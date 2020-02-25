@@ -1871,7 +1871,8 @@ input:-webkit-autofill:focus {
     border: 0;
     width: 100%;
     border-radius: 0;
-    max-width: 100%; }
+    max-width: 100%;
+    border-radius: 30px; }
   .section-carousel .owl-item.active .item-image {
     transform: none;
     opacity: .5; }

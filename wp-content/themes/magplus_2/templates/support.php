@@ -157,7 +157,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="nonloop owl-carousel blog-carousel"> 
+                            <div class="nonloop owl-carousel col-carousel two-col-carousel blog-carousel"> 
                                 <div class="card card-with-image item">
                                     <div class="card-body">
                                         <div class="card-image">
