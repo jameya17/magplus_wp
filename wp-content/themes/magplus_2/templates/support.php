@@ -8,6 +8,24 @@
  * @since 1.0.0
  */
 //$terms = get_terms("video_cat");
+
+$args = array(
+    'post_type' => 'video',
+    'post_status' => 'publish',
+    'orderby' => 'publish_date',
+    'order' => 'DESC',
+    'posts_per_page' => 5,
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'video_cat',
+            'field' => 'id',
+            'terms' => '366'
+        )
+    )
+);
+$the_tutorials_query = new WP_Query( $args );
+
+
 $args = array(
     'post_type' => 'video',
     'post_status' => 'publish',
@@ -23,10 +41,13 @@ $args = array(
     )
 );
 $the_showcaseAds_query = new WP_Query( $args );
-while ( $the_showcaseAds_query->have_posts() ) : $the_showcaseAds_query->the_post();
+
+
+
+//while ( $the_showcaseAds_query->have_posts() ) : $the_showcaseAds_query->the_post();
    //echo get_the_title();
    //echo "<br/><br/>";
-endwhile;    
+//endwhile;    
 get_header();
     ?>
         <div class="container">
@@ -60,36 +81,23 @@ get_header();
                             </div>
 
                             <div class="owl-carousel full-wrap-carousel">
-                                <div class="item">
-                                    <a href="/" target="_blank" rel="" class="item-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/temp-schedule-demo.svg" alt="" />        
-                                        <span class="video-play-btn">
-                                        </span>
-                                    </a>    
-                                    <div class="item-detail">
-                                        <p>From the creation of your layout through quality</p>
-                                    </div>    
-                                </div>
-                                <div class="item">
-                                    <a href="/" target="_blank" rel="" class="item-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/temp-schedule-demo.svg" alt="" />        
-                                        <span class="video-play-btn">
-                                        </span>
-                                    </a>    
-                                    <div class="item-detail">
-                                        <p>From the creation of your layout through quality</p>
-                                    </div>  
-                                </div>
-                                <div class="item">
-                                    <a href="/" target="_blank" rel="" class="item-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/temp-schedule-demo.svg" alt="" />        
-                                        <span class="video-play-btn">
-                                        </span>
-                                    </a>    
-                                    <div class="item-detail">
-                                        <p>From the creation of your layout through quality</p>
-                                    </div>  
-                                </div> 
+                                <?php 
+                                    while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post(); 
+                                    $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                                ?>
+                                    <div class="item">
+                                        <a href="<?php the_permalink(); ?>" target="_blank" rel="" class="item-image">
+                                            <img src="<?php echo $thumb; ?>" alt="" />        
+                                            <span class="video-play-btn">
+                                            </span>
+                                        </a>    
+                                        <div class="item-detail">
+                                            <p><?php the_title(); ?></p>
+                                        </div>    
+                                    </div>
+                                <?php 
+                                    endwhile; 
+                                ?>
                             </div>    
                         </div>    
                     </div>    
