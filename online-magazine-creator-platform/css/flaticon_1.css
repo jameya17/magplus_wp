@@ -1,0 +1,30 @@
+	
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon_1.eot");
+  src: url("../fonts/Flaticon_1.eot#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon_1.woff") format("woff"),
+       url("../fonts/Flaticon_1.ttf") format("truetype"),
+       url("../fonts/Flaticon_1.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon_1.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-background:before { content: "\f100"; }
+.flaticon-interface:before { content: "\f101"; }

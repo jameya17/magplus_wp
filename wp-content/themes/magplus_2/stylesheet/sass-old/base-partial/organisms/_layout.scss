@@ -1,0 +1,161 @@
+// section bg
+.white-bg{
+    background-color: $white-col;  
+}
+.grey-bg{
+    background-color: #F7F7F7;   
+}
+.org-bg{
+    background-color: #FF8616; 
+    h3{
+        color: $white-col;
+    }
+    p{
+        color: $white-col; 
+    }
+
+}
+.l-section{
+    @media only screen and (max-width: 1024px) {
+        background-image: none !important;  
+    }
+}
+
+.l-section-wrap{
+    // position: relative;
+    @extend .header-wrap; 
+}
+.l-sub-section-pad{
+    padding: 0 60px;
+}
+.small-wrap{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.g-col{
+    width: 100%; 
+    @include flexbox;
+    @include align-items(center); 
+    @include justify-content(space-between); 
+    @media only screen and (max-width: 1024px) {
+        @include flex-direction(column-reverse);
+        @include justify-content(center); 
+        text-align: center;
+        // padding: 0 15px;
+    }
+    &.offset_default{
+        & > div{
+            margin-left: 4%; 
+            &:first-child{
+                margin-left: 0;  
+            }
+            @media only screen and (max-width: 1024px) {
+                margin-bottom: 0;
+                &:last-child{
+                    margin: 0;
+                } 
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            @include flex-direction(column); 
+        }
+    }
+}
+.one-half{
+    width: 48%;
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.image-block{
+    @media only screen and (max-width: 1024px) {
+        margin-bottom: 20px; 
+    }
+    img{
+        @media only screen and (max-width: 1024px) {
+            max-width: 320px;
+        }
+    }
+}
+
+//content alignment 
+.align-left{
+    @include justify-content(flex-start);
+}
+.align-center{
+    @include flex-direction(column);
+    @include justify-content(center);
+}
+.align-right{
+    @include justify-content(flex-end);
+}
+.align-top{
+    @include justify-content(flex-start);
+    @include align-items(flex-start); 
+}
+.container{
+    padding-top: 68px;
+    @media only screen and (max-width: 1024px) {
+        padding: 68px 15px 0; 
+    }
+}
+.sec-pad{
+    @include flexbox;
+    @include align-items(center);
+    padding: 160px 0;
+    @media only screen and (max-width: 1024px) {
+        padding: 40px 0;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+//Custom css
+.magplus-pro-section{
+    .g-col{
+        max-width: 830px; 
+        margin: 0 auto;
+        @media only screen and (max-width: 1024px) {
+            max-width: 100%;  
+        }
+    }
+    .magpluspro-con-block{
+        padding: 160px 0 65px 38%; 
+        background-image: url('../../images/magplus-pro-bg.svg'); 
+        background-repeat: no-repeat; 
+        background-position: left top; 
+        h3{
+            color: $white-col;
+        }
+        p{
+            color: $white-col;
+        }
+        .btn{
+            background-color: $white-col;
+            color: $org-col; 
+        }
+        @media only screen and (max-width: 1024px) {
+            padding: 40px 0; 
+            background-image: none; 
+            max-width: 280px;
+        }
+    }
+}
+
+
+//Page spacific css
+.pad-top0{
+    padding-top: 0; 
+}
+.pad-bot0{
+    padding-bottom: 0; 
+}
+.key-offerings{
+    padding-top: 0; 
+    padding-bottom: 100px; 
+}

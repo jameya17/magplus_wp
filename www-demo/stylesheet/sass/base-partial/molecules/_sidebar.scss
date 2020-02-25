@@ -1,0 +1,173 @@
+.sidebar{
+    width: 265px;
+    .inline-form{
+        margin-bottom: 1px;     
+    }
+}
+.sidebar-header{
+    position: relative;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.7px;
+    color: #414141;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin: 90px 0 50px 0; 
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+        width: 46px;
+        height: 6px;
+        background-color: #DDDFE1; 
+    }
+}
+.sidebar-listing{
+    padding: 0;
+    list-style-type: none;
+    li{
+        display: block;
+        padding: 0;
+        list-style-type: none;
+    }
+}
+.count{
+    font-size: 16px;
+    line-height: 24px;
+    color: #565455;
+    letter-spacing: 1px;
+}
+.post-sidebar{
+    @media only screen and (max-width: 1024px) {
+        text-align: left;
+    }
+    .sidebar-section-listing{
+        margin-bottom: 25px;
+        &:last-child{
+            margin: 0;
+        }
+    }
+    .sec-title{
+        font-size: 32px;
+        line-height: 44.07px;
+        color: #414141;
+        font-weight: bold;
+        letter-spacing: -0.7px;
+    }
+    .sidebar-listing{
+        li{
+            a{
+                display: inline-block; 
+                font-family: 'Ubuntu', sans-serif; 
+                font-size: 14px;
+                line-height: 22px;
+                color: $org-col;
+                font-weight: 400;
+                letter-spacing: 0.44px;
+                margin-top: 10px;
+                &:hover{
+                    color: $dark-org-col; 
+                }
+                .count{
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: $org-col;
+                    font-weight: 400;
+                    letter-spacing: 0.44px; 
+                }
+            }
+        }
+        &.tags-listing{
+            font-size: 0; 
+            .tag-link{
+                display: inline-block;
+                margin-right: 8px;
+                margin-bottom: 8px;
+                a{
+                    display: block;
+                    font-size: 9px;
+                    line-height: 13px;
+                    color: #8D8788;
+                    font-weight: 500;
+                    letter-spacing: 0.18px;
+                    border-radius: 30px;
+                    background-color: #ECECEC;
+                    padding: 6px 12px; 
+                    text-transform: uppercase;
+                    &:hover{
+                        color: $white-col;  
+                        background-color: $dark-org-col;  
+                        
+                    }
+                }
+                &:active{
+                    background-color: $dark-org-col; 
+                    &:hover{
+                        background-color: $dark-org-col; 
+                        color: $white-col;  
+                    }
+                }
+                
+            }
+        } 
+    }
+    .get-update-ces{
+        background-color: #ECECEC;
+        padding: 60px 20px;
+        border-radius: 8px;
+        .sec-title{
+            margin-bottom: 50px;
+        }
+        h6{
+            font-size: 11px;
+            line-height: 16px;
+            color: #8D8788;
+            letter-spacing: 1.95px;
+            text-transform: uppercase;
+            a{
+                color: #8D8788;
+                &:hover{
+                    color: $dark-org-col; 
+                }                
+            }
+        }
+        .inline-form input{
+            min-width: 185px; 
+        }
+    }
+}
+.tmc-block{
+    font-size: 10px;
+    line-height: 12px;
+    color: #4F5362;
+    .checkbox-container{
+        font-size: 10px;
+        line-height: 12px;
+        color: #4F5362;
+        border: 0;
+        margin: 0;
+        padding-left: 25px; 
+        input{ 
+            left: 0;
+            width: 17px;
+            height: 17px;
+            z-index: 1; 
+        }
+        .checkmark{
+            width: 15px;
+            left: 0;
+            right: auto;
+            border: 1px solid #43CB83; 
+            border-radius: 50%;
+            &:after {
+                left: 4px;
+                top: 2px; 
+            }
+        }
+        input:checked ~ .checkmark{
+            background-color: #43CB83;
+        }
+
+    }
+}

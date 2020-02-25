@@ -1,0 +1,104 @@
+.entry-header{
+    .post-meta{
+        margin-bottom: 35px;
+    }
+    .category-name{
+        display: inline-block;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 1.5px;
+        color: #FF8616;
+        font-weight: 500;
+        text-transform: uppercase;        
+        margin-right: 5px;
+    }
+    .publish-details{
+        @extend .category-name;
+        color: #8D8788;
+        margin: 0; 
+        text-transform: none;
+    }
+    .entry-title{
+        font-size: 30px;
+        line-height: 36px;
+        color: #333333;
+        letter-spacing: 0px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 30px;
+        color: #595656;
+        font-weight: 400;
+    }
+}
+.entry-content{ 
+    .blog-img{
+        display: block;
+        width: 100%;
+        border-radius: 18px; 
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 30px;
+        color: #595656;
+        font-weight: 400;
+    }   
+    li{
+        padding-top: 10px;
+        color: #333333;
+    }
+    strong{
+        font-weight: bold;
+        color: #333333; 
+    }
+}  
+
+.fiveCol-slider{
+    h3{
+        font-size: 30px;
+        line-height: 36px;
+        color: #333333;
+        letter-spacing: 0px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .owl-carousel{
+        padding-top: 15px; 
+    }
+    .out-of-nav{
+        .owl-nav{
+            top: -40px;
+        }
+    }
+    .slider-counter{
+        top: -45px;
+    }
+    .sec-holder{
+        padding-top: 160px;
+        border-top: 1px solid #6B6A6A;  
+    }
+}
+.blog-listing-section{
+    .one-third{
+        width: 70.666667%; 
+    }
+    .blog-listing{
+        @include flexbox;
+        @include justify-content(flex-start);
+        @include align-items(flex-start); 
+        @include flex-wrap(wrap);  
+        margin-bottom: 150px;
+    }
+    .card{
+        max-width: 358px;
+    }
+    .card-with-image{
+        img{
+            width: 100%;
+        }
+    } 
+    
+}

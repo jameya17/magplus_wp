@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="30px" viewBox="0 0 31 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Play Button</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05-Support-Tutorials-Page" transform="translate(-916.000000, -1086.000000)">
+            <g id="Expanded" transform="translate(537.000000, 759.000000)">
+                <g id="Video-5" transform="translate(266.000000, 251.000000)">
+                    <g id="Button-/-Play" transform="translate(113.000000, 76.000000)">
+                        <g id="Play-Button">
+                            <ellipse id="Oval" stroke="#FF8616" fill="#FFFFFF" cx="15.5" cy="15" rx="15" ry="14.5"></ellipse>
+                            <polygon id="Triangle" fill="#FF8616" transform="translate(16.439394, 15.227273) rotate(-270.000000) translate(-16.439394, -15.227273) " points="16.4393939 11.2348485 21.4393939 19.219697 11.4393939 19.219697"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

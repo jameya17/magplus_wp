@@ -1,0 +1,1 @@
+<?php include( TEMPLATEPATH .'/template-full.php');

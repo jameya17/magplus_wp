@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="8px" viewBox="0 0 14 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10-Pricing" transform="translate(-1289.000000, -619.000000)" fill="#FF8616">
+            <g id="Title" transform="translate(118.000000, 248.000000)">
+                <g transform="translate(264.000000, 0.000000)" id="Currency">
+                    <g transform="translate(828.000000, 357.000000)">
+                        <g id="right-copy" transform="translate(77.000000, 12.000000)">
+                            <path d="M14.581728,1.999833 C14.202612,1.999833 13.846248,2.140589 13.578534,2.395382 L9.011142,6.739964 L4.445046,2.395525 C4.1769,2.140589 3.820788,2.000108 3.440988,2.000108 C3.06171,2.000108 2.705166,2.140589 2.436858,2.395525 C1.883934,2.922007 1.883934,3.77872 2.436858,4.304916 L8.007876,9.604331 C8.275662,9.859542 8.631684,9.99988 9.01098,9.99988 C9.390096,9.99988 9.746892,9.859542 10.015272,9.604331 L15.585264,4.304916 C15.853734,4.049848 16.000848,3.711037 16.000848,3.350226 C16.000848,2.989822 15.853482,2.650461 15.585264,2.395382 C15.317478,2.140589 14.961186,1.999833 14.581728,1.999833 Z" id="arrow"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

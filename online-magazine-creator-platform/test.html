@@ -1,0 +1,78 @@
+<!--<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="helloForm" action="HelloWorld" method="GET"  onsubmit="valthisform();">
+            <br>
+            <br><b> MY LIKES </b>
+            <br>
+            First Name: <input type="text" name="first_name" required>
+            <br />
+            Last Name: <input type="text" name="last_name"  required />
+            <br>
+            <input type="radio" name="modifyValues" value="uppercase" required="required">Convert to uppercase <br>
+            <input type="radio" name="modifyValues" value="lowercase" required="required">Convert to lowercase <br>
+            <input type="radio" name="modifyValues" value="asis"      required="required" checked="checked">Do not convert <br>
+            <br>
+            <input type="checkbox" name="c1" value="maths"     /> Maths
+            <input type="checkbox" name="c1" value="physics"   /> Physics
+            <input type="checkbox" name="c1" value="chemistry" /> Chemistry
+            <br>
+
+            <button onclick="submit">Submit</button>
+
+            <!-- input type="submit" value="submit" / -->
+            <!--<script>
+                <!---
+                function valthisform() {
+                    var checkboxs=document.getElementsByName("c1");
+                    var okay=false;
+                    for(var i=0,l=checkboxs.length;i<l;i++) {
+                        if(checkboxs[i].checked) {
+                            okay=true;
+                            break;
+                        }
+                    }
+                    if (!okay) { 
+                        alert("Please check a checkbox");
+                        event.preventDefault();
+                    } else {
+                    }
+                }
+                -->
+           <!-- </script>
+        </form>
+    </body>
+</html>
+-->
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <script type="text/javascript" language="javascript" src="jquery.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                var val1=parseInt($("#TextBox1").val());
+                var val2=parseInt($("#TextBox2").val());
+                
+                $("#TextBox3").val(val1 + val2);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <br />
+        <input type="button" id="btn1" value="Show Result" />
+        <br /><br />
+        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+    </form>
+</body>
+</html>

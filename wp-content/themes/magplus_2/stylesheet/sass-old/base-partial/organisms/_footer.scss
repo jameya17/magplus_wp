@@ -1,0 +1,143 @@
+footer{
+    padding: 175px 0;
+    background-color: $black-col;
+    z-index: 1;
+    h6{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 10px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        padding: 20px 15px;
+    }
+}
+.footer-wrap{
+    @extend .header-wrap;
+    @include flexbox;
+    @include justify-content(space-between);
+    @media only screen and (max-width: 1024px) {
+        display: block; 
+    }
+}
+.foot-col{
+    @include flexbox;
+    @include flex-direction(column); 
+    width: 8%;
+    @media only screen and (max-width: 1024px) {
+        display: block;
+        width: auto;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &.copyright-sec{
+        width: 18%;
+        @media only screen and (max-width: 1024px) {
+            width: auto;
+        }
+    }
+    &.subscription-sec{
+        width: 23%; 
+        @media only screen and (max-width: 1024px) {
+            width: auto;
+        }
+    }
+}
+.foot-link-block{
+    font-size: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+        font-size: 11px;
+        line-height: 14px;
+        margin-bottom: 15px;
+        &:last-child{
+            margin: 0;
+        }
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 4px;
+        }
+    }
+    .foot-link{
+        font-size: 11px;
+        line-height: 14px;
+        color: $white-col; 
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+}
+.copyright-block{
+    @include flexbox;
+    @include flex-direction(column); 
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    .foot-logo{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    span{
+        font-size: 11px;
+        line-height: 15px;
+        color: $white-col;
+        font-weight: 400;
+    }
+    @media only screen and (max-width: 1024px) {
+        max-width: 270px;
+    }
+}
+.follow-us-listing{
+    font-size: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+        display: inline-block;
+        margin-left: 15px;
+        &:first-child{
+            margin: 0;
+        }
+    }
+}
+.subscription-sec{ 
+    a{
+        font-size: 11px;  
+        line-height: 16px;
+        color: $white-col;
+        letter-spacing: 2.75px;
+    }
+}
+.inline-form{
+    @include flexbox;
+    margin-bottom: 20px;
+    input{
+        display: block;
+        min-width: 200px;
+        position: relative;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 400;
+        border: 1px solid #fff;
+        border-radius: 3px 0px 0px 3px;
+        color: #333333; 
+        padding: 0px 0 0 20px;
+        width: auto;
+        background-color: $white-col;
+        outline: 0;
+        min-height: 45px; 
+    }
+    .btn{
+        width: 58px;
+        padding: 0;
+        border-radius: 0 3px 3px 0;
+        background-image: url('../../images/icons/right-arrow.svg');
+        background-position: center center; 
+        background-repeat: no-repeat; 
+        &:hover{
+            background-color: $dark-org-col;
+        }
+    }
+}
+

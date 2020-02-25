@@ -1,0 +1,85 @@
+.page-item-28418 {
+    display: none !important;
+}
+
+
+
+body.blog .brand-page-header-container, body.category .brand-page-header-container {
+    color: #fff !important;
+    height: 250px !important;
+}
+@media only screen and (max-width: 1023px) {
+
+.isMobile .main-blog { width: 95%; margin-left: 2%;}
+
+}
+body.blog .main, body.category .main {
+    padding: 0 !important;
+    padding-bottom: 30px !important;
+}
+
+body.blog .brand-page-header-container .blog-brand-page-header, body.category .brand-page-header-container .blog-brand-page-header {
+    text-align: center !important;
+
+
+}
+img {
+    vertical-align: middle;
+}
+body.blog .brand-page-header-container h1, body.category .brand-page-header-container h1 {
+    color: #fff !important;
+    font-size: 41px !important;
+    font-family: actoultralight,sans-serif !important;
+    margin-bottom: 0 !important;
+    text-align: center !important;
+    padding-top: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+body.blog .brand-page-header-container .blog-brand-page-header h2, body.category .brand-page-header-container .blog-brand-page-header h2 {
+    color: #fff !important;
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    font-family: actobook,sans-serif !important;
+}
+.larger {
+    font-size: 14px !important;
+}
+label.screen-reader-text {
+    display: none !important;
+}
+
+
+#searchform #s {
+   	background-color: #fff;
+	width: 100%;
+    margin: 0 0 5px;
+    overflow: visible;
+    border: 1px solid #372a2a;
+    padding: 5px 8px;
+    color: #000;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-sizing: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+
+.sidebar-right {
+    margin: 0 0 30px 30px;
+    padding: 56px 0 0 ;
+}
+
+.cat-item {
+    padding-top: 5px!important;
+}

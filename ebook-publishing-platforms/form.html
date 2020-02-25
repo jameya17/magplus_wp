@@ -1,0 +1,95 @@
+
+
+
+
+
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" id="footer-form">
+
+
+			<input type="hidden" name="oid" value="00D7F000005CgsF">
+			<input  id="00N7F00000HNBcC" maxlength="100" name="00N7F00000HNBcC" size="20" type="hidden" value="<?php echo $ipaddress ?>" />
+			<input type="hidden" name="retURL" value="https://www.magplus.com/services/creative-services/creative-services-thank-you-2">
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name *" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name *" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Your Email *"required>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="form-control" pattern=".{10,}" title="Please Enter Your Phone Number" name="phone" placeholder="Phone *" id="phone" required>
+              <br>
+            </div>
+          </div>
+		  
+	<div class="form-group mb-4">
+		  <div style="float: left; margin-left: -14px;" class="col-sm-8">	
+			 <input class="phone_class form-control CustControl mb-4"  style="margin-right: 5px;text-align:center; background-image: url(1.JPG); font-size: 17px; color: black; font-weight: 600;" type="text" id="mainCaptcha"  readonly /> 
+		  </div>
+		  <div style="float: left;" class="col-sm-4"> 
+			 <input style="padding: 12px 16px;" class="btn submitBtn"  type="button" id="refresh" value="Refresh" onclick="Captcha();" />
+		  </div>
+   </div>
+		   <div class="form-group mb-4">
+			  <input class="form-control CustControl" type="text" placeholder="type the code shown above"  id="txtInput" required  /> 
+		   </div>
+		  
+          <center>
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </center>
+</form>
+
+
+
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit=" return ValidCaptcha();">
+   <!--<form action="#" method="POST" onsubmit="alert(ValidCaptcha());">-->
+   <!--<input type="text" name="sf_phone" id="sf_phone" value="" >-->
+   <input type="hidden" name="oid" value="00D7F000005CgsF">
+   <input  id="00N7F00000HNBcC" maxlength="100" name="00N7F00000HNBcC" size="20" type="hidden" value="<?php echo $ipaddress ?>" />
+   <input type="hidden" name="retURL" value="https://www.magplus.com/services/creative-services/creative-services-thank-you-2">
+   <div class="form-group mb-4">
+      <input type="text" class="form-control CustControl" id="firstName"   placeholder="First Name" name="first_name" required>
+   </div>
+   <div class="form-group mb-4">
+      <input type="text" class="form-control CustControl" id="lastName"   placeholder="Last Name" name="last_name" required>
+   </div>
+   <div class="form-group mb-4">
+      <input type="email" class="form-control CustControl" id="exampleInputEmail1"  placeholder="Email" name="email" required>
+   </div>
+   <div class="form-group mb-4">
+      <input class="form-control CustControl" pattern=".{10,}" title="Please Enter Your Phone Number" id="phone" name="phone" type="tel" required >
+   </div>
+   <!--<div style="float: left; margin-left: -14px;" class="col-sm-4">	
+      <div style="float: left;" class="col-sm-8">
+      <input style="border-radius: 5px; margin-right: 5px;text-align:center; background-image: url(1.JPG); border: none; font-size: 17px; color: black; font-weight: 600;" type="text" id="mainCaptcha"  readonly /> 
+      </div>
+      <div style="float: right;" class="col-sm-4">
+      <input style="width: 50%;" type="button" id="refresh" value="Refresh" onclick="Captcha();" />
+      </div>
+      </div>-->
+   <div class="form-group mb-4">
+      <div style="float: left; margin-left: -14px;" class="col-sm-8">	
+         <input class="phone_class form-control CustControl mb-4"  style="margin-right: 5px;text-align:center; background-image: url(1.JPG); font-size: 17px; color: black; font-weight: 600;" type="text" id="mainCaptcha"  readonly /> 
+      </div>
+      <div style="float: left;" class="col-sm-4"> 
+         <input style="padding: 12px 16px;" class="btn submitBtn"  type="button" id="refresh" value="Refresh" onclick="Captcha();" />
+      </div>
+   </div>
+   <div class="form-group mb-4">
+      <!--<input type="email" class="form-control CustControl" id="exampleInputEmail1"  placeholder="Email" name="email" required>-->
+      <input class="form-control CustControl" type="text" placeholder="type the code shown above"  id="txtInput" required  /> 
+   </div>
+   <div class="form-group text-center mb-4">
+      <button class="btn submitBtn">Submit</button>
+   </div>
+</form>

@@ -1,0 +1,154 @@
+html .mceContentBody {
+	max-width: 700px; /* the wide format */
+	background-color: #fff;
+}
+
+/*   WordPress styles   */
+.alignleft  { float: left; }
+.alignright  { float: right; }
+.aligncenter { display:block; margin:0 auto 20px; }
+.wp-caption { margin: 0 0 15px; padding: 0 0 5px; text-align:center; background:#F8F8F4; border: solid 1px #e6e6e6; }
+.wp-caption img  { margin:0; padding:4px 0; background:none; border:0; }
+.wp-caption-text { margin:0; padding:0; font-size:11px; text-align:center; }
+.clear, .clearall { clear: both; }
+
+img.alignright { margin: 0 0 15px 15px; }
+img.alignleft { margin: 0 15px 15px 0; }
+.align-flushright {float: right; margin: 0 -160px 40px 40px;}
+.align-flushleft {float: left; margin: 0 40px 0 -240px;}
+
+@font-face {
+    font-family: 'BelizioRegular';
+    src: url('belizio-font/belizio-regular-webfont.eot');
+    src: url('belizio-font/belizio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('belizio-font/belizio-regular-webfont.woff') format('woff'),
+         url('belizio-font/belizio-regular-webfont.ttf') format('truetype'),
+         url('belizio-font/belizio-regular-webfont.svg#BelizioRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*   Tags   */
+
+body { color: #595656; font: 14px/1.3 "Helvetica Neue", Arial, sans-serif; }
+
+a { text-decoration: none; color: #509fcc; }
+a:hover { color: #EA680B; }
+blockquote {padding: 0 1.5em; font-style: italic;}
+
+h1, h2, h3, h4, h5, h6 {  margin: 0; font-weight: normal; color: #545454; }
+h1 { font-size: 30px; margin: 0 0 15px; font-family: 'BelizioRegular', "Helvetica Neue", Arial, sans-serif; color: #000 }
+h1 a { color: #000; }
+h2 { font-size: 18px; font-weight: bold }
+h2 a { color: #545454; }
+h3 { font-size: 18px; margin: 0 0 10px;}
+h3 a { color: #545454; }
+h5, h6 { font-weight: normal; color: #999; font-size: 15px; text-shadow: 0 -1px 0 #222; margin: 0 0 15px; }
+h1 strong,
+h2 strong,
+h3 strong { color: #EA680B; font-weight: inherit; }
+p { margin: 0 0 15px; }
+small { font-size: 10px; }
+
+
+
+
+/*   Buttons   */
+/* general for all buttons *
+.button-green-gray,
+.big-orange-button,
+.big-green-button { display: block; background: url(images/buttons.png); color: #fff; text-align: center; }
+
+.button-green-gray:hover,
+.big-orange-button:hover,
+.big-green-button:hover { color: #eee; }
+
+.button-green-gray { padding: 1px 0 0; height: 39px; line-height: 40px;
+    width: 162px; color: #fff; font-weight: 500; text-shadow: 1px 1px 1px rgba(0,0,0,.4); text-align: center; }
+.button-green-gray:hover { background-position: 0 -40px; }
+
+.big-orange-button,
+.big-green-button {  text-shadow: 0 -1px 1px rgba(0,0,0,.5); }
+
+.big-orange-button { background-position: 0 -90px; width: 242px; line-height: 59px; font-size: 18px; font-weight: bold; }
+.big-orange-button:hover { text-shadow: 0 0 2px rgba(0,0,0,.4); background-position: 0 -150px; }
+
+.big-green-button { background-position: 0 -210px; width: 242px; line-height: 59px; font-size: 18px; font-weight: bold; }
+.big-green-button:hover { text-shadow: 0 0 2px rgba(0,0,0,.4); background-position: 0 -270px; }
+
+
+.ps-button-1 { color: #fff; display: block; background: url(images/sprites.png) no-repeat 0 -22px; height: 50px; width: 120px; text-decoration: none !important;
+    padding: 14px 16px 0px 60px; text-align: center; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 11px; }
+.ps-button-1:hover { background-position: 0 -88px; text-shadow: 0 -1px 0 rgba(0,0,0,.6); color: #fff; }
+.ps-button-1 strong { font-size: 15px; }
+
+
+
+
+/*
+ * CSS3 buttons
+ */
+/* old */.button-green-gray,
+.primary-button, /* old */ .big-green-button,
+.big-primary-button { display: block; color: #fff; text-align: center; margin: 0 0 15px; border: 1px solid rgb(129,179,66); text-shadow: 0 -1px 1px rgba(0,0,0,.5); padding: 10px;
+    -moz-box-shadow:  0px 1px 3px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.4); -webkit-box-shadow:  0px 1px 3px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.4); box-shadow:  0px 1px 3px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.4);
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    background: rgb(128,182,29); background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(161,201,99)), to(rgb(128,182,29))); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, rgb(161,201,99), rgb(128,182,29)); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, rgb(161,201,99), rgb(128,182,29)); /* FF3.6 */ background-image:     -ms-linear-gradient(top, rgb(161,201,99), rgb(128,182,29)); /* IE10 */ background-image:      -o-linear-gradient(top, rgb(161,201,99), rgb(128,182,29)); /* Opera 11.10+ */ background-image:         linear-gradient(top, rgb(161,201,99), rgb(128,182,29)); }
+.primary-button:hover, /* old */ .big-green-button:hover, /* old */.button-green-gray:hover,
+.big-primary-button:hover { color: #fff; background: rgb(161,201,99); background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(181,221,119)), to(rgb(128,182,29))); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, rgb(181,221,119), rgb(128,182,29)); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, rgb(181,221,119), rgb(128,182,29)); /* FF3.6 */ background-image:     -ms-linear-gradient(top, rgb(181,221,119), rgb(128,182,29)); /* IE10 */ background-image:      -o-linear-gradient(top, rgb(181,221,119), rgb(128,182,29)); /* Opera 11.10+ */background-image:         linear-gradient(top, rgb(181,221,119), rgb(128,182,29)); }
+
+
+.big-primary-button { width: 380px; padding: 8px 10px 12px; font-size: 12px; text-shadow: 0px 0px 4px #000; font-weight: 500; }
+.big-primary-button strong { font-size: 22px; text-transform: none; display: block; text-shadow: 0 -1px 0 rgba(0,0,0,.4); line-height: 1.6 }
+.big-primary-button img { float: none; margin: -4px 5px 0 0;  }
+
+/* old */ .button-green-gray,
+.primary-button, /* old */ .big-green-button { display: inline-block; margin: 0; width: auto; line-height: 1.2; padding: 10px 10px; text-shadow: 0 0 2px rgba(0,0,0,.5); font-size: 17px; font-weight: bold; }
+
+/* Orange button */
+/* old */.ps-button-orange,
+.gform_wrapper .gform_button,
+.secondary-button,
+.big-secondary-button { display: block; padding: 6px 10px; text-align: center; color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    border: 1px solid #c7671e; border-top: 1px solid #e78132; border-bottom: 1px solid #aa5402; cursor: pointer; width: auto;
+    -moz-border-radius: 4px;-webkit-border-radius: 4px; border-radius: 4px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+	background: #ea791c;
+	background: -webkit-linear-gradient(top, #fd9d53, #ea791c);
+	background: -moz-linear-gradient(top, #fd9d53, #ea791c);
+	background: -o-linear-gradient(top, #fd9d53, #ea791c);
+	background: -ms-linear-gradient(top, #fd9d53, #ea791c);
+	background: linear-gradient(top, #fd9d53, #ea791c);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .5);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .5);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .5); }
+
+/* old */.ps-button-orange:hover,
+.secondary-button:hover,
+.gform_wrapper .gform_button:hover,
+.big-secondary-button:hover { border-top-color: #e98e47; border-bottom-color: #a4571c; text-shadow: 0 0 5px rgba(255, 255, 255, .4);
+	background: #ec8533;
+	background: -webkit-linear-gradient(top, #fda865, #ec8533);
+	background: -moz-linear-gradient(top, #fda865, #ec8533);
+	background: -o-linear-gradient(top, #fda865, #ec8533);
+	background: -ms-linear-gradient(top, #fda865, #ec8533);
+	background: linear-gradient(top, #fda865, #ec8533); }
+
+
+.big-secondary-button { font-size: 11px; }
+.big-secondary-button img { margin: 0  10px 0 0; }
+.big-secondary-button strong { font-size: 15px; }
+.big-secondary-button:hover { color: #fff;
+	background: rgb(234,104,11);
+    background: -webkit-linear-gradient(top, rgb(255,163,90), rgb(244,114,21));
+	background: -moz-linear-gradient(top, rgb(255,163,90), rgb(244,114,21));
+	background: -o-linear-gradient(top, rgb(255,163,90), rgb(244,114,21));
+	background: -ms-linear-gradient(top, rgb(255,163,90), rgb(244,114,21));
+	background: linear-gradient(top, rgb(255,163,90), rgb(244,114,21));}
+
+/* old */.ps-button-orange,
+.secondary-button { font-weight: bold; display: inline-block; }
+
+
+/**********   END CSS3 buttons   *****/

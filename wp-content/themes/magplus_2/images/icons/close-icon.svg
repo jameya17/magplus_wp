@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="12-Contact-Us---Form" transform="translate(-1392.000000, -157.000000)" stroke="#FF8616" stroke-width="1.333">
+            <g id="Contact-Copy" transform="translate(594.000000, 132.000000)">
+                <g id="Close" transform="translate(799.000000, 26.000000)">
+                    <path d="M24,12 C24,18.6274286 18.6274286,24 12,24 C5.37257143,24 0,18.6274286 0,12 C0,5.37257143 5.37257143,0 12,0 C18.6274286,0 24,5.37257143 24,12 Z" id="Stroke-1"></path>
+                    <line x1="7" y1="7" x2="17.5" y2="17.5" id="Stroke-3"></line>
+                    <line x1="17.5" y1="7" x2="7" y2="17.5" id="Stroke-5"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

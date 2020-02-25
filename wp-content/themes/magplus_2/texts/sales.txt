@@ -1,0 +1,4 @@
+##Go-to-market projects
+Strategy|App strategy, Business strategy & Distribution strategy
+Production|Design production, HTLM-features, movie editing & ad production
+Training|Staff training in Mag+ tools

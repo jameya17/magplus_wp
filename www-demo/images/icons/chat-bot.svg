@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="81px" viewBox="0 0 82 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Chat Bot</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M31.9867405,-2.22044605e-16 C49.6526441,-2.22044605e-16 63.9736123,14.1455097 63.9736123,31.5945354 C63.9736123,49.0434954 49.6526441,63.1888082 31.9867405,63.1888082 C25.7016464,63.1888082 19.8399175,61.3983092 14.8958653,58.3055566 L0.55105641,60.34688 L5.1996249,48.8680877 C1.91164608,43.9037211 -8.75965966e-14,37.9696222 -8.75965966e-14,31.5945354 C-8.75965966e-14,14.1455097 14.3210338,-2.22044605e-16 31.9867405,-2.22044605e-16 Z" id="path-1"></path>
+        <filter x="-25.0%" y="-17.4%" width="150.0%" height="150.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0939869253   0 0 0 0 0.0930534705   0 0 0 0 0.0966655344  0 0 0 0.335637019 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chat-Bot" transform="translate(2.000000, -3.000000)">
+            <g transform="translate(7.000000, 7.000000)">
+                <g id="Combined-shape-7963">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#231F20" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group" transform="translate(18.051282, 28.717949)" fill="#FFFFFF">
+                    <circle id="Oval" cx="3.28205128" cy="3.28205128" r="3.28205128"></circle>
+                    <circle id="Oval-Copy" cx="13.9487179" cy="3.28205128" r="3.28205128"></circle>
+                    <circle id="Oval-Copy-2" cx="24.6153846" cy="3.28205128" r="3.28205128"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

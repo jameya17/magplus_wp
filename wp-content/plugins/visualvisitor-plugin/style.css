@@ -1,0 +1,43 @@
+.bng_logo{
+	border: 1px solid; 
+	padding: 10px;
+	position: relative; 
+	background-color: #fff;
+	width: 700px;
+}
+.bng-wrap{
+	width: 450px; 
+	border: 1px solid; 
+	padding: 15px;
+	background-color: #fff;
+}
+.logo_img img{
+	width: 300px;
+}
+@media (max-width: 767px ){
+	.bng_logo{
+		width: 95%;
+	}
+	.sign_up {
+		position: relative !important;
+		top: 5px !important;
+		right: 0 !important;
+	}
+	.bng-wrap{
+		width: 94% !important;
+	}
+	.bng-wrap label{
+		display: block !important;
+		text-align: left !important;
+		margin-left: 5px;
+	}
+	.bng-wrap input{
+		width: 94% !important;
+		padding: 5px;
+	}
+	.bng_script_footer{
+		padding: 10px 0 !important;
+		padding-right: 10px !important;
+		margin-right: 0 !important;  
+	}
+}

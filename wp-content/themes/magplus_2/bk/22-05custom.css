@@ -1,0 +1,263 @@
+/*p {
+    font-size: 16px!important;
+    line-height: 24px;
+}*/
+
+.salesforce_w2l_lead .w2linput.submit {font-size: 16px;}
+label {font-size: 16px;}
+
+
+iframe {width: 100%;}
+#clients-list .client-item .tablet.horiz .frame { left: 0px;}
+.single-use_case .entry-content img { max-width: 560px; width: 100%;}
+
+
+.bg-primary {
+    color: #fff;
+    background-color: #ff7a00;
+    padding: 30px 15px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+  .color-orange{ color: #ff7b00;}
+
+
+.subhead2 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 400;
+	color: #000;
+}
+.color-white{color:#fff;}
+ .text-centre{text-align:center;}
+
+.heading-2 {
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#clients {
+    padding: 0 15px;
+}
+
+
+/* i-pad Start */
+
+@media only screen and (max-width: 1024px)
+{
+
+.subpage-mantle section:not(.search-bar) { margin: 40px 20px;}
+.multi-device { padding: 0 0px;}
+.subpage-mantle .subhead {font-size: 25px;}
+
+
+.subpage-mantle .mbox h3 { font-size: 22px;}
+
+
+.home-page header h2 {font-size: 2em;}
+
+
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+
+
+#clients-list .client-item .short.vert .frame, .single-clients .client-item .short.vert .frame {left: 0px;}
+
+#clients-list .client-item .tablet.vert .frame, .single-clients .client-item .tablet.vert .frame {left: 0px;}
+#clients-list .client-item .tall.vert .frame, .single-clients .client-item .tall.vert .frame{left: 0px;}
+
+}
+
+
+
+/* i-pad end */
+
+@media only screen and (max-width: 768px)
+{ 
+
+
+#subNav .clients li { padding: 0 15px !important; margin: 0 0 0 16px; font-size: 18px;}
+.mbox h2 {font-size: 20px;}
+.isMobile #subNav .wrapper li {margin: 0 0px 0 0;}
+.isMobile .subpage-mantle .mbox .image {width: 100%;height: auto;}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 767px)
+{ 
+.subpage-mantle .mbox h1 { font-size: 20px; color: #fff;  width: 700px;}
+.subpage-mantle .mbox .mantle p {  font-size: 16px;   width: 500px;}
+.subpage-mantle .subhead {font-size: 20px;text-align: center; margin: 0 0 -10px 0; padding: 25px 0 0 0;color: #444;}
+.home-page header h2 { color: #333; font-size: 20px;  margin: 0 0 20px 0;   }
+.isMobile .home p {font-size: 16px;}
+.home-page .companies-using header p {font-size: 16px;}
+.mbox h1 {text-align: center;font-size: 25px; }
+.subhead2 {font-size: 20px;line-height: 30px;font-weight: bold;color: #000;}
+.heading-2 {font-size: 21px!important;font-weight: 500; display: inline-block;}
+.mbox h2 {font-size: 20px;}
+/*.mbox {font-size: 16px;}*/
+.subpage-mantle .mbox h3 {font-size: 18px;}
+.mbox p strong {font-size: 16px;}
+.support-services .mbox h3 {font-size: 18px;}
+.support-services .mbox h2 {font-size: 20px;}
+
+.subpage-mantle section:not(.search-bar) { margin: 15px;}
+.subpage-mantle section h2 {font-size: 20px;}
+.subpage-mantle section h3 {font-size: 20px;}
+.multi-device {padding: 0 0px;}
+
+
+}
+
+@media only screen and (max-width: 520px) {
+.subhead2{font-size:20px !important;}
+.salesforce_w2l_lead .left-aligned .w2llabel{width:100% !important;}
+.salesforce_w2l_lead .left-aligned .w2linput.text, .salesforce_w2l_lead .left-aligned .w2linput.textarea{width:100% !important;}
+.salesforce_w2l_lead .w2linput.text.captcha{max-width:120px;}
+.review-sub-head{margin:0 10px 0 10px;}
+.isMobile .salesforce_w2l_lead .w2linput{width:100%;}
+.sf_type_checkbox { margin-left: 0% !important;}
+.mbox h1 { font-size: 25px; line-height: 30px;}
+.makers .maker { width: 80%; margin: 0px 0 20px 12%; border-left: none;}
+h1 {font-size: 22px;}
+
+.salesforce_w2l_lead .w2linput.submit { margin-left: auto!important; margin-right: auto!important;}
+
+
+}
+
+
+
+.vc_column-inner{width:100%;float:left;}
+
+
+/* .videoIframe { min-height: 400px;} */
+
+
+
+
+/*For Client Start*/
+
+.isMobile #clients-list .entry.tablet.horiz .project-img {width: 262px;}
+.isMobile #clients-list .entry.tablet.horiz .frame { width: 206px;}
+#clients-list .entry .links .stores *, .single-clients .entry .links .stores * {
+    width: 116px;
+    height: 42px;
+    display: block;
+    float: left;
+    margin: 0 0 0 5px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-size: 116px;
+}
+  #clients-list .links { width: 100%;}
+  #clients-list .stores { width: 425px;}
+
+@media only screen and (max-width: 1023px) {
+	
+	
+	#clients-list .entry.tablet.vert .frame, .single-clients .entry.tablet.vert .frame { position: absolute; top: 32px;  left: 30px; width: 200px;}
+	#clients-list .entry.tablet.vert .project-img, .single-clients .entry.tablet.vert .project-img {position: relative;height: 395px;width: 241px;}
+	#clients-list .entry li.details .vfloat, .single-clients .entry li.details .vfloat { display: block; margin-top: 45px; vertical-align: middle;}
+	#clients-list .links { width: 100%;}
+	.isMobile #clients-list .entry>li, .isMobile #clients-list .single-clients .entry>li { width: 457px;}
+	.isMobile #clients-list .open .btn-close { background-color: #666; color: #fff; top: -0px !important;}
+	
+	/*#clients-list .entry .shadow, .single-clients .entry .shadow {bottom: 132px;}*/
+     .stores {  width: 425px;}
+    #clients-list .entry .links, .single-clients .entry .links { overflow: inherit;}
+    #clients-list .entry .shadow, .single-clients .entry .shadow {  bottom: 130px;}
+   #clients-list .entry.tablet.horiz .shadow, .single-clients .entry.tablet.horiz .shadow { bottom: 16px;}
+  
+
+	}
+
+	
+	
+	
+	@media only screen and (max-width: 500px) {
+	
+	
+	.isMobile #clients-list .expander .entry.tablet .details {width: 100%;display: block;padding: 0;height: auto;}
+	#clients-list .entry .links, .single-clients .entry .links { clear: both; overflow: visible; height: 180px!important;}
+	#clients-list .entry .shadow, .single-clients .entry .shadow { display: none;}
+    .isMobile #clients-list .expander, .isMobile .single-clients .expander { background-color: #f1f1f1;padding: 0px 10px;}
+    #clients-list .entry .links li:first-child, .single-clients .entry .links li:first-child {display: none;}
+    #clients-list .entry li.details .vfloat, .single-clients .entry li.details .vfloat { margin-top: 15px;}
+    .isMobile #clients-list .open .btn-close {top: 12px !important;left: 95% !important;padding: 0px 10px;font-size: 25px;}
+    .isMobile #clients-list .expander.open {overflow: visible; padding-bottom: 10px;}
+.isMobile #clients-list ul.links:after {display:none}
+#clients-list .entry .links .stores *, .single-clients .entry .links .stores * {
+    width: 104px;
+    height: 42px;
+    display: block;
+    float: left;
+    margin: 0 0 0 5px;
+    text-indent: -1000px;
+    overflow: hidden;
+    background-size: 102px;
+}
+
+/*......For contact page sales force radio button start......*/
+
+    .isMobile #sf_reseller__c {  margin: 2px 10px 0 0;}
+	
+/*......For contact page sales force radio button End.....*/
+
+
+
+
+	}
+	
+/*For Client End*/
+
+
+
+
+
+/*......For Blog start......*/
+.entry-content img {
+    max-width: 700px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+
+/*.isMobile .main-blog { width: 95%; margin-left: 2%;}*/
+.isMobile .entry-header { text-align: left;}
+.featured-image-wrap img { width: 100%;}
+
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+	.isMobile .sf_type_checkbox { margin: 9px 0 20px 0;}
+	.isMobile input#s { position: inherit;}
+	input#searchsubmit { margin-left: 0px!important;}
+   .sidebar-right { margin: 0 0 30px 15px!important;padding: 8px 0 0 !important;}
+    .main-blog .entry-content img {  max-width: 320px;}
+   
+}
+@media only screen and (max-width: 330px) {
+	
+    .main-blog .entry-content img {  max-width: 280px;}
+   
+}
+
+
+
+
+/*......For Blog End......*/
+ 

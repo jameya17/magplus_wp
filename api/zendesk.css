@@ -1,0 +1,89 @@
+#magplus_header { position: absolute; top: 0; left: 0; right: 0px; width: 100%; display: block !important; height: 99px; overflow: hidden; }
+#magplus_header iframe { overflow: hidden; height: 160px; width: 100%; }
+#page { padding: 124px 0 0; width: 960px; }
+
+#header { background: #f00; height: auto; padding: 0; position: relative; margin: 0; }
+#header_container { display: none; }
+
+body #top-menu-background { background: none; }
+#top-right { margin: 0; float: right; padding: 0; position: absolute; top: 13px; right: 0; z-index: 100; }
+#top-right, #top-right a { color: #000; margin: 0; text-shadow: none !important ; }
+
+
+/* Search */
+body #top #topquery {
+float: none;
+height: 18px;
+width: auto;
+padding: 0;
+position: absolute; top: -100px; right: 240px; background: none;;
+}
+body #top #topquery input#searchinput { width: 190px; height: 23px; }
+ 
+#top-menu { height: auto; }
+#top-menu #green { margin: 0 0 10px; }
+#top-menu #green .main,
+#top-menu #green .active { height: auto; border: none; background: none; padding: 10px 0; }
+#top-menu #green .main:hover,
+#top-menu #green .active:hover  { background: #ccc; }
+#top-menu #green .main > a { color: #595656;  }
+#top-menu #green .active > a { color: #000 }
+#top-menu #green .menu-drop { top: 27px; left: 0px; border-top: 2px solid #EA680B; border-color: #ccc }
+
+#green .tab_forums,
+#top-menu #green .tab_new,
+#top-menu #green .tab_requests { display: none; }
+
+/* logged in */
+#top-menu #gray { position: absolute; top: -125px; left: 200px; border-radius: 0 0 5px 5px; height: 30px; }
+#gray .main { height: 16px; }
+
+/* login button */
+a.mag-login-button { display: block; padding: 6px 10px; text-align: center; color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); text-decoration: none; margin: -5px 0 0;
+    right: 155px; width: 129px; 
+    border: 1px solid #c7671e; border-top: 1px solid #e78132; border-bottom: 1px solid #aa5402; cursor: pointer; 
+    -moz-border-radius: 4px;-webkit-border-radius: 4px; border-radius: 4px;-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+    background: #ea791c;
+    background: -webkit-linear-gradient(top, #fd9d53, #ea791c);
+    background: -moz-linear-gradient(top, #fd9d53, #ea791c);
+    background: -o-linear-gradient(top, #fd9d53, #ea791c);
+    background: -ms-linear-gradient(top, #fd9d53, #ea791c);
+    background: linear-gradient(top, #fd9d53, #ea791c);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .5);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .5);
+    font-size: 12px;
+}
+
+a.mag-login-button:hover { border-top-color: #e98e47; border-bottom-color: #a4571c; text-shadow: 0 0 5px rgba(255, 255, 255, .4); margin: -4px 0 0;
+    background: #ec8533;
+    background: -webkit-linear-gradient(top, #fda865, #ec8533);
+    background: -moz-linear-gradient(top, #fda865, #ec8533);
+    background: -o-linear-gradient(top, #fda865, #ec8533);
+    background: -ms-linear-gradient(top, #fda865, #ec8533);
+    background: linear-gradient(top, #fda865, #ec8533); }
+
+.button.primary{
+    color: #fff;
+    text-align: center;
+    border: 1px solid #81b342;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+    padding: 10px;
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.4);
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.4);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.3),inset 0 1px 0 rgba(255,255,255,0.4);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #80b61d;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#a1c963),to(#80b61d));
+    background-image: -webkit-linear-gradient(top,#a1c963,#80b61d);
+    background-image: -moz-linear-gradient(top,#a1c963,#80b61d);
+    background-image: -ms-linear-gradient(top,#a1c963,#80b61d);
+    background-image: -o-linear-gradient(top,#a1c963,#80b61d);
+    background-image: linear-gradient(top,#a1c963,#80b61d);
+}
+
+.content p a, .content li a{
+    color: #509FCC;
+}

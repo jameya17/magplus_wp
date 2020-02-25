@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>L</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.999924,5.41802 C9.999924,5.797172 9.859168,6.153482 9.604419,6.421232 L5.25976,10.988624 L9.604166,15.554864 C9.859168,15.823046 9.999671,16.179068 9.999671,16.55894 C9.999671,16.938092 9.859168,17.294564 9.604166,17.56289 C9.077761,18.115832 8.221169,18.115832 7.694863,17.56289 L2.395415,11.991836 C2.140325,11.724248 1.99991,11.368208 1.99991,10.988768 C1.99991,10.60976 2.140325,10.252874 2.395415,9.984548 L7.694863,4.41452 C7.949865,4.146032 8.28872,3.998864 8.649641,3.998864 C9.010045,3.998864 9.349329,4.146338 9.604419,4.41452 C9.859168,4.682252 9.999924,5.038724 9.999924,5.41802 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05-Support-Tutorials-Page" transform="translate(-738.000000, -693.000000)">
+            <g id="Pagenation-Down" transform="translate(736.000000, 689.000000)">
+                <g id="L">
+                    <use fill="#000000" xlink:href="#path-1"></use>
+                    <use fill="#8799A3" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,45 @@
+.faq-pg{
+    h3{
+        margin-bottom: 100px;
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 40px;
+        }
+    }
+    .g-col{
+        @include justify-content(space-between);
+    }
+    .one-half{
+        width: 40%;
+        @media only screen and (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}
+
+.privacy-pg{
+    .sec-title{
+        font-size: 30px;
+        line-height: 36px;
+        color: #333;
+        margin-bottom: 50px;
+    }
+    .content-block{
+        padding-left: 350px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #595656;
+        font-weight: 400;
+        letter-spacing: 0.5px; 
+        p, span, strong{   
+            font-size: 16px;
+            line-height: 24px;
+            color: #595656;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-bottom: 26px; 
+        }
+        span, strong{
+            display: block;
+        }
+    }
+}

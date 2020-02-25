@@ -1,0 +1,253 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" href="onclick-form-popup.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="onclick-form-popup.js"></script>
+
+
+<!----------------------------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+                 function Captcha(){
+                     var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+                     var i;
+                     for (i=0;i<6;i++){
+                       var a = alpha[Math.floor(Math.random() * alpha.length)];
+                       var b = alpha[Math.floor(Math.random() * alpha.length)];
+                       var c = alpha[Math.floor(Math.random() * alpha.length)];
+                       var d = alpha[Math.floor(Math.random() * alpha.length)];
+                       var e = alpha[Math.floor(Math.random() * alpha.length)];
+                      // var f = alpha[Math.floor(Math.random() * alpha.length)];
+                      // var g = alpha[Math.floor(Math.random() * alpha.length)];
+                      }
+                    var code = a + ' ' + b + ' ' + ' ' + c + ' ' + d + ' ' + e;
+                    document.getElementById("mainCaptcha").value = code
+                  }
+                  function ValidCaptcha(){
+                      var string1 = removeSpaces(document.getElementById('mainCaptcha').value);
+                      var string2 = removeSpaces(document.getElementById('txtInput').value);
+                      if (string1 == string2){
+                        return true;
+						$("#phone").val($( "div.selected-dial-code" ).html()+" "+$('#phone').val());
+                      }
+                      else{        
+					    event.preventDefault();
+					    return alert("Please Input a Valid Captcha");
+                      }
+                  }
+                  function removeSpaces(string){
+                    return string.split(' ').join('');
+                  }
+             </script>
+<!----------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="side-widget open">
+  <div class="inner">
+    <a class="btn btn-blue productCheckout" id="get-started">Contact Us</a>
+  </div>
+</div>
+<section class="section triad-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 triad-sub-section">
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+      </div>
+	  <div class="col-md-3 triad-sub-section">
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+      </div>
+	  <div class="col-md-3 triad-sub-section">
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+      </div>
+      <div class="col-md-3 triad-sub-section">
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+        <p class="detail-paragraph">
+          <strong>Lorem ipsum dolor</strong>
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem magna, maximus eget odio vel, dictum ultrices nunc.                            
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/devices.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<div id="popup-container">
+  <div id="popup-window">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
+      <a href="#" class="your-class"></a>
+      <div>
+        <div class="row text-center">
+          <h1>Contact Us</h1>
+          <hr>
+          <p>Fill out the form below to get started today!</p>
+        </div>
+        <br>
+        
+		
+		
+		<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="post" id="footer-form">
+
+
+			<input type="hidden" name="oid" value="00D7F000005CgsF">
+			<input  id="00N7F00000HNBcC" maxlength="100" name="00N7F00000HNBcC" size="20" type="hidden" value="<?php echo $ipaddress ?>" />
+			<input type="hidden" name="retURL" value="https://www.magplus.com/services/creative-services/creative-services-thank-you-2">
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First Name *" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last Name *" required>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Your Email *"required>
+            </div>
+            <div class="col-md-6">
+              <input type="tel" class="form-control" pattern=".{10,}" title="Please Enter Your Phone Number" name="phone" placeholder="Phone *" id="phone" required>
+              <br>
+            </div>
+          </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+	<div class="form-group mb-4">
+		  <div style="float: left; margin-left: -14px;" class="col-sm-8">	
+			 <input class="phone_class form-control CustControl mb-4"  style="margin-right: 5px;text-align:center; background-image: url(1.JPG); font-size: 17px; color: black; font-weight: 600;" type="text" id="mainCaptcha"  readonly /> 
+		  </div>
+		  <div style="float: left;" class="col-sm-4"> 
+			 <input style="padding: 12px 16px;" class="btn submitBtn"  type="button" id="refresh" value="Refresh" onclick="Captcha();" />
+		  </div>
+    </div>
+		   <div class="form-group mb-4">
+			  
+		   </div>
+		  
+          <center>
+            <input type="submit" class="btn btn-primary" value="Submit">
+          </center>
+</form>
+		
+		
+		
+		
+		
+        <br>
+      </div>
+    </div>
+  </div>
+</div>
