@@ -43,6 +43,16 @@ $args = array(
 $the_showcaseAds_query = new WP_Query( $args );
 
 
+$args = array(
+    'post_type' => 'post',
+    'post_status' => 'publish',
+    'orderby' => 'publish_date',
+    'order' => 'DESC',
+    'posts_per_page' => 5
+);
+$the_query = new WP_Query( $args );
+
+
 
 //while ( $the_showcaseAds_query->have_posts() ) : $the_showcaseAds_query->the_post();
    //echo get_the_title();
@@ -166,45 +176,25 @@ get_header();
                             </div>
 
                             <div class="nonloop owl-carousel col-carousel two-col-carousel blog-carousel"> 
-                                <div class="card card-with-image item">
+                                <?php 
+                                    while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                                    $url = get_the_post_thumbnail_url();
+                                ?>
+                                    <div class="card card-with-image item">
                                     <div class="card-body">
                                         <div class="card-image">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp1.svg" alt="" />  
+                                            <img src="<?php echo $url; ?>" alt="" />  
                                         </div>
                                         <div class="card-body-con">
-                                            <span class="publish-date">August 6, 2017 </span>
-                                            <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                            <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                            <a href="#" class="text-link">Read More +</a>
+                                            <span class="publish-date"><?php the_time('F d, Y'); ?> </span>
+                                            <h5 class="card-title two-ellipsis"><?php the_title(); ?></h5>
+                                            <p class="card-discp block-ellipsis"><?php the_excerpt(); ?></p>
+                                            <a href="<?php the_permalink(); ?>" class="text-link">Read More +</a>
                                         </div>    
                                     </div>
                                 </div>
-                                <div class="card card-with-image item">
-                                    <div class="card-body">
-                                        <div class="card-image">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                        </div>
-                                        <div class="card-body-con">
-                                            <span class="publish-date">August 6, 2017 </span>
-                                            <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                            <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                            <a href="#" class="text-link">Read More +</a>
-                                        </div>    
-                                    </div>
-                                </div>
-                                <div class="card card-with-image item">
-                                    <div class="card-body">
-                                        <div class="card-image">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                        </div>
-                                        <div class="card-body-con">
-                                            <span class="publish-date">August 6, 2017 </span>
-                                            <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                            <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                            <a href="#" class="text-link">Read More +</a>
-                                        </div>    
-                                    </div>
-                                </div>
+
+                                <?php endwhile; ?>
                             </div>    
                         </div>    
                     </div>    

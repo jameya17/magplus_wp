@@ -9,7 +9,24 @@
  */
 
 get_header();
-    ?>
+
+$args = array(
+    'post_type' => 'video',
+    'post_status' => 'publish',
+    'orderby' => 'publish_date',
+    'order' => 'DESC',
+    'posts_per_page' => 4,
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'video_cat',
+            'field' => 'id',
+            'terms' => array(183,171)
+        )
+    )
+);
+$the_showcase_query = new WP_Query( $args );
+
+?>
         <div class="container">
             <section id="tutorials" class="l-section sec-pad grey-bg pad-top0 scrrol-sec">
                 <div class="l-section-wrap">
@@ -43,54 +60,27 @@ get_header();
                         </div>
 
                         <div class="case-studies-listing">
-                            <div class="g-col offset_default">
-                                <div class="one-half image-block">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/case-study-temp3.png" alt="Digital storytelling made Easier">
+                            <?php 
+                                while ( $the_showcase_query->have_posts() ) : $the_showcase_query->the_post(); 
+                                $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                            ?>
+                                <div class="g-col offset_default">
+                                    <div class="one-half image-block">
+                                        <img src="<?php echo $thumb; ?>">
+                                    </div>    
+                                    <div class="one-half">
+                                        <h3 class="sec-title"><?php the_title(); ?></h3>
+                                        <p class="block-ellipsis"><?php echo get_the_excerpt(); ?></p>
+                                        <a href="<?php the_permalink(); ?>" title="View Case Study +" class="text-link"> View Case Study +</a>
+                                    </div>     
                                 </div>    
-                                <div class="one-half">
-                                    <h3 class="sec-title">Enhance Your Brand Potential With Giant Advertising Blimps</h3>
-                                    <p class="block-ellipsis">Another title for this article can be “How to write an ad that will be immediately thrown into a waste paper basket?”. But it is too long. In their business advertisers have to follow some rules to enhance the process of customer’s perception of the presented information. However, they are very often overlooked. It is really very annoying. So I suggest turning everything upside down and to make a flop of your ad take advantage of this “wrong” advice: The first wrong advice. Open your ad with the words “If you want …” The client will hesitate whether he really needs your service or goods. As a rule, he comes to conclusion that he will buy it later, but not now.</p>
-                                    <a href="#" title="View Case Study +" class="text-link"> View Case Study +</a>
-                                </div>     
-                            </div>    
-
-                            <div class="g-col offset_default">
-                                <div class="one-half image-block">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/case-study-temp4.png" alt="Digital storytelling made Easier">
-                                </div>    
-                                <div class="one-half">
-                                    <h3 class="sec-title">Download Free Song For Ipod</h3>
-                                    <p class="block-ellipsis">All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community, there are many others who will be looking out for friends. This will mean that they are naturally looking out for good people who are interesting enough. For this, the profile has to be very interesting.</p>
-                                    <a href="#" title="View Case Study +" class="text-link"> View Case Study +</a>
-                                </div>     
-                            </div>    
-
-                            <div class="g-col offset_default">
-                                <div class="one-half image-block">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/case-study-temp5.png" alt="Digital storytelling made Easier">
-                                </div>    
-                                <div class="one-half">
-                                    <h3 class="sec-title">Where To Look For Cheap Brochure Printing Services</h3>
-                                    <p class="block-ellipsis">Another title for this article can be “How to write an ad that will be immediately thrown into a waste paper basket?”. But it is too long. In their business advertisers have to follow some rules to enhance the process of customer’s perception of the presented information. However, they are very often overlooked. It is really very annoying. So I suggest turning everything upside down and to make a flop of your ad take advantage of this “wrong” advice: The first wrong advice. Open your ad with the words “If you want …” The client will hesitate whether he really needs your service or goods. As a rule, he comes to conclusion that he will buy it later, but not now.</p>
-                                    <a href="#" title="View Case Study +" class="text-link"> View Case Study +</a>
-                                </div>     
-                            </div> 
-
-                            <div class="g-col offset_default">
-                                <div class="one-half image-block">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/case-study-temp6.png" alt="Digital storytelling made Easier">
-                                </div>    
-                                <div class="one-half">
-                                    <h3 class="sec-title">Free Philippine Real Estate Ads Forums And Classifieds</h3>
-                                    <p class="block-ellipsis">Another title for this article can be “How to write an ad that will be immediately thrown into a waste paper basket?”. But it is too long. In their business advertisers have to follow some rules to enhance the process of customer’s perception of the presented information. However, they are very often overlooked. It is really very annoying. So I suggest turning everything upside down and to make a flop of your ad take advantage of this “wrong” advice: The first wrong advice. Open your ad with the words “If you want …” The client will hesitate whether he really needs your service or goods. As a rule, he comes to conclusion that he will buy it later, but not now.</p>
-                                    <a href="#" title="View Case Study +" class="text-link"> View Case Study +</a>
-                                </div>     
-                            </div>  
+                            <?php endwhile; ?>
+                            
                         </div>    
 
                         <div class="case-studies-foot">
                             <div class="loading-spinner" style="display: none;"></div>
-                            <a href="/" class="primary-btn align-center" title="View More">
+                            <a href="/" class="primary-btn align-center" title="View More" id="view-more-case-studies">
                                 <span class="span1">View More</span>
                                 <span class="span2">View More</span>
                                 <span class="span3">View More</span>
