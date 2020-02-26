@@ -28,7 +28,7 @@ if('ENVIRONMENT' == local){
 //}
 
 define('MAGPLUS_SECRET', '65b4c7f2387010c2549d951ceed54dfe7eb99218');
-define(PROTOCOL, 'https');
+define('PROTOCOL', 'https');
 define('TOP_LEVEL_DOMAIN', 'dev');
 
 
@@ -77,12 +77,14 @@ function mag_publish_url( $role = false ){
  * @return Object|false The cookie info else false
  */
 function magplus_logged_in_check(){
-	
+	/*
 	if('ENVIRONMENT' == local){
 		$cookie_name = 'magplus_session_dev';
 	}else{
 		$cookie_name = 'magplus_session';
 	}
+	*/
+	$cookie_name = 'magplus_session_dev';
 	//print '<pre>';
 	//print_r($_COOKIE); 
 	if(isset($_COOKIE[$cookie_name])){
