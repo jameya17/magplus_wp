@@ -75,7 +75,7 @@ get_header();
                 </div>     
             </div>    
         </section>
-        <section class="l-section sec-pad grey-bg">
+        <section class="l-section sec-pad grey-bg how-it-works-sec">
             <div class="l-section-wrap">
                 <div class="align-center">  
                     <h3>How it Works</h3>

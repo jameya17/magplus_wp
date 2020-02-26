@@ -61,7 +61,7 @@ $the_query = new WP_Query( $args );
 get_header();
     ?>
         <div class="container">
-            <section id="tutorials" class="l-section sec-pad white-bg pad-top0 scrrol-sec">
+            <section id="tutorials" class="l-section sec-pad white-bg pad-top0 scrrol-sec" style="flex-direction: column;">
                 <div class="l-section-wrap">
                     <div class="breadcrumb">
                         <ul>
@@ -76,42 +76,42 @@ get_header();
                             <li><a class="nav-link" title="Blogs" data-scroll="blog">Blogs</a></li> 
                         </ul>
                     </div>
-                    <div class="g-col align-center">
-                        <div class="content-block">
-                            <h3>Mag+ Tutorials</h3>
-                            <div class="small-wrap">
-                                <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                                <div class="btn-block align-center">
-                                    <a href="/" class="primary-btn" title="Watch All Tutorials">
-                                        <span class="span1">Watch All Tutorials</span>
-                                        <span class="span2">Watch All Tutorials</span>
-                                        <span class="span3">Watch All Tutorials</span>
-                                    </a>
-                                </div>
+                </div>    
+                <div class="g-col align-center">
+                    <div class="content-block">
+                        <h3>Mag+ Tutorials</h3>
+                        <div class="small-wrap">
+                            <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                            <div class="btn-block align-center">
+                                <a href="/" class="primary-btn" title="Watch All Tutorials">
+                                    <span class="span1">Watch All Tutorials</span>
+                                    <span class="span2">Watch All Tutorials</span>
+                                    <span class="span3">Watch All Tutorials</span>
+                                </a>
                             </div>
+                        </div>
 
-                            <div class="owl-carousel full-wrap-carousel">
-                                <?php 
-                                    while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post(); 
-                                    $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
-                                ?>
-                                    <div class="item">
-                                        <a href="<?php the_permalink(); ?>" target="_blank" rel="" class="item-image">
-                                            <img src="<?php echo $thumb; ?>" alt="" />        
-                                            <span class="video-play-btn">
-                                            </span>
-                                        </a>    
-                                        <div class="item-detail">
-                                            <p><?php the_title(); ?></p>
-                                        </div>    
-                                    </div>
-                                <?php 
-                                    endwhile; 
-                                ?>
-                            </div>    
+                        <div class="owl-carousel full-wrap-carousel">
+                            <?php 
+                                while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post(); 
+                                $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                            ?>
+                                <div class="item">
+                                    <a href="<?php the_permalink(); ?>" target="_blank" rel="" class="item-image">
+                                        <img src="<?php echo $thumb; ?>" alt="" />        
+                                        <span class="video-play-btn">
+                                        </span>
+                                    </a>    
+                                    <div class="item-detail">
+                                        <p><?php the_title(); ?></p>
+                                    </div>    
+                                </div>
+                            <?php 
+                                endwhile; 
+                            ?>
                         </div>    
                     </div>    
-                </div>            
+                </div>     
             </section>  
 
             <section id="case-studies" class="l-section sec-pad grey-bg scrrol-sec">
@@ -188,7 +188,8 @@ get_header();
                                         <div class="card-body-con">
                                             <span class="publish-date"><?php the_time('F d, Y'); ?> </span>
                                             <h5 class="card-title two-ellipsis"><?php the_title(); ?></h5>
-                                            <p class="card-discp block-ellipsis"><?php the_excerpt(); ?></p>
+                                            <div class="card-discp block-ellipsis"
+                                            ><?php the_excerpt(); ?></div>
                                             <a href="<?php the_permalink(); ?>" class="text-link">Read More +</a>
                                         </div>    
                                     </div>

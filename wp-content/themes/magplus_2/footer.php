@@ -135,8 +135,9 @@
                 center: true, 
                 items: 3,  
                 margin: 30,    
-                nav:true,  
-                dots: false, 
+                nav:false,   
+                dots: false,
+                autoplay: true  
                 }
             }
         });  
