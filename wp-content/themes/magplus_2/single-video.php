@@ -13,21 +13,27 @@
                 </div>
                 <div class="g-col offset_default">
                     <?php 
+                        $termId = 0;
                         if(have_posts()): while(have_posts()): the_post(); 
                         $video_id = get_post_meta($post->ID, '_mag_video_id', true);
                         $service = get_post_meta($post->ID, '_mag_video_service', true);
+                        $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
                         
                         if($service == 'vimeo'){
                             $video = 'https://player.vimeo.com/video/'. $video_id .'?title=0&amp;byline=0&amp;portrait=0';
                         }elseif($service == 'youtube'){
                             $video = 'https://www.youtube.com/embed/'. $video_id .'?rel=0';
                         }
+
+                        $terms = get_the_terms( $post->ID, 'video_cat' );
+                        $termId = $terms[0]->term_id;
+                        
                     ?>
                         <div class="main one-third">
                             <article class="type-post">
                                 <header class="entry-header">
                                     <div class="post-meta h-entry"> 
-                                        <a href="" class="category-name">Marketing Apps</a>
+                                        <a href="" class="category-name"><?php echo $terms[0]->slug; ?></a>
                                         <span class="publish-details">
                                             <time class="dt-published" datetime="19-09-12">September 12, 2019</time>, by <span class="author vcard h-card p-author"> admin, </span> 
                                         </span>
@@ -37,10 +43,10 @@
                                 </header>
 
                                 <div class="entry-content">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp.png" class="blog-img" alt="" />
+                                    <img src="<?php echo $thumb; ?>" class="blog-img" alt="" />
                                     <?php the_content(); ?>
                                     <p>
-                                        <iframe src="<?php echo $video; ?>" style="width:100%;max-width:720px;height:400px;"></iframe>
+                                        <iframe src="<?php echo $video; ?>" style="width:100%;max-width:720px;height:400px;" allowfullscreen></iframe>
                                     </p>
                                 </div>
                             </article>
@@ -123,97 +129,48 @@
                     <h3>More Case Studies</h3>     
                     <div class="slider-container">
                         <div class="nonloop owl-carousel col-carousel out-of-nav five-col-carousel"> 
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp1.svg" alt="" />  
+                            <?php
+                                if($termId == 171){
+                                    $termId = 183;
+                                }
+                                else{
+                                    $termId = 171;
+                                }
+                                $args = array(
+                                    'post_type' => 'video',
+                                    'post_status' => 'publish',
+                                    'orderby' => 'publish_date',
+                                    'order' => 'DESC',
+                                    'posts_per_page' => 7,
+                                    'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'video_cat',
+                                            'field' => 'id',
+                                            'terms' => array($termId)
+                                        )
+                                    )
+                                );
+                                $the_showcase_query = new WP_Query( $args );
+                                while ( $the_showcase_query->have_posts() ) : $the_showcase_query->the_post();
+                                $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                                if($thumb == ""){
+                                    $thumb = get_bloginfo('template_directory').'/images/case-study-temp3.png';
+                                }
+                            ?>
+                                <div class="card card-with-image item">
+                                    <div class="card-body">
+                                        <div class="card-image">
+                                            <img src="<?php echo $thumb; ?>" alt="" />  
+                                        </div>
+                                        <div class="card-body-con">
+                                            <span class="publish-date">August 6, 2017 </span>
+                                            <h5 class="card-title two-ellipsis"><?php the_title(); ?></h5>
+                                            <p class="card-discp block-ellipsis"><?php echo get_the_excerpt(); ?></p>
+                                            <a href="<?php the_permalink(); ?>" class="text-link">Read More +</a>
+                                        </div>    
                                     </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
                                 </div>
-                            </div>
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                    </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                    </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                    </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                    </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                    </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
-                                </div>
-                            </div>
-                            <div class="card card-with-image item">
-                                <div class="card-body">
-                                    <div class="card-image">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/blog-temp2.svg" alt="" />  
-                                    </div>
-                                    <div class="card-body-con">
-                                        <span class="publish-date">August 6, 2017 </span>
-                                        <h5 class="card-title two-ellipsis">Computer Hardware Desktops And Notebooks And Handhelds Oh My</h5>
-                                        <p class="card-discp block-ellipsis">Maxim Magazine’s September issue uses interactive digital publishing for a very fun NFL feature. Users can read up on their favorite NFL teams, and also predict the future! Ask the app who will win tonight’s game, shake, and receive your answer. </p>
-                                        <a href="#" class="text-link">Read More +</a>
-                                    </div>    
-                                </div>
-                            </div>
+                            <?php endwhile; ?>
                         </div> 
                         <div class="slider-counter">1/5</div>
                     </div>                                                              

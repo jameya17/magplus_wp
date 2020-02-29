@@ -50,8 +50,66 @@ function add_tags_to_post_types(){
 
 
 
+add_action( 'init', 'my_script_enqueuer' );
+
+function my_script_enqueuer() {
+   wp_register_script( "my_voter_script", '/form.js', array('jquery') );
+   wp_localize_script( 'my_voter_script', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' )));        
+
+   wp_enqueue_script( 'jquery' );
+   wp_enqueue_script( 'my_voter_script' );
+
+}
+
+add_action("wp_ajax_generate_case_studies_html", "generate_case_studies_html");
+add_action("wp_ajax_nopriv_generate_case_studies_html", "generate_case_studies_html");
 
 
+function generate_case_studies_html() {
+	$term = $output = "";
+   	$offset = $_POST['offset'];
+   	if($_POST['termId'] == "all"){
+   		$term = array(171,183);
+   	}
+   	else{
+   		$term = array($_POST['termId']);
+   	}
+   	$args = array(
+	    'post_type' => 'video',
+	    'post_status' => 'publish',
+	    'orderby' => 'publish_date',
+	    'order' => 'DESC',
+	    'offset' => $offset,
+	    'posts_per_page' => 4,
+	    'tax_query' => array(
+	        array(
+	            'taxonomy' => 'video_cat',
+	            'field' => 'id',
+	            'terms' => $term
+	        )
+	    )
+	);
+	$the_showcase_query = new WP_Query( $args );
+	global $post;
+	while ( $the_showcase_query->have_posts() ) : $the_showcase_query->the_post(); 
+		$thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+		if($thumb == ""){
+			$thumb = get_bloginfo('template_directory').'/images/case-study-temp3.png';
+		}
+		$output .= 	'<div class="g-col offset_default">
+	                    <div class="one-half image-block">
+	                        <img src="'.$thumb.'">
+	                    </div>    
+	                    <div class="one-half">
+	                        <h3 class="sec-title">'.get_the_title().'</h3>
+	                        <p class="block-ellipsis">'.get_the_excerpt().'</p>
+	                        <a href="'.get_the_permalink().'" title="View Case Study +" class="text-link"> View Case Study +</a>
+	                    </div>     
+	                </div>';
+	endwhile;
+	echo $output;
+   die();
+}
 
 
 

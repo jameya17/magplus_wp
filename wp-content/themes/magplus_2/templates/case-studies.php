@@ -53,13 +53,13 @@ $the_showcase_query = new WP_Query( $args );
                     <div class="l-sub-section-pad">
                         <div class="tab-section">
                             <ul class="tab-head">
-                                <li class="tab-item active"><a href="#" class="tab-link" title="All">All</a></li>
-                                <li class="tab-item"><a href="#" class="tab-link" title="Advertisements">Advertisements</a></li>
-                                <li class="tab-item"><a href="#" class="tab-link" title="Applications">Applications</a></li>
+                                <li class="tab-item active"><a href="#" class="tab-link casestudyLink" title="All" data-value="all">All</a></li>
+                                <li class="tab-item"><a href="#" class="tab-link casestudyLink" title="Advertisements" data-value="183">Advertisements</a></li>
+                                <li class="tab-item"><a href="#" class="tab-link casestudyLink" title="Applications" data-value="171">Applications</a></li>
                             </ul>
                         </div>
 
-                        <div class="case-studies-listing">
+                        <div class="case-studies-listing listingActive">
                             <?php 
                                 while ( $the_showcase_query->have_posts() ) : $the_showcase_query->the_post(); 
                                 $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
@@ -75,9 +75,9 @@ $the_showcase_query = new WP_Query( $args );
                                     </div>     
                                 </div>    
                             <?php endwhile; ?>
-                            
                         </div>    
-
+                        <input type="hidden" value="4" id="offsetValue"/>
+                        <input type="hidden" value="all" id="term_id"/>
                         <div class="case-studies-foot">
                             <div class="loading-spinner" style="display: none;"></div>
                             <a href="/" class="primary-btn align-center" title="View More" id="view-more-case-studies">
