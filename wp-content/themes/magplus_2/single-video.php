@@ -57,32 +57,48 @@
                         <div class="sidebar-section-listing">
                             <h3 class="sec-title">Categories</h3>
                             <ul class="sidebar-listing">
-                                <li><a href="">Business Insights<span class="count"> (16)</span></a></li>
-                                <li><a href="">Digital Magazine Publishing <span class="count"> (23)</span></a></li>
-                                <li><a href="">Marketing<span class="count"> (9)</span></a></li>
-                                <li><a href="">Publishing Trends<span class="count"> (15)</span></a></li>
-                                <li><a href="">Tips and Tricks<span class="count">(31)</span></a></li>
+                                <?php 
+                                    $categories = get_categories(); 
+                                    foreach($categories as $categoryKey => $category){
+                                    $link = get_category_link($category->cat_ID);
+
+                                ?>
+                                    <li><a href="<?php echo $link; ?>"><?php echo $category->name ?><span class="count"> (<?php echo $category->count ?>)</span></a></li>
+                                <?php } ?>
                             </ul>
                         </div>                                             
                         <div class="sidebar-section-listing">
                             <h3 class="sec-title">Latest Post</h3>
+                            <?php
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'orderby' => 'publish_date',
+                                    'order' => 'DESC',
+                                    'posts_per_page' => 4,
+                                );
+                                $the_query = new WP_Query( $args );
+
+                            ?>
                             <ul class="sidebar-listing">
-                                <li><a href="" title="">Expand your market with Digital Catalog Publishing</a></li>
-                                <li><a href="" title="">Ten Benefits of Publishing Digital Magazines</a></li>
-                                <li><a href="" title="">Diversify Your Revenue Stream with Mobile App Publishing</a></li>
-                                <li><a href="" title="">Digital Magazines for Tablets: 10 Tips for Creating Better Ads</a></li>
+                                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                                <li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+                                <?php endwhile; ?>
                             </ul>
                         </div>                                             
                         <div class="sidebar-section-listing">
                             <h3 class="sec-title">Tags</h3>
                             <ul class="sidebar-listing tags-listing">
-                                <li class="tag-link"><a href="" title="">Marketing</a></li>
-                                <li class="tag-link"><a href="" title="">logo</a></li>
-                                <li class="tag-link"><a href="" title="">Cars</a></li>
-                                <li class="tag-link"><a href="" title="">design</a></li>
-                                <li class="tag-link"><a href="" title="">A4</a></li>
-                                <li class="tag-link"><a href="" title="">Apps</a></li>
-                                <li class="tag-link"><a href="" title="">print</a></li>
+                                <?php 
+                                    $tags = get_tags();
+                                    foreach($tags as $tagKey => $tag){
+                                        if($tag->count > 4){
+                                ?>
+                                            <li class="tag-link"><a href="<?php echo get_term_link($tag->term_id); ?>" title="<?php echo $tag->name; ?>"><?php echo $tag->name; ?></a></li>
+                                <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </div>  
                         <div class="sidebar-section-listing">
