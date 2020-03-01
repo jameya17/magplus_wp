@@ -13,11 +13,12 @@ get_header();
             <div class="l-section-wrap">
                 <div class="g-col">
                     <div class="one-half">
-                        <h1>Easily Create Your Next Magazine</h1>
-                        <p>Publish content to your own mobile app,<br/> Coding free/Hassle free.</p>
+                        <h1>Easily create your next Magazine</h1>
+                        <p>A platform to build, distribute and monetise creative content on smart-devices. 6000+ apps have already been made - Coding free, Hassle free</p>
                         <a href="/" class="primary-btn" title="Know More">
                             <span class="span1">Know More</span>
                             <span class="span2">Know More</span>
+                            <span class="span3">Know More</span> 
                         </a>
                     </div>    
                     <div class="one-half image-block">
@@ -34,38 +35,56 @@ get_header();
                     <div class="loop owl-carousel">
                         <div class="item">
                             <div class="item-image">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/case-study1.png" alt="">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/volvo-fh.png" alt="Volvo FH">
                             </div>    
                             <div class="item-detail">
-                                <h5>Case Study 1</h5>
-                                <p>From the creation of your layout through quality</p>
+                                <h5>Volvo FH</h5>
+                                <p>Experience the trucks that will change the world for drivers</p>
                             </div>    
                         </div>
                         <div class="item">
                             <div class="item-image">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/case-study2.png" alt="">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/ny-mag.png" alt="NY Mag">
                             </div>    
                             <div class="item-detail">
-                                <h5>Case Study 2</h5>
-                                <p>From the creation of your layout through quality</p>
+                                <h5>NY Mag</h5>
+                                <p>Full print edition enhanced with up-to-the-minute reporting from nymag.com</p>
                             </div>    
                         </div>
                         <div class="item">
                             <div class="item-image">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/case-study3.png" alt="">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/popular-science.png" alt="ular Science+">
                             </div>    
                             <div class="item-detail">
-                                <h5>Case Study 3</h5>
-                                <p>From the creation of your layout through quality</p>
+                                <h5>Popular Science+</h5>
+                                <p>Creating interactive infographics to improve customer engagement</p>
                             </div>    
                         </div>
                         <div class="item">
                             <div class="item-image">
-                                <img src="<?php bloginfo('template_directory'); ?>/images/case-study4.png" alt="">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/tag-heuer.png" alt="Tag Heuer">
                             </div>    
                             <div class="item-detail">
-                                <h5>Case Study 4</h5>
-                                <p>From the creation of your layout through quality</p>
+                                <h5>Tag Heuer</h5>
+                                <p>Beautifully designed, interactive brand book to showcase product catalog</p>
+                            </div>    
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/mad-magazine.png" alt="MAD Magazine">
+                            </div>    
+                            <div class="item-detail">
+                                <h5>MAD Magazine</h5>
+                                <p>The classic, satirical magazine for the iPad.</p>
+                            </div>    
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <img src="<?php bloginfo('template_directory'); ?>/images/harvard-business-school.png" alt="Harvard Business School">
+                            </div>    
+                            <div class="item-detail">
+                                <h5>Harvard Business School</h5>
+                                <p>HBS Alumni Bulletin is a quarterly magazine for 85,000+ alumni worldwide</p>
                             </div>    
                         </div>
                     </div>

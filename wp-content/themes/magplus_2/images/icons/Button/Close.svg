@@ -1,0 +1,19 @@
+
+<svg width="36px" height="35px" viewBox="0 0 36 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Button / Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Burger-Menu" transform="translate(-304.000000, -13.000000)" stroke="#FF8616" stroke-width="2.333">
+            <g id="Header" transform="translate(0.000000, 1.000000)">
+                <g id="Button-/-Close" transform="translate(306.020408, 13.500000)">
+                    <g id="Close">
+                        <path d="M32,16 C32,24.8365714 24.8365714,32 16,32 C7.16342857,32 0,24.8365714 0,16 C0,7.16342857 7.16342857,0 16,0 C24.8365714,0 32,7.16342857 32,16 Z" id="Stroke-1"></path>
+                        <line x1="9.33333333" y1="9.33333333" x2="23.3333333" y2="23.3333333" id="Stroke-3"></line>
+                        <line x1="23.3333333" y1="9.33333333" x2="9.33333333" y2="23.3333333" id="Stroke-5"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

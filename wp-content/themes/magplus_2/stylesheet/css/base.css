@@ -678,7 +678,9 @@ ol {
     border: 1px solid #FF8616; }
   @media only screen and (max-width: 1024px) {
     .btn, .primary-btn span {
-      padding: 10px 20px; } }
+      padding: 10px 20px;
+      font-size: 10px;
+      line-height: 14px; } }
 
 .button-focus {
   outline: 0; }
@@ -2318,13 +2320,19 @@ input:-webkit-autofill:focus {
       @media only screen and (max-width: 1024px) {
         .sticky-nav-tabs-container li .sticky-nav-tab {
           display: block;
-          padding: 15px 20px;
+          padding: 11px 20px;
           color: #231F20;
-          border-bottom: 1px solid #ddd;
-          font-size: 15px;
-          line-height: 15px; } }
+          font-size: 16px;
+          line-height: 16px;
+          color: #231F20;
+          font-weight: 700; } }
       .sticky-nav-tabs-container li .sticky-nav-tab:hover {
         color: #FF8616; }
+    @media only screen and (max-width: 1024px) {
+      .sticky-nav-tabs-container li.support .sticky-nav-tab, .sticky-nav-tabs-container li.services .sticky-nav-tab {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400; } }
     .sticky-nav-tabs-container li .sub-menu {
       display: none;
       width: 300px;
@@ -2343,7 +2351,8 @@ input:-webkit-autofill:focus {
           border: 0;
           background-color: #fff;
           box-shadow: none;
-          border-bottom: 1px solid #ddd; } }
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 15px; } }
       .sticky-nav-tabs-container li .sub-menu li {
         display: block;
         margin: 0;
@@ -2359,12 +2368,19 @@ input:-webkit-autofill:focus {
           padding: 25px 15px; }
           @media only screen and (max-width: 1024px) {
             .sticky-nav-tabs-container li .sub-menu li .sticky-nav-tab {
-              padding: 10px 35px;
-              border: 0; } }
+              font-size: 16px;
+              line-height: 16px;
+              color: #231F20;
+              padding: 6px 20px;
+              border: 0;
+              font-weight: 700; } }
           .sticky-nav-tabs-container li .sub-menu li .sticky-nav-tab:hover {
             color: #EB3300; }
         .sticky-nav-tabs-container li .sub-menu li.active .sticky-nav-tab {
           color: #EB3300; }
+          @media only screen and (max-width: 1024px) {
+            .sticky-nav-tabs-container li .sub-menu li.active .sticky-nav-tab {
+              color: #231F20; } }
     .sticky-nav-tabs-container li.services .sub-menu {
       left: -110px; }
     .sticky-nav-tabs-container li.support .sub-menu {
@@ -2373,6 +2389,9 @@ input:-webkit-autofill:focus {
       color: #FF8616; }
     .sticky-nav-tabs-container li.active .sub-menu .sticky-nav-tab {
       color: #8D8788; }
+      @media only screen and (max-width: 1024px) {
+        .sticky-nav-tabs-container li.active .sub-menu .sticky-nav-tab {
+          color: #231F20; } }
     .sticky-nav-tabs-container li:hover .sub-menu {
       display: block; }
 
@@ -2433,6 +2452,22 @@ input:-webkit-autofill:focus {
     height: 350px;
     border-bottom: 1px solid #ddd;
     overflow-y: auto; } }
+
+.icon-burger {
+  display: none; }
+  @media only screen and (max-width: 1024px) {
+    .icon-burger {
+      display: block; } }
+
+@media only screen and (max-width: 1024px) {
+  .try-free-block {
+    display: flex !important;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center; } }
+.try-free-block .follow-us-listing {
+  display: flex !important;
+  align-items: center; }
 
 footer {
   padding: 175px 0;
@@ -2860,8 +2895,11 @@ footer {
   @media only screen and (max-width: 1024px) {
     .magplus-pro-section .magpluspro-con-block {
       padding: 40px 0;
-      background-image: none;
-      max-width: 280px; } }
+      background-size: 80%;
+      padding-bottom: 220px;
+      background-position: 300% bottom;
+      text-align: left;
+      padding-left: 25px; } }
 
 .pad-top0 {
   padding-top: 0; }
@@ -2925,6 +2963,12 @@ footer {
   @media only screen and (max-width: 1024px) {
     .how-it-works-sec .one-third:last-child {
       width: 100%; } }
+
+.mob-view {
+  display: none !important; }
+  @media only screen and (max-width: 1024px) {
+    .mob-view {
+      display: block !important; } }
 
 .entry-title {
   font-variation-settings: 30px;
