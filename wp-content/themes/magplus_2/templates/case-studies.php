@@ -27,7 +27,7 @@ $args = array(
 $the_showcase_query = new WP_Query( $args );
 
 ?>
-        <div class="container">
+        <div class="container casestudiesPg">
             <section id="tutorials" class="l-section sec-pad grey-bg pad-top0 scrrol-sec">
                 <div class="l-section-wrap">
                     <div class="breadcrumb">

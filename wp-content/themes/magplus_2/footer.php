@@ -172,7 +172,7 @@
             responsive: {
                 600: {
                 items: 2,  
-                margin: 30,    
+                margin: 20,    
                 loop: true,
                 nav:true,  
                 dots: false,
