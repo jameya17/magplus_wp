@@ -186,7 +186,7 @@ get_header();
                                             <img src="<?php echo $url; ?>" alt="" />  
                                         </div>
                                         <div class="card-body-con">
-                                            <span class="publish-date"><?php the_time('F d, Y'); ?> </span>
+                                            <span class="publish-date"><?php the_time('F d, Y'); ?></span>
                                             <h5 class="card-title two-ellipsis"><?php the_title(); ?></h5>
                                             <div class="card-discp block-ellipsis"
                                             ><?php the_excerpt(); ?></div>

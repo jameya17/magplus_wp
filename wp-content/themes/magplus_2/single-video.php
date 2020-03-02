@@ -27,6 +27,7 @@
 
                         $terms = get_the_terms( $post->ID, 'video_cat' );
                         $termId = $terms[0]->term_id;
+                        $author_id=$post->post_author;
                         
                     ?>
                         <div class="main one-third">
@@ -35,7 +36,7 @@
                                     <div class="post-meta h-entry"> 
                                         <a href="" class="category-name"><?php echo $terms[0]->slug; ?></a>
                                         <span class="publish-details">
-                                            <time class="dt-published" datetime="19-09-12">September 12, 2019</time>, by <span class="author vcard h-card p-author"> admin, </span> 
+                                            <time class="dt-published" datetime="19-09-12"><?php the_time('F d, Y'); ?></time>, by <span class="author vcard h-card p-author"> <?php the_author_meta( 'user_nicename' , $author_id ); ?>, </span> 
                                         </span>
                                     </div> 
                                     <h1 class="entry-title"><?php the_title(); ?></h1>  
@@ -179,7 +180,7 @@
                                             <img src="<?php echo $thumb; ?>" alt="" />  
                                         </div>
                                         <div class="card-body-con">
-                                            <span class="publish-date">August 6, 2017 </span>
+                                            <span class="publish-date"><?php the_time('F d, Y'); ?> </span>
                                             <h5 class="card-title two-ellipsis"><?php the_title(); ?></h5>
                                             <p class="card-discp block-ellipsis"><?php echo get_the_excerpt(); ?></p>
                                             <a href="<?php the_permalink(); ?>" class="text-link">Read More +</a>

@@ -44,133 +44,133 @@ get_header();
                         <div class="sidebar">
                             <h3 class="sidebar-header">Categories</h3>
                             <ul class="sidebar-listing">
+                                <?php 
+                                    $terms = get_terms('video_cat' );
+                                    $termIdArray = array(366,367,100);
+                                    $countArray = array(); 
+                                    foreach($terms as $termKey => $term){
+                                        if(in_array($term->term_id, $termIdArray)){
+                                            $countArray[0] = $countArray[0] + $term->count;
+                                        }
+                                        if($term->term_id == 366){
+                                            $countArray[1] = $term->count;
+                                        }
+                                        if($term->term_id == 367){
+                                            $countArray[2] = $term->count;
+                                        }
+                                        if($term->term_id == 100){
+                                            $countArray[3] = $term->count;
+                                        }
+                                    }
+                                ?>
                                 <li>
-                                    <label class="checkbox-container">All&nbsp;<span class="count">(10)</span>
-                                        <input type="checkbox" checked="checked">
+                                    <label class="checkbox-container">All&nbsp;<span class="count">(<?php echo $countArray[0]; ?>)</span>
+                                        <input type="checkbox" class="checkboxTutorials allTutorials" data-value="all" checked="checked">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="checkbox-container">Tutorials&nbsp;<span class="count">(10)</span>
-                                        <input type="checkbox">
+                                    <label class="checkbox-container">Tutorials&nbsp;<span class="count">(<?php echo $countArray[1]; ?>)</span>
+                                        <input type="checkbox" class="checkboxTutorials" data-value="366">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="checkbox-container">Webinars&nbsp;<span class="count">(10)</span>
-                                        <input type="checkbox">
+                                    <label class="checkbox-container">Webinars&nbsp;<span class="count">(<?php echo $countArray[2]; ?>)</span>
+                                        <input type="checkbox" class="checkboxTutorials" data-value="367">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="checkbox-container">What is Magplus&nbsp;<span class="count">(10)</span>
-                                        <input type="checkbox">
+                                    <label class="checkbox-container">What is Magplus&nbsp;<span class="count">(<?php echo $countArray[3]; ?>)</span>
+                                        <input type="checkbox" class="checkboxTutorials" data-value="100">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                             </ul>
                         </div>
                         <div class="video-listing-block"> 
+                            <?php
+                                $total = $noOfPages = 0;
+                                $args = array(
+                                    'post_type' => 'video',
+                                    'post_status' => 'publish',
+                                    'orderby' => 'publish_date',
+                                    'order' => 'DESC',
+                                    'posts_per_page' => 9,
+                                    'tax_query' => array(
+                                        array(
+                                            'taxonomy' => 'video_cat',
+                                            'field' => 'id',
+                                            'terms' => array(366,367,100)
+                                        )
+                                    )
+                                );
+                                $the_tutorials_query = new WP_Query( $args );
+                                $total = $the_tutorials_query->found_posts;
+                                $noOfPages = ceil($total/9);
+                            ?>
                             <ul class="pagination">
                                 <li class="page-item" id="previous-page"><a class="page-link" href="javascript:void(0)"><img src="<?php bloginfo('template_directory'); ?>/images/icons/pagination-prev.svg" alt=""></a></li>
-                                <li class="page-item current-page active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">2</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">4</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">5</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0)">...</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">9</a></li>
+                                <?php 
+                                    for($i=1; $i<=$noOfPages; $i++){
+                                ?>
+                                    <li class="page-item current-page pageId-<?php echo $i ?> <?php if($i == 1){?>active<?php } ?>"><a class="page-link" href="javascript:void(0)"><?php echo $i; ?></a></li>
+                                <?php } ?>
                                 <li class="page-item" id="next-page"><a class="page-link" href="javascript:void(0)"><img src="<?php bloginfo('template_directory'); ?>/images/icons/pagination-next.svg" alt=""></a></li>
+                                
                             </ul>
 
                             <div class="video-container">
-                                <ul class="video-section video-listing">
-                                    <li>
-                                        <a href="#" title="" class="active">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/video-thumbnail1.png" alt="" />
-                                            <span class="video-play-btn"></span>
-                                            <span class="play-text">Watch Tutorial</span>
-                                        </a>
-                                        <strong class="tutorials-title">Compare Prices Find The Best Computer Accessory</strong>    
-                                    </li>
-                                    <li>
-                                        <a href="#" title="" class="">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/video-thumbnail2.png" alt="" />
-                                            <span class="video-play-btn"></span>
-                                            <span class="play-text"></span>
-                                        </a>
-                                        <strong class="tutorials-title">Video Games Playing With Imagination</strong>    
-                                    </li>
-                                    <li>
-                                        <a href="#" title="" class="">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/video-thumbnail3.png" alt="" />
-                                            <span class="video-play-btn"></span>
-                                            <span class="play-text"></span>
-                                        </a>
-                                        <strong class="tutorials-title">What Is Hdmi</strong>    
-                                    </li>
-                                </ul>
-                                <div class="video-content">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/video-screenshot.png" alt="" class="video-screenshot">    
-                                    <span class="video-play-btn"></span>
-                                    <span class="play-text"></span>
-                                    <!-- <iframe src="https://www.youtube.com/embed/5sgXe_Nat5s?rel=0" frameborder="0"></iframe> -->
-                                    <span class="close-btn">x</span>
+                                <?php
+                                    
+                                    $i = 0;
+                                    while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post();
+                                        $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                                        if($i == 0){
+                                ?>
+                                            <ul class="video-section video-listing">
 
-                                </div>
-                            </div>     
-                            <div class="video-container">
-                                <ul class="video-section video-listing">
-                                    <li>
-                                        <a href="#" title="" class="active">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/video-thumbnail1.png" alt="" />
-                                            <span class="video-play-btn"></span>
-                                            <span class="play-text">Watch Tutorial</span>
-                                        </a>
-                                        <strong class="tutorials-title">Compare Prices Find The Best Computer Accessory</strong>    
-                                    </li>
-                                    <li>
-                                        <a href="#" title="" class="">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/video-thumbnail2.png" alt="" />
-                                            <span class="video-play-btn"></span>
-                                            <span class="play-text"></span>
-                                        </a>
-                                        <strong class="tutorials-title">Video Games Playing With Imagination</strong>    
-                                    </li>
-                                    <li>
-                                        <a href="#" title="" class="">
-                                            <img src="<?php bloginfo('template_directory'); ?>/images/video-thumbnail3.png" alt="" />
-                                            <span class="video-play-btn"></span>
-                                            <span class="play-text"></span>
-                                        </a>
-                                        <strong class="tutorials-title">What Is Hdmi</strong>    
-                                    </li>
-                                </ul>
-                                <div class="video-content">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/video-screenshot.png" alt="" class="video-screenshot">    
-                                    <span class="video-play-btn"></span>
-                                    <span class="play-text"></span>
-                                    <!-- <iframe src="https://www.youtube.com/embed/5sgXe_Nat5s?rel=0" frameborder="0"></iframe> -->
-                                    <span class="close-btn">x</span>
+                                        <?php } ?>
+                                                <li>
+                                                    <a href="#" title="">
+                                                        <img src="<?php echo $thumb; ?>" alt="" />
+                                                        <span class="video-play-btn"></span>
+                                                        <span class="play-text">Watch Tutorial</span>
+                                                    </a>
+                                                    <strong class="tutorials-title"><?php the_title(); ?></strong>    
+                                                </li>
+                                        <?php 
+                                            $i++;
+                                            if($i == 3) { 
+                                            $i = 0;
+                                        ?>
+                                            </ul>
+                                        <?php } ?>
 
-                                </div>
+                                <?php 
+
+                                    endwhile; 
+                                ?>
+                                
                             </div>     
+                                
 
                             <ul class="pagination pagination-bottom">
                                 <li class="page-item" id="previous-page"><a class="page-link" href="javascript:void(0)"><img src="<?php bloginfo('template_directory'); ?>/images/icons/pagination-prev.svg" alt=""></a></li>
-                                <li class="page-item current-page active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">2</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">4</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">5</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0)">...</a></li>
-                                <li class="page-item current-page"><a class="page-link" href="javascript:void(0)">9</a></li>
+                                 <?php 
+                                    for($i=1; $i<=$noOfPages; $i++){
+                                ?>
+                                    <li class="page-item current-page pageId-<?php echo $i ?> <?php if($i == 1){?>active<?php } ?>"><a class="page-link" href="javascript:void(0)"><?php echo $i; ?></a></li>
+                                <?php } ?>
                                 <li class="page-item" id="next-page"><a class="page-link" href="javascript:void(0)"><img src="<?php bloginfo('template_directory'); ?>/images/icons/pagination-next.svg" alt=""></a></li>
                             </ul>
+                            <input type="hidden" id="term_id" value="all" />
+                            <input type="hidden" id="current_page" value="1" />
+                            <input type="hidden" id="total_pages" value="<?php echo $noOfPages; ?>">
                         </div>
                     </div>
                 </div>
             </section>  
         </div>
-    <?php
-get_footer();   
+    <?php get_footer(); ?>

@@ -112,6 +112,157 @@ function generate_case_studies_html() {
 }
 
 
+add_action("wp_ajax_generate_tutorials_html", "generate_tutorials_html");
+add_action("wp_ajax_nopriv_generate_tutorials_html", "generate_tutorials_html");
+
+function generate_tutorials_html(){
+	$output = "";
+	$offset = $_POST['offset'];
+   	if($_POST['termId'] == "all"){
+   		$term = array(366,367,100);
+   	}
+   	else{
+   		$term = explode(",", $_POST['termId']);
+   	}
+   	$args = array(
+        'post_type' => 'video',
+        'post_status' => 'publish',
+        'orderby' => 'publish_date',
+        'order' => 'DESC',
+        'offset' => $offset,
+        'posts_per_page' => 9,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'video_cat',
+                'field' => 'id',
+                'terms' => $term
+            )
+        )
+    );
+    $the_tutorials_query = new WP_Query( $args );
+    $i = 0;
+    global $post;
+    while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post();
+    $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+    if($i == 0){
+    	$output .= '<ul class="video-section video-listing">';
+    }
+    	$output .= '<li>
+                        <a href="#" title="">
+                            <img src="'.$thumb.'" alt="" />
+                            <span class="video-play-btn"></span>
+                            <span class="play-text">Watch Tutorial</span>
+                        </a>
+                        <strong class="tutorials-title">'.get_the_title().'</strong>    
+                    </li>';
+
+    $i++;
+    if($i == 3) {
+    	$i = 0;
+    	$output .= '</ul>';
+    }
+    endwhile;
+    echo $output;
+	die();
+}
+
+add_action("wp_ajax_generate_tutorials_checkbox_html", "generate_tutorials_checkbox_html");
+add_action("wp_ajax_nopriv_generate_tutorials_checkbox_html", "generate_tutorials_checkbox_html");
+
+function generate_tutorials_checkbox_html(){
+	$term = $output = "";
+	if($_POST['termId'] == "all"){
+   		$term = array(366,367,100);
+   	}
+   	else{
+   		$term = explode(",", $_POST['termId']);
+   	}
+	$total = $noOfPages = 0;
+    $args = array(
+        'post_type' => 'video',
+        'post_status' => 'publish',
+        'orderby' => 'publish_date',
+        'order' => 'DESC',
+        'posts_per_page' => 9,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'video_cat',
+                'field' => 'id',
+                'terms' => $term
+            )
+        )
+    );
+    $the_tutorials_query = new WP_Query( $args );
+    $total = $the_tutorials_query->found_posts;
+    $noOfPages = ceil($total/9);
+    $output .= '<ul class="pagination">
+        		<li class="page-item" id="previous-page"><a class="page-link" href="javascript:void(0)"><img src="'.get_bloginfo('template_directory').'/images/icons/pagination-prev.svg" alt=""></a></li>';
+        
+        for($i=1; $i<=$noOfPages; $i++){
+        	$className = "";
+        	if($i == 1){
+        		$className = "active"; 
+        	}
+            $output .= '<li class="page-item '.$className.' current-page pageId-'.$i.'"> <a class="page-link" href="javascript:void(0)">'.$i.'</a></li>';
+        }
+    $output .= '<li class="page-item" id="next-page"><a class="page-link" href="javascript:void(0)"><img src="'.get_bloginfo('template_directory').'/images/icons/pagination-next.svg" alt=""></a></li>';
+        
+    $output .= '</ul>';
+
+    $output .= '<div class="video-container">';
+                
+                    
+                $i = 0;
+                	global $post;
+                    while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post();
+                        $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                        if($i == 0){
+                            $output .= '<ul class="video-section video-listing">';
+
+                        }
+                        	$output .= '<li>
+	                                    <a href="#" title="">
+	                                        <img src="'.$thumb.'" alt="" />
+	                                        <span class="video-play-btn"></span>
+	                                        <span class="play-text">Watch Tutorial</span>
+	                                    </a>
+	                                    <strong class="tutorials-title">'.get_the_title().'</strong>    
+	                                </li>';
+                       
+                        $i++;
+                        if($i == 3) { 
+                            $i = 0;
+                       
+                        	$output .= '</ul>';
+                        }
+
+                
+                    endwhile; 
+                
+            $output .= '</div>'; 
+
+            $output .= '<ul class="pagination pagination-bottom">
+		        		<li class="page-item" id="previous-page"><a class="page-link" href="javascript:void(0)"><img src="'.get_bloginfo('template_directory').'/images/icons/pagination-prev.svg" alt=""></a></li>';
+		        
+		        for($i=1; $i<=$noOfPages; $i++){
+		        	$className = "";
+		        	if($i == 1){
+		        		$className = "active"; 
+		        	}
+		            $output .= '<li class="page-item '.$className.' current-page pageId-'.$i.'"> <a class="page-link" href="javascript:void(0)">'.$i.'</a></li>';
+		        }
+		    $output .= '<li class="page-item" id="next-page"><a class="page-link" href="javascript:void(0)"><img src="'.get_bloginfo('template_directory').'/images/icons/pagination-next.svg" alt=""></a></li>';
+		        
+		    $output .= '</ul>';  
+
+		    $output .= '<input type="hidden" id="term_id" value="'.$_POST['termId'].'" />';
+            $output .= '<input type="hidden" id="current_page" value="1" />';
+            $output .= '<input type="hidden" id="total_pages" value="'.$noOfPages.'" />';  
+
+    echo $output;
+	die();
+}
+
 
 
 
