@@ -2466,7 +2466,6 @@ input:-webkit-autofill:focus {
     height: 40px;
     align-items: center; } }
 .try-free-block .follow-us-listing {
-  display: flex !important;
   align-items: center; }
 
 footer {
