@@ -99,6 +99,9 @@
             </div>
         </section>    
     </div>    
+    <div class="loader-block">
+        <span class="loader"></span>
+    </div>
 
     <?php include("includes/footer.php"); ?>    
 

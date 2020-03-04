@@ -69,7 +69,8 @@
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.1.js"></script> 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script> 
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.fancybox.js"></script> 
+<!-- <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.fancybox.js"></script>  -->
+<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'>
 <script type="text/javascript">
     $(document).ready(function() {
         $(".icon-burger").click(function(){
@@ -102,7 +103,6 @@
             }
             return false;
         });
-
         $(".loop").owlCarousel({
             items:1,
             dots: true,
@@ -119,7 +119,6 @@
                 }
             }
         });  
-
         $(".full-wrap-carousel").owlCarousel({ 
             items: 1,
             loop: false,
@@ -162,7 +161,6 @@
                 }
             }
         });
-
         $(".two-col-carousel").owlCarousel({ 
             items: 1,
             loop: false,
@@ -179,7 +177,6 @@
                 }
             }
         }); 
-
         $(".five-col-carousel").owlCarousel({  
             items: 1,
             loop: false,
@@ -196,7 +193,6 @@
                 }
             }
         }); 
-
         $('.sticky-sidebar a').on('click', function() {
             var scrollAnchor = $(this).attr('data-scroll');
             if($(window).width() < 1024){
@@ -218,6 +214,11 @@
         $('#close-popup').on('click', function(){
             $(this).closest('.drawer-body').removeClass('active');
         });
+        $('.card-deck a').fancybox({
+            caption : function( instance, item ) {
+                return $(this).parent().find('.card-text').html();
+            }
+        });
     }); 
     function tabNav(evt, tabHead) {
         var i, tabcontent, tablinks;
@@ -232,7 +233,6 @@
         document.getElementById(tabHead).style.display = "block";
         evt.currentTarget.className += " active";
     }
-
     $(window).scroll(function(){
         // if ($(this).scrollTop() > 130) {
         //     $('.sticky-nav-block').addClass('fixed');

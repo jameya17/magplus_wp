@@ -132,6 +132,14 @@ get_header();
                                     <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
+                                <div class="card-popup-content popup-content-block">
+                                    <div class="card-icon">
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                    </div>
+                                    <h4 class="card-title">Create Content</h4>
+                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <a href="" id="close-popup"></a>
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
@@ -141,6 +149,14 @@ get_header();
                                     <h4 class="card-title">Publish Content</h4>
                                     <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
+                                </div>
+                                <div class="card-popup-content popup-content-block">
+                                    <div class="card-icon">
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                    </div>
+                                    <h4 class="card-title">Create Content</h4>
+                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <a href="" id="close-popup"></a>
                                 </div>
                             </div>
                             <div class="card">
@@ -152,6 +168,14 @@ get_header();
                                     <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
+                                <div class="card-popup-content popup-content-block">
+                                    <div class="card-icon">
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                    </div>
+                                    <h4 class="card-title">Create Content</h4>
+                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <a href="" id="close-popup"></a>
+                                </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
@@ -162,6 +186,14 @@ get_header();
                                     <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
+                                <div class="card-popup-content popup-content-block">
+                                    <div class="card-icon">
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                    </div>
+                                    <h4 class="card-title">Create Content</h4>
+                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <a href="" id="close-popup"></a>
+                                </div> 
                             </div>
                         </div>    
                     </div>

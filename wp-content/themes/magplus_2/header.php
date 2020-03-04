@@ -65,10 +65,10 @@
                     </li>
                     <li class="support">
                         <a href="?page_id=31668" class="sticky-nav-tab">Support</a>
-                        <ul class="sub-menu mob-view">
-                            <li class="active"><a href="?page_id=9057" class="sticky-nav-tab" title="Tutorials">Tutorials</a></li>
-                            <li><a href="javascript:void(0)" class="sticky-nav-tab" title="Case Studies">Case Studies</a></li>
-                            <li><a href="javascript:void(0)" class="sticky-nav-tab" title="Blogs">Blogs</a></li> 
+                        <ul class="sub-menu">
+                            <li class="active"><a href="?page_id=31675" class="sticky-nav-tab" title="Tutorials">Tutorials</a></li>
+                            <li><a href="?page_id=31670" class="sticky-nav-tab" title="Case Studies">Case Studies</a></li>
+                            <li><a href="?page_id=19" class="sticky-nav-tab" title="Blogs">Blogs</a></li> 
                         </ul>
                     </li>
                     <li><a href="?page_id=27659" class="sticky-nav-tab">Pricing</a></li>

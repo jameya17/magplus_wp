@@ -121,7 +121,7 @@ get_header();
                                 
                             </ul>
 
-                            <div class="video-container">
+                            <div class="video-container card-deck">
                                 <?php
                                     
                                     $i = 0;
@@ -133,8 +133,8 @@ get_header();
 
                                         <?php } ?>
                                                 <li>
-                                                    <a href="#" title="">
-                                                        <img src="<?php echo $thumb; ?>" alt="" />
+                                                    <a href="https://www.youtube.com/watch?v=2mDPgVWG_Y8" data-fancybox title="">
+                                                        <img src="<?php echo $thumb; ?>" alt="" class="card-img-top img-fluid"/>
                                                         <span class="video-play-btn"></span>
                                                         <span class="play-text">Watch Tutorial</span>
                                                     </a>
@@ -152,7 +152,12 @@ get_header();
 
                                     endwhile; 
                                 ?>
-                                
+                                <video controls id="myVideo" style="display:none;"> 
+                                    <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+                                    <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+                                    <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+                                    Your browser doesn't support HTML5 video tag.
+                                </video>
                             </div>     
                                 
 
