@@ -80,7 +80,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.1.js"></script> 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script> 
 <!-- <script type="text/javascript" src="/js/jquery.fancybox.js"></script>  -->
-<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'>
+<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
 <script type="text/javascript">
     $(document).ready(function() {
         $(".icon-burger").click(function(){
