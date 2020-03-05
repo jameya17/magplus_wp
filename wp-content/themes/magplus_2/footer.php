@@ -64,12 +64,22 @@
 
             <h6>Contact: <a href="tel:+91 80876 00106" title="tel:+91 80876 00106">+91 80876 00106</a></h6>
         </div>
+        <div class="mob-view">
+            <div class="follow-us-block">
+                <ul class="follow-us-listing">
+                    <li><a href="" title="Twitter"><img src="<?php bloginfo('template_directory'); ?>/images/icons/twitter.svg" alt="Twitter"/></a></li>
+                    <li><a href="" title="facebook"><img src="<?php bloginfo('template_directory'); ?>/images/icons/facebook.svg" alt="facebook"/></a></li>
+                    <li><a href="" title="Instagram"><img src="<?php bloginfo('template_directory'); ?>/images/icons/instagram.svg" alt="Instagram"/></a></li> 
+                </ul>
+                <span class="copy-text">Magplus is a registered Trademark Copyright &copy 2020</span>
+            </div>
+        </div>
     </div>
 </footer>
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.1.js"></script> 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script> 
-<!-- <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.fancybox.js"></script>  -->
+<!-- <script type="text/javascript" src="/js/jquery.fancybox.js"></script>  -->
 <script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'>
 <script type="text/javascript">
     $(document).ready(function() {
