@@ -155,7 +155,7 @@ get_header();
                                 </div>     
                             </div>
                         </div>  
-                        <a href="/" class="primary-btn align-center" title="Full Specs and Pricing">
+                        <a href="/" class="primary-btn align-center" title="Full Specs and Pricing">Full Specs and Pricing
                             <span class="span1">Full Specs and Pricing</span>
                             <span class="span2">Full Specs and Pricing</span>
                         </a>

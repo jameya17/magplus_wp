@@ -82,8 +82,8 @@ get_header();
                         <h3>Mag+ Tutorials</h3>
                         <div class="small-wrap">
                             <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                            <div class="btn-block align-center">
-                                <a href="<?php echo get_permalink(31675); ?>" class="primary-btn" title="Watch All Tutorials">
+                            <div class="btn-block">
+                                <a href="<?php echo get_permalink(31675); ?>" class="primary-btn" title="Watch All Tutorials">Watch All Tutorials
                                     <span class="span1">Watch All Tutorials</span>
                                     <span class="span2">Watch All Tutorials</span>
                                     <span class="span3">Watch All Tutorials</span>
@@ -129,8 +129,8 @@ get_header();
                             <h3>Mag+ Case Studies</h3>
                             <div class="small-wrap">
                                 <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                                <div class="btn-block align-center">
-                                    <a href="<?php echo get_permalink(31670); ?>" class="primary-btn" title="View All Case Studies">
+                                <div class="btn-block">
+                                    <a href="<?php echo get_permalink(31670); ?>" class="primary-btn" title="View All Case Studies">View All Case Studies
                                         <span class="span1">View All Case Studies</span>
                                         <span class="span2">View All Case Studies</span>
                                         <span class="span3">View All Case Studies</span>
@@ -174,8 +174,8 @@ get_header();
                             <h3>Mag+ Blogs</h3>
                             <div class="small-wrap">
                                 <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                                <div class="btn-block align-center">
-                                    <a href="<?php echo get_permalink(19); ?>" class="primary-btn" title="View All Blogs">
+                                <div class="btn-block">
+                                    <a href="<?php echo get_permalink(19); ?>" class="primary-btn" title="View All Blogs">View All Blogs
                                         <span class="span1">View All Blogs</span>
                                         <span class="span2">View All Blogs</span>
                                         <span class="span3">View All Blogs</span>

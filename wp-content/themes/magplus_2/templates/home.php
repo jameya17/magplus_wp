@@ -15,7 +15,7 @@ get_header();
                     <div class="one-half">
                         <h1>Easily create your next Magazine</h1>
                         <p>A platform to build, distribute and monetise creative content on smart-devices. 6000+ apps have already been made - Coding free, Hassle free</p>
-                        <a href="/" class="primary-btn" title="Know More">
+                        <a href="/" class="primary-btn" title="Know More">Know More
                             <span class="span1">Know More</span>
                             <span class="span2">Know More</span>
                             <span class="span3">Know More</span> 
@@ -96,7 +96,7 @@ get_header();
                 <div class="g-col align-center">  
                     <h3>How it Works</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                    <a href="/" class="primary-btn align-center" title="Schedule a Demo">
+                    <a href="/" class="primary-btn align-center" title="Schedule a Demo">Schedule a Demo
                         <span class="span1">Schedule a Demo</span>
                         <span class="span2">Schedule a Demo</span>
                     </a>
@@ -116,7 +116,7 @@ get_header();
                 <div class="g-col align-center">  
                     <h3>Why choose Magplus</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                    <a href="/" class="primary-btn align-center" title="Contact Us">
+                    <a href="/" class="primary-btn align-center" title="Contact Us">Contact Us
                         <span class="span1">Contact Us</span>
                         <span class="span2">Contact Us</span>
                     </a>
@@ -206,7 +206,11 @@ get_header();
                     <div class="magpluspro-con-block">
                         <h3>Check out our all new Magplus Pro</h3>
                         <p>The SIngle source of truth Using the proven mag+ creation tools, add worth to content in the form of interactive </p>
-                        <a href="/" class="btn" title="Check Now">Check Now</a>
+                        <a href="/" class="btn primary-btn secondary-btn" title="Contact Us">Check Now
+                            <span class="span1">Check Now</span>
+                            <span class="span2">Check Now</span>
+                        </a>    
+                        <!-- <a href="/" class="btn " title="Check Now">Check Now</a> -->
                     </div>    
                 </div>       
             </div>

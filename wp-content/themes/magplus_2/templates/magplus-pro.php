@@ -17,7 +17,7 @@ get_header();
                     <div class="one-half">
                         <h1>What is Magplus Pro?</h1>
                         <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                        <a href="/" class="primary-btn" title="Know More">
+                        <a href="/" class="primary-btn" title="Know More">Know More
                             <span class="span1">Know More</span>
                             <span class="span2">Know More</span>
                         </a>
@@ -34,7 +34,7 @@ get_header();
                 <div class="g-col align-center">  
                     <h3>How it Works</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                    <a href="/" class="primary-btn align-center" title="Schedule a Demo">
+                    <a href="/" class="primary-btn align-center" title="Schedule a Demo">Schedule a Demo
                         <span class="span1">Schedule a Demo</span>
                         <span class="span2">Schedule a Demo</span>
                     </a>
@@ -54,7 +54,7 @@ get_header();
                 <div class="g-col align-center">  
                     <h3>Why choose Magplus</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                    <a href="/" class="primary-btn align-center" title="Contact Us">
+                    <a href="/" class="primary-btn align-center" title="Contact Us">Contact Us
                         <span class="span1">Contact Us</span>
                         <span class="span2">Contact Us</span>
                     </a>

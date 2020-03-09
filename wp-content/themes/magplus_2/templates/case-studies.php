@@ -80,7 +80,7 @@ $the_showcase_query = new WP_Query( $args );
                         <input type="hidden" value="all" id="term_id"/>
                         <div class="case-studies-foot">
                             <div class="loading-spinner" style="display: none;"></div>
-                            <a href="/" class="primary-btn align-center" title="View More" id="view-more-case-studies">
+                            <a href="/" class="primary-btn align-center" title="View More" id="view-more-case-studies">View More
                                 <span class="span1">View More</span>
                                 <span class="span2">View More</span>
                                 <span class="span3">View More</span>
