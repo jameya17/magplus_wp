@@ -83,7 +83,7 @@ get_header();
                         <div class="small-wrap">
                             <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
                             <div class="btn-block align-center">
-                                <a href="/" class="primary-btn" title="Watch All Tutorials">
+                                <a href="<?php echo get_permalink(31675); ?>" class="primary-btn" title="Watch All Tutorials">
                                     <span class="span1">Watch All Tutorials</span>
                                     <span class="span2">Watch All Tutorials</span>
                                     <span class="span3">Watch All Tutorials</span>
@@ -95,9 +95,17 @@ get_header();
                             <?php 
                                 while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post(); 
                                 $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                                $video_id = get_post_meta($post->ID, '_mag_video_id', true);
+                                $service = get_post_meta($post->ID, '_mag_video_service', true);
+                                
+                                if($service == 'vimeo'){
+                                    $video = 'https://player.vimeo.com/video/'. $video_id .'?title=0&amp;byline=0&amp;portrait=0';
+                                }elseif($service == 'youtube'){
+                                    $video = 'https://www.youtube.com/embed/'. $video_id .'?rel=0';
+                                }
                             ?>
                                 <div class="item">
-                                    <a href="<?php the_permalink(); ?>" target="_blank" rel="" class="item-image">
+                                    <a href="<?php echo $video; ?>" target="_blank" rel="" class="item-image" data-fancybox title="">
                                         <img src="<?php echo $thumb; ?>" alt="" />        
                                         <span class="video-play-btn">
                                         </span>
@@ -122,7 +130,7 @@ get_header();
                             <div class="small-wrap">
                                 <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
                                 <div class="btn-block align-center">
-                                    <a href="/" class="primary-btn" title="View All Case Studies">
+                                    <a href="<?php echo get_permalink(31670); ?>" class="primary-btn" title="View All Case Studies">
                                         <span class="span1">View All Case Studies</span>
                                         <span class="span2">View All Case Studies</span>
                                         <span class="span3">View All Case Studies</span>
@@ -167,7 +175,7 @@ get_header();
                             <div class="small-wrap">
                                 <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
                                 <div class="btn-block align-center">
-                                    <a href="/" class="primary-btn" title="View All Blogs">
+                                    <a href="<?php echo get_permalink(19); ?>" class="primary-btn" title="View All Blogs">
                                         <span class="span1">View All Blogs</span>
                                         <span class="span2">View All Blogs</span>
                                         <span class="span3">View All Blogs</span>

@@ -44,10 +44,18 @@
                                 </header>
 
                                 <div class="entry-content">
-                                    <img src="<?php echo $thumb; ?>" class="blog-img" alt="" />
                                     <?php the_content(); ?>
                                     <p>
-                                        <iframe src="<?php echo $video; ?>" style="width:100%;max-width:720px;height:400px;" allowfullscreen></iframe>
+                                        <div class="item">
+                                            <a href="<?php echo $video; ?>" target="_blank" rel="" class="item-image" data-fancybox title="">
+                                                <img src="<?php echo $thumb; ?>" alt="" />        
+                                                <span class="video-play-btn">
+                                                </span>
+                                            </a>    
+                                            <div class="item-detail">
+                                                <p><?php the_title(); ?></p>
+                                            </div>    
+                                        </div>
                                     </p>
                                 </div>
                             </article>
