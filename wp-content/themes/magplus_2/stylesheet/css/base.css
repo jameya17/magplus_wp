@@ -1695,6 +1695,9 @@ input:-webkit-autofill:focus {
   @media only screen and (max-width: 1024px) {
     .card {
       padding: 30px 28px; } }
+  @media only screen and (max-width: 767px) {
+    .card {
+      max-width: 230px; } }
   .card.plain-card {
     padding: 0;
     background-color: transparent;
@@ -2577,16 +2580,31 @@ footer {
         font-weight: 500;
         padding: 15px 15px;
         margin: 0;
-        border-bottom: 1px solid #D8D8D8;
+        border-top: 1px solid #D8D8D8;
         text-transform: none;
         letter-spacing: 1px;
         opacity: .6; }
         footer h6:last-child {
           border-bottom: 0; } }
+    footer h6.toggle {
+      position: relative; }
+      @media only screen and (max-width: 1024px) {
+        footer h6.toggle::before {
+          content: '';
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          width: 14px;
+          height: 7px;
+          background-image: url("../../images/icons/foot-acc-arrow.svg");
+          transform: rotate(180deg); } }
+    footer h6.resources {
+      border: 0; }
   @media only screen and (max-width: 1024px) {
     footer .subscription-sec {
       margin: 0 auto;
-      text-align: center; }
+      text-align: center;
+      border-top: 1px solid #D8D8D8; }
       footer .subscription-sec h6 {
         border: 0; }
       footer .subscription-sec p {
@@ -2663,13 +2681,21 @@ footer {
       margin: 0; }
     @media only screen and (max-width: 1024px) {
       .foot-link-block li {
-        margin-bottom: 4px; } }
+        margin-bottom: 0; } }
   .foot-link-block .foot-link {
     font-size: 11px;
     line-height: 14px;
     color: #fff;
     font-weight: 400;
     letter-spacing: 0px; }
+    @media only screen and (max-width: 1024px) {
+      .foot-link-block .foot-link {
+        display: block;
+        font-size: 10px;
+        line-height: 14px;
+        color: #fff;
+        opacity: .5;
+        padding: 10px 15px; } }
 
 .copyright-block {
   display: -webkit-box;

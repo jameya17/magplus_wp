@@ -19,8 +19,8 @@
             </div>
         </div>
         <div class="foot-col">
-            <h6>Resources</h6>
-            <ul class="foot-link-block">
+            <h6 class="toggle resources">Resources</h6>
+            <ul class="inner foot-link-block">
                 <li><a href="?page_id=31670" class="foot-link" title="Case Studies ">Case Studies </a></li>
                 <li><a href="?page_id=31675" class="foot-link" title="Tutorials ">Tutorials </a></li>
                 <li><a href="?page_id=19" class="foot-link" title="Blogs">Blogs</a></li>
@@ -28,24 +28,24 @@
             </ul>    
         </div>
         <div class="foot-col">
-            <h6>Legal</h6>
-            <ul class="foot-link-block">
+            <h6 class="toggle">Legal</h6>
+            <ul class="inner foot-link-block">
                 <li><a href="?page_id=870" class="foot-link" title="Privacy Policy  ">Privacy Policy  </a></li>
                 <li><a href="?page_id=867" class="foot-link" title="Terms of Use">Terms of Use</a></li>
                 <li><a href="?page_id=608" class="foot-link" title="License and Agreement">License and Agreement</a></li>
             </ul>    
         </div>
         <div class="foot-col">
-            <h6>Products</h6>
-            <ul class="foot-link-block">
+            <h6 class="toggle">Products</h6>
+            <ul class="inner foot-link-block">
                 <li><a href="?page_id=22485" class="foot-link" title="Services ">Services </a></li>
                 <li><a href="?page_id=27659" class="foot-link" title="Pricing">Pricing</a></li>
                 <li><a href="?page_id=31672" class="foot-link" title="Mag Plus Pro">Mag Plus Pro</a></li>
             </ul>    
         </div>
         <div class="foot-col">
-            <h6>Company</h6>
-            <ul class="foot-link-block">
+            <h6 class="toggle">Company</h6>
+            <ul class="inner foot-link-block">
                 <li><a href="javascript:void(0)" class="foot-link" title="About Us">About Us</a></li>
                 <li><a href="javascript:void(0)" class="foot-link" title="Events ">Events </a></li>
                 <li><a href="javascript:void(0)" class="foot-link" title="Try For Free ">Try For Free </a></li>
@@ -227,6 +227,19 @@
         $('.card-deck a').fancybox({
             caption : function( instance, item ) {
                 return $(this).parent().find('.card-text').html();
+            }
+        });
+        $('.toggle').click(function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            if ($this.next().hasClass('show')) {
+                $this.next().removeClass('show');
+                $this.next().slideUp(350);
+            } else {
+                $this.parent().parent().find('.inner').removeClass('show'); 
+                $this.parent().parent().find('.inner').slideUp(350);
+                $this.next().toggleClass('show');
+                $this.next().slideToggle(350);
             }
         });
     }); 
