@@ -127,13 +127,21 @@ get_header();
                                     $i = 0;
                                     while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post();
                                         $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+                                        $video_id = get_post_meta($post->ID, '_mag_video_id', true);
+                                        $service = get_post_meta($post->ID, '_mag_video_service', true);
+                                        
+                                        if($service == 'vimeo'){
+                                            $video = 'https://player.vimeo.com/video/'. $video_id .'?title=0&amp;byline=0&amp;portrait=0';
+                                        }elseif($service == 'youtube'){
+                                            $video = 'https://www.youtube.com/embed/'. $video_id .'?rel=0';
+                                        }
                                         if($i == 0){
                                 ?>
                                             <ul class="video-section video-listing">
 
                                         <?php } ?>
                                                 <li>
-                                                    <a href="https://www.youtube.com/watch?v=2mDPgVWG_Y8" data-fancybox title="">
+                                                    <a href="<?php echo $video; ?>" data-fancybox title="">
                                                         <img src="<?php echo $thumb; ?>" alt="" class="card-img-top img-fluid"/>
                                                         <span class="video-play-btn"></span>
                                                         <span class="play-text">Watch Tutorial</span>
@@ -152,12 +160,7 @@ get_header();
 
                                     endwhile; 
                                 ?>
-                                <video controls id="myVideo" style="display:none;"> 
-                                    <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
-                                    <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
-                                    <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
-                                    Your browser doesn't support HTML5 video tag.
-                                </video>
+                                
                             </div>     
                                 
 
@@ -173,6 +176,12 @@ get_header();
                             <input type="hidden" id="term_id" value="all" />
                             <input type="hidden" id="current_page" value="1" />
                             <input type="hidden" id="total_pages" value="<?php echo $noOfPages; ?>">
+                            <video controls id="myVideo" style="display:none;"> 
+                                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+                                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+                                <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+                                Your browser doesn't support HTML5 video tag.
+                            </video>
                         </div>
                     </div>
                 </div>

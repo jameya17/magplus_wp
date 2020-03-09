@@ -144,11 +144,19 @@ function generate_tutorials_html(){
     global $post;
     while ( $the_tutorials_query->have_posts() ) : $the_tutorials_query->the_post();
     $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
+    $video_id = get_post_meta($post->ID, '_mag_video_id', true);
+    $service = get_post_meta($post->ID, '_mag_video_service', true);
+    
+    if($service == 'vimeo'){
+        $video = 'https://player.vimeo.com/video/'. $video_id .'?title=0&amp;byline=0&amp;portrait=0';
+    }elseif($service == 'youtube'){
+        $video = 'https://www.youtube.com/embed/'. $video_id .'?rel=0';
+    }
     if($i == 0){
     	$output .= '<ul class="video-section video-listing">';
     }
     	$output .= '<li>
-                        <a href="#" title="">
+                        <a href="'.$video.'" title="" data-fancybox title="">
                             <img src="'.$thumb.'" alt="" />
                             <span class="video-play-btn"></span>
                             <span class="play-text">Watch Tutorial</span>

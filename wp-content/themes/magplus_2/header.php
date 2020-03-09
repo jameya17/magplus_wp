@@ -23,8 +23,6 @@
 	<?php //wp_head(); ?>
 	<?php include("includes/css-js.php"); ?> 
 </head>
-
-<body <?php body_class(); ?>>
 <header class="header">
     <div class="header-wrap">
         <div class="header-pad clearfix">
@@ -72,8 +70,4 @@
         </div>
     </div>       
 </header>
-<?php //wp_body_open(); ?>
-
-<!-- <div id="page" class="site"> -->
-
-	<!-- <div id="content" class="site-content"> -->
+<body>
