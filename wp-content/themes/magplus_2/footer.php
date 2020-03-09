@@ -77,6 +77,69 @@
     </div>
 </footer>
 
+<div class="sticky-drawer-section">
+    <div class="drawer-head">
+        <h4 class="contact-us">Contact Us</h4>
+        <span class="sharing-icon"></span>
+    </div>
+    <div class="drawer-body">
+        <div class="form-section form-container sign-up-form contact-us-form">
+            <form class="form-block" action="">
+                <h2 class="form-block-title">Contact</h2>
+                <p>Feel free to contact us. We are willing to help you with any issues you may encounter with our products.<br/> Your privacy is important to us. We’ll never share your information</p>
+                <div class="form-field-group">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Name</label>
+                        <span class="error">Welcome to Magplus</span>
+                    </div>
+                    
+                    <div class="styled-input">
+                        <input type="email" required />
+                        <label>Email</label>
+                        <span class="error">Welcome to Magplus</span>
+                    </div>
+                </div>   
+                <div class="form-field-group">
+                    <div class="styled-input">
+                        <input type="tel" required autocomplete="off" />
+                        <label>phone number</label>
+                        <span class="error">This is secure with us</span>
+                    </div>
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Subject</label>
+                        <span class="error">Please specify the Inquiry subject</span>
+                    </div>
+                </div>    
+                <div class="form-field-group message-field">
+                    <label>Message</label>
+                    <textarea name="" id="" cols="30" rows="3"></textarea>
+                </div>    
+                <div class="tmc-block ">
+                    <label class="checkbox-container" for="i-agree">
+                        <input type="checkbox" id="i-agree">
+                        <span class="checkmark"></span>
+                        I agree to receive timely updates with the latest blog posts
+                    </label>
+                </div> 
+                <div class="btn-block align-center">
+                    <a href="/mega-plus/www/tutorials.php" class="primary-btn" title="try for free">
+                        <span class="span1">try for free</span>
+                        <span class="span2">try for free</span>
+                        <span class="span3">try for free</span>
+                    </a>
+                </div>
+            </form>
+            <span id="close-popup"></span>
+        </div> 
+    </div>
+</div>
+
+<div class="chat-section">
+    <span class="chat-icon"></span>
+</div>
+
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.1.js"></script> 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script> 
 <!-- <script type="text/javascript" src="/js/jquery.fancybox.js"></script>  -->

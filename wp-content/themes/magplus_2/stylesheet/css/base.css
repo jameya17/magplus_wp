@@ -828,7 +828,7 @@ ol {
   .primary-btn span {
     display: inline-block;
     position: absolute;
-    transition: transform 0.8s; }
+    transition: transform 0.3s; }
     .primary-btn span:hover {
       background-color: #FF8616;
       color: #fff; }
@@ -840,7 +840,8 @@ ol {
         display: none; } }
   .primary-btn .span2 {
     opacity: 0;
-    background-color: #F36F21; }
+    background-color: #F36F21;
+    transform: translate(0, 0); }
     @media only screen and (max-width: 1024px) {
       .primary-btn .span2 {
         display: none; } }
@@ -2821,8 +2822,8 @@ footer {
 
 .chat-section {
   position: fixed;
-  bottom: 30%;
-  right: 5%; }
+  bottom: 10px;
+  right: 10px; }
   .chat-section .chat-icon {
     display: block;
     width: 64px;
@@ -3349,7 +3350,7 @@ footer {
     .video-section {
       display: block; } }
   .video-section li {
-    max-width: 250px;
+    max-width: 270px;
     list-style-type: none; }
     @media only screen and (max-width: 1024px) {
       .video-section li {
@@ -3373,14 +3374,14 @@ footer {
   -ms-flex-align: flex-start;
   align-items: flex-start;
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   min-height: auto; }
   .video-listing li a {
     position: relative;
     display: block;
     margin-bottom: 5px;
-    border-radius: 8px;
-    border: 1px solid #979797; }
+    border-radius: 8px; }
     .video-listing li a:hover::before {
       content: '';
       position: absolute;
@@ -3550,8 +3551,10 @@ footer {
     .blog-listing-section .blog-listing {
       margin-bottom: 40px; } }
 .blog-listing-section .card {
-  max-width: 358px; }
+  max-width: 325px;
+  margin: 30px; }
 .blog-listing-section .card-with-image img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 18px 18px 0 0; }
 
 /*# sourceMappingURL=base.css.map */
