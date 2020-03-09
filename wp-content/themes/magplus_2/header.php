@@ -22,6 +22,9 @@
     </title>
 	<?php //wp_head(); ?>
 	<?php include("includes/css-js.php"); ?> 
+    <?php 
+        $pageId = get_the_ID();
+    ?>
 </head>
 <header class="header">
     <div class="header-wrap">
@@ -38,24 +41,24 @@
 
             <nav class="sticky-nav-tabs">
                 <ul class="sticky-nav-tabs-container">
-                    <li class="active services">
+                    <li class="<?php if($pageId == 22485 || $pageId == 9057){ ?>active<?php } ?> services">
                         <a href="?page_id=22485" class="sticky-nav-tab">Services</a>
                         <ul class="sub-menu">
-                            <li class="active"><a href="?page_id=9057" class="sticky-nav-tab" title="Creative Services">Creative Services</a></li>
+                            <li class="<?php if($pageId == 9057){ ?>active<?php } ?>"><a href="?page_id=9057" class="sticky-nav-tab" title="Creative Services">Creative Services</a></li>
                             <li><a href="javascript:void(0)" class="sticky-nav-tab" title="App submission">App submission</a></li>
                             <li><a href="javascript:void(0)" class="sticky-nav-tab" title="App Updation">App Updation</a></li> 
                         </ul>
                     </li>
-                    <li class="support">
+                    <li class="<?php if($pageId == 31668 || $pageId == 31670 || $pageId == 31675 || $pageId == 19){ ?>active<?php } ?> support">
                         <a href="?page_id=31668" class="sticky-nav-tab">Support</a>
                         <ul class="sub-menu">
-                            <li class="active"><a href="?page_id=31675" class="sticky-nav-tab" title="Tutorials">Tutorials</a></li>
-                            <li><a href="?page_id=31670" class="sticky-nav-tab" title="Case Studies">Case Studies</a></li>
-                            <li><a href="?page_id=19" class="sticky-nav-tab" title="Blogs">Blogs</a></li> 
+                            <li class="<?php if($pageId == 31675){ ?>active<?php } ?>"><a href="?page_id=31675" class="sticky-nav-tab" title="Tutorials">Tutorials</a></li>
+                            <li class="<?php if($pageId == 31670){ ?>active<?php } ?>"><a href="?page_id=31670" class="sticky-nav-tab" title="Case Studies">Case Studies</a></li>
+                            <li class="<?php if($pageId == 19){ ?>active<?php } ?>"><a href="?page_id=19" class="sticky-nav-tab" title="Blogs">Blogs</a></li> 
                         </ul>
                     </li>
-                    <li><a href="?page_id=27659" class="sticky-nav-tab">Pricing</a></li>
-                    <li><a href="?page_id=31672" class="sticky-nav-tab">MagPlus Pro</a></li>
+                    <li class="<?php if($pageId == 27659){ ?>active<?php } ?>"><a href="?page_id=27659" class="sticky-nav-tab">Pricing</a></li>
+                    <li class="<?php if($pageId == 31672){ ?>active<?php } ?>"><a href="?page_id=31672" class="sticky-nav-tab">MagPlus Pro</a></li>
                     <li><a href="?page_id=31257" class="sticky-nav-tab mob-view">FAQs</a></li>
                     <li class="try-free-block">
                         <a class="btn" id="navLoginBtn" href="javascript:void(0)" data-fancybox="" data-animation-duration="700" data-src="#try-for-free-popup">Try for free</a>
