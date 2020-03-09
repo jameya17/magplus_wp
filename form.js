@@ -81,9 +81,9 @@ $(document).on('click','.pagination li', function(e){
    }
    else{
       $('.pagination li').removeClass('active');
-      $(this).addClass('active');
       pageId = $(this).text();
       new_page = parseInt(pageId);
+      $('.pageId-'+new_page).addClass('active');
    }
    var offset = parseInt(pageId-1)*9;
    var termId = $('#term_id').val();
