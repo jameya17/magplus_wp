@@ -15,7 +15,7 @@ get_header();
             <div class="l-section-wrap">
                 <div class="g-col">
                     <div class="one-half">
-                        <h1>What is Magplus Pro?</h1>
+                        <h1>What is<br/> Magplus Pro?</h1>
                         <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
                         <a href="/" class="primary-btn" title="Know More">Know More
                             <span class="span1">Know More</span>
