@@ -111,7 +111,8 @@
         list-style-type: none;
         padding: 65px 0; 
         @media only screen and (max-width: 1024px) {
-            padding: 10px 0;
+            padding: 10px 15px;
+            margin-bottom: 25px;
         }
     }
 }

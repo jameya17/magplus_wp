@@ -54,6 +54,9 @@
         background-color: #fff;
         box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.2); 
     }
+    @media only screen and (max-width: 1024px) {
+        display: none;
+    }
 }
 .sticky-con-pad{
     padding-left: 350px;
@@ -73,6 +76,9 @@
         list-style-type: none;
         padding: 0; 
         margin-bottom: 110px; 
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 40px; 
+        }
     }
     .tab-item{
         display: inline-block;
@@ -88,6 +94,10 @@
             color: #8D8788;
             letter-spacing: 0.8px;
             padding: 15px 25px; 
+            @media only screen and (max-width: 1024px) {
+                font-size: 15px;
+                padding: 15px 15px;
+            }
         }
 
     }

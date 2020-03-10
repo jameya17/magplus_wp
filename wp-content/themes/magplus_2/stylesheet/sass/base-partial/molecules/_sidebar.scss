@@ -3,6 +3,16 @@
     .inline-form{
         margin-bottom: 1px;     
     }
+    @media only screen and (max-width: 1024px) {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        z-index: 9;
+        width: 100%;
+        padding: 0;
+        left: 0;
+        bottom: 0;
+    } 
 }
 .sidebar-header{
     position: relative;
@@ -22,6 +32,13 @@
         height: 6px;
         background-color: #DDDFE1; 
     }
+    @media only screen and (max-width: 1024px) {
+        margin: 0;
+        padding: 20px;
+        &::before{
+            left: 20px;
+        }
+    }
 }
 .sidebar-listing{
     padding: 0;
@@ -30,6 +47,9 @@
         display: block;
         padding: 0;
         list-style-type: none;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding: 20px;
     }
 }
 .count{

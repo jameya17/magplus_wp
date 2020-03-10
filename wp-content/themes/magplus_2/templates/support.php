@@ -145,7 +145,7 @@ get_header();
                                         $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
                                     ?>
                                         <div class="g-col offset_default item">
-                                            <div class="one-half image-block">
+                                            <div href="<?php the_permalink(); ?>" class="one-half image-block">
                                                 <img src="<?php echo $thumb; ?>" alt="App Update Services">  
                                             </div>
 

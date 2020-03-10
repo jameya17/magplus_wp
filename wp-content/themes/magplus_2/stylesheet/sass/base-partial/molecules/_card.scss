@@ -1,10 +1,11 @@
 .card-section{
-    margin: 75px 0 0 0;
+    margin: 100px 0 0 0;
     @media only screen and (max-width: 1024px) {
         margin: 25px 0 0 0;
     }
 }
 .card-listing{
+    position: relative;
     @include flexbox;
     @include justify-content(center);
     @include flex-wrap(wrap) 
@@ -22,9 +23,12 @@
     @media only screen and (max-width: 1024px) {
         padding: 30px 28px;
     }
+    @media only screen and (max-width: 767px) {
+        max-width: 230px; 
+    }
     &.plain-card{
         padding: 0;
-        background-color: transparent;
+        background-color: transparent; 
         border: 0;
         box-shadow: none;
         width: auto;
@@ -41,12 +45,20 @@
             color: $dark-org-col;
         }
     }
+    .btn-link{
+        color: $org-col;
+        text-transform: uppercase;
+        @include justify-content(flex-start); 
+        &:hover{
+            color: $dark-org-col;
+        }
+    }
 }
 .card-icon{
     margin-bottom: 15px;
 }
 .card-title{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .card-discp{ 
     font-size: 14px;
@@ -84,4 +96,67 @@
 }
 .card-body-con{
     padding: 40px; 
+}
+
+.popup-content-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    padding: 50px 75px;
+    margin: 0 auto;
+    text-align: left; 
+    border: 1px solid #FF8616;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.1); 
+    transition: all 0.4s;
+    transform: scale(0);
+    opacity: 0;
+    z-index: 1;
+}
+.card{
+    &.active{
+        .popup-content-block{
+            opacity: 1;
+            transform: scale(1);                
+        } 
+    }
+}
+.card-text{
+    font-size: 16px;
+    line-height: 24px;
+}
+.key-offerings{
+    .card{
+        max-width: 195px;  
+        @media only screen and (max-width: 1024px) {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+.how-it-works-sec{
+    .card{
+        max-width: 230px;  
+        &:first-child{
+            margin-bottom: 75px; 
+            @media only screen and (max-width: 1024px) {
+                margin-bottom: 30px;  
+            }
+        }
+        @media only screen and (max-width: 1024px) {
+            max-width: 100%;  
+            margin: 30px 15px;
+            text-align: center;
+        } 
+    }
 }

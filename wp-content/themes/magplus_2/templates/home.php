@@ -102,11 +102,17 @@ get_header();
                     </a>
 
                     <div class="video-section">
-                        <a href="/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://youtu.be/QiknaxhsVqo" target="_blank" rel="noopener noreferrer" data-fancybox>
                             <img src="<?php bloginfo('template_directory'); ?>/images/temp-schedule-demo.svg" alt="" />        
                             <span class="video-play-btn">
                             </span>
                         </a>    
+                        <!-- <video controls id="myVideo" style="display:none;"> 
+                            <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+                            <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+                            <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+                            Your browser doesn't support HTML5 video tag.
+                        </video> -->
                     </div>
                 </div>    
             </div>
@@ -123,7 +129,7 @@ get_header();
 
                     <div class="card-section">
                         <div class="card-listing">
-                            <div class="card">
+                            <div class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
@@ -141,7 +147,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/publish-content-icon.svg" alt="Publish Content" />
@@ -159,7 +165,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/manage-apps-icon.svg" alt="Manage Apps" />
@@ -177,7 +183,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/monitise-apps-icons.svg" alt="Monitise Apps" />

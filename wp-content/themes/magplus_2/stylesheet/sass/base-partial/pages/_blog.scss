@@ -84,6 +84,9 @@
 .blog-listing-section{
     .one-third{
         width: 70.666667%; 
+        @media only screen and (max-width: 1024px) {
+            width: 100%;
+        }
     }
     .blog-listing{
         @include flexbox;
@@ -91,13 +94,18 @@
         @include align-items(flex-start); 
         @include flex-wrap(wrap);  
         margin-bottom: 150px;
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 40px;
+        }
     }
     .card{
-        max-width: 358px;
+        max-width: 325px;
+        margin: 30px; 
     }
     .card-with-image{
         img{
             width: 100%;
+            border-radius: 18px 18px 0 0;
         }
     } 
     

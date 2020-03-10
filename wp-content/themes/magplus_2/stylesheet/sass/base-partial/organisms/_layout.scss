@@ -5,7 +5,7 @@
 .grey-bg{
     background-color: #F7F7F7;   
     @media only screen and (max-width: 1024px) {
-        background-color: transparent; 
+        // background-color: transparent; 
     }
 }
 .org-bg{
@@ -27,6 +27,10 @@
 .l-section-wrap{
     // position: relative;
     @extend .header-wrap; 
+    @media only screen and (max-width: 1024px) {
+        width: 100%;
+        // padding: 0 15px;
+    } 
 }
 .l-sub-section-pad{
     padding: 0 60px;
@@ -66,6 +70,15 @@
             @include flex-direction(column); 
         }
     }
+    &.row-reverse{
+        @include flex-direction(row-reverse);
+        @media only screen and (max-width: 1024px) {
+            @include flex-direction(column-reverse);
+            @include justify-content(center); 
+            text-align: center;
+            // padding: 0 15px;
+        }
+    }
 }
 .one-cal{
     width: 24.333333%;
@@ -98,7 +111,7 @@
 }
 .image-block{
     @media only screen and (max-width: 1024px) {
-        margin-bottom: 20px; 
+        margin-bottom: 20px !important; 
     }
     img{
         @media only screen and (max-width: 1024px) {
@@ -135,7 +148,7 @@
 .container{
     padding-top: 68px;
     @media only screen and (max-width: 1024px) {
-        padding: 68px 15px 0; 
+        padding: 68px 0 0; 
     }
 }
 .sec-pad{
@@ -143,7 +156,7 @@
     @include align-items(center);
     padding: 160px 0;
     @media only screen and (max-width: 1024px) {
-        padding: 30px 0;
+        padding: 30px 15px;
     }
     p{
         margin-bottom: 20px;
@@ -160,7 +173,7 @@
         }
     }
     .magpluspro-con-block{
-        padding: 160px 0 65px 38%; 
+        padding: 135px 0 90px 38%; 
         background-image: url('../../images/magplus-pro-bg.svg'); 
         background-repeat: no-repeat; 
         background-position: left top; 
@@ -175,9 +188,12 @@
             color: $org-col; 
         }
         @media only screen and (max-width: 1024px) {
-            padding: 40px 0; 
-            background-image: none; 
-            max-width: 280px;
+            padding: 40px 0;
+            background-size: 80%;
+            padding-bottom: 220px;
+            background-position: 300% bottom;
+            text-align: left;
+            padding-left: 25px;
         }
     }
 }
@@ -200,12 +216,20 @@
 .casestudiesPg{
     .tab-section{
         margin-top: 55px; 
+        @media only screen and (max-width: 1024px) {
+            margin: 0;
+        }
     }
     h3.sec-title{
         font-size: 32px;
         line-height: 44.07px;
         color: #414141;
         letter-spacing: -0.7px; 
+        @media only screen and (max-width: 1024px) {
+            font-size: 24px;
+            line-height: 30px;
+            margin: 15px 0;
+        }
     }
     p{
         font-size: 17px;
@@ -226,6 +250,10 @@
                 padding-bottom: 0;
                 margin-bottom: 0;  
             }
+            @media only screen and (max-width: 1024px) {
+                padding-bottom: 30px;
+                margin-bottom: 30px; 
+            }
         }
         .image-block{
             display: block; 
@@ -240,9 +268,14 @@
     }
 }
 .case-studies-foot{
+    display: inline-flex; 
     position: relative;
-    display: flex-box;
-    margin-top: 75px; 
+    margin: 75px auto 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
 }
 .sec-pad{
     .marB75{
@@ -263,5 +296,17 @@
                 width: 100%;
             }
         }
+    }
+}
+.mob-view{
+    display: none !important; 
+    @media only screen and (max-width: 1024px) {
+        display: block !important; 
+    }
+}
+.marb-75{
+    margin-bottom: 75px;
+    @media only screen and (max-width: 1024px) {
+        margin-bottom: 25px;
     }
 }

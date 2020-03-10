@@ -228,7 +228,7 @@
             nav:true,  
             dots: true,
             responsive: {
-                600: {
+                767: {
                 items: 1,
                 dots: false      
                 }
@@ -305,6 +305,15 @@
                 $this.next().slideToggle(350);
             }
         });
+        $('.click-card-block').click(function(e) { 
+            e.preventDefault(); 
+            if($(this).hasClass('active')){ 
+                $(this).removeClass('active');
+            }
+            else{
+                $(this).addClass('active'); 
+            }
+        });    
     }); 
     function tabNav(evt, tabHead) {
         var i, tabcontent, tablinks;

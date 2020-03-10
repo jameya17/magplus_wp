@@ -65,9 +65,9 @@ $the_showcase_query = new WP_Query( $args );
                                 $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
                             ?>
                                 <div class="g-col offset_default">
-                                    <div class="one-half image-block">
+                                    <a href="<?php the_permalink(); ?>" class="one-half image-block">
                                         <img src="<?php echo $thumb; ?>">
-                                    </div>    
+                                    </a>    
                                     <div class="one-half">
                                         <h3 class="sec-title"><?php the_title(); ?></h3>
                                         <p class="block-ellipsis"><?php echo get_the_excerpt(); ?></p>

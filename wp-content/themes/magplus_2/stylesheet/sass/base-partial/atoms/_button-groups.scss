@@ -25,7 +25,9 @@
         border: 1px solid $org-col;
     }
     @media only screen and (max-width: 1024px) { 
-        padding: 10px 20px;
+        padding: 15px 30px;
+        font-size: 10px;
+        line-height: 14px; 
     }
 }
 .button-focus{
@@ -105,7 +107,7 @@
     padding: 0.200em 0.417em;
 }
 .btn-block{
-    display: block;
+    display: inline-block;
     width: 100%;
 }
 .video-section{
@@ -122,10 +124,10 @@
     width: 59px;
     height: 59px;
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 0;
     left: 0;
-    margin: -30px auto 0;
+    margin: 0 auto;
     border-radius: 50%;
     background-image: url('../../images/icons/play-button.svg');
     background-repeat: no-repeat;
@@ -140,61 +142,95 @@
     }
 }
 .primary-btn{
+    @extend .btn;
+    position: relative; 
+    display: inline-flex;  
+    justify-content: center;
+    align-items: center;
     position: relative;
-    height: 52px; 
-    @media only screen and (max-width: 1024px) {
-        height: auto;
-    }
-    span{
-        @extend .btn;
-        display: inline-block;
+    border-color: $org-col; 
+    transition: all .3s;
+    z-index: 1;
+    .span1 {
+        content: '';
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;  
+        width: 100%;
+        height: 100%;
         position: absolute;
-        transition: transform 0.8s;
-        &:hover{
-            background-color: $org-col;
-            color: $white-col;     
-        }
-    }
-    .span1{
+        bottom: 0;
+        left: 0;
         background-color: $org-col;
-        border-color: $org-col; 
+        color: $white-col;
+        border-color: $org-col;
+        border-radius: 30.5px;
+        transition: all .3s;
+        z-index: 1; 
         @media only screen and (max-width: 1024px) {
             display: none;
         }
     }
     .span2{
-        opacity: 0;
-        background-color: $dark-org-col;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;  
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2; 
+        border-radius: 30.5px;
+        background-color: $white-col;
+        border-color: $org-col;  
         @media only screen and (max-width: 1024px) {
             display: none;
         }
     }
     .span3{
         display: none;
+        justify-content: center;
+        align-items: center;  
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $dark-org-col;
+        color: $white-col;
+        border-color: $org-col;
+        border-radius: 30.5px;
+        transition: all .3s;
+        z-index: 1; 
         @media only screen and (max-width: 1024px) {
-            position: static; 
-            display: inline-block;
+            display: inline-flex;
         }
     }
     &:hover{
-        .span1{
-            background-color: $white-col;
-            border-color: $org-col; 
-        }
-        .span2{
+        .span1{ 
+            transform: translate(12px, -12px);    
             background-color: $dark-org-col;
-            opacity: 1;
-            transform: translate(12px, -12px);
-            &:hover{
-                background-color: $dark-org-col; 
-                border-color: $dark-org-col; 
-            }
-        }    
+        
+        }
     }
-    &.align-center{
-        @include flexbox;
-        @include justify-content(center);
-        @include flex-direction(row);
+    &.secondary-btn{
+        .span1 {
+            background-color: $dark-org-col;
+            color: $white-col;
+            border-color: $org-col;
+            visibility: hidden;
+        }
+        .span2 {
+            background-color: $white-col;
+            color: $white-col;
+            border-color: $org-col;
+        }
+        &:hover{
+            .span1 {
+                visibility: visible;
+            }
+        }
     }
 }
 .pricing-switcher{
@@ -276,10 +312,10 @@
     }
 }
 .btn-block{
-    position: relative;
-    @include flexbox; 
-    .primary-btn{
-        @include flexbox; 
-        @include justify-content(center); 
-    }
+    // position: relative;
+    // @include flexbox; 
+    // .primary-btn{ 
+    //     @include flexbox; 
+    //     @include justify-content(center); 
+    // }
 }
