@@ -8,7 +8,7 @@ get_header();
 
 ?>
 
-<div class="container">
+    <div class="container">
         <section class="l-section sec-pad white-bg" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/easily-create-your-next-magazine-bg.svg'); background-repeat: no-repeat; background-position: top right">
             <div class="l-section-wrap">
                 <div class="g-col">
@@ -28,7 +28,7 @@ get_header();
             </div>
         </section>
         <section class="l-section sec-pad grey-bg pad-bot0">
-            <div class="l-section-wrap">
+            <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">
                     <h3 class="title-with-border bdr-org">Trusted by the world's best</h3>
 
@@ -92,11 +92,11 @@ get_header();
             </div>
         </section>
         <section class="l-section sec-pad white-bg">
-            <div class="l-section-wrap">
+            <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">  
                     <h3>How it Works</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                    <a href="/" class="primary-btn align-center" title="Schedule a Demo">Schedule a Demo
+                    <a href="/" class="primary-btn" title="Schedule a Demo">Schedule a Demo
                         <span class="span1">Schedule a Demo</span>
                         <span class="span2">Schedule a Demo</span>
                     </a>
@@ -118,18 +118,18 @@ get_header();
             </div>
         </section>
         <section class="l-section sec-pad grey-bg">
-            <div class="l-section-wrap">
+            <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">  
                     <h3>Why choose Magplus</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
-                    <a href="/" class="primary-btn align-center" title="Contact Us">Contact Us
+                    <a href="/" class="primary-btn" title="Contact Us">Contact Us
                         <span class="span1">Contact Us</span>
                         <span class="span2">Contact Us</span>
                     </a>
 
-                    <div class="card-section">
+                    <div class="card-section" style="overflow: hidden;">
                         <div class="card-listing">
-                            <div class="card click-card-block">
+                            <div data-aos="fade-right" class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
@@ -147,7 +147,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card click-card-block">
+                            <div data-aos="fade-left" class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/publish-content-icon.svg" alt="Publish Content" />
@@ -165,7 +165,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card click-card-block">
+                            <div data-aos="fade-right" class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/manage-apps-icon.svg" alt="Manage Apps" />
@@ -183,7 +183,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card click-card-block">
+                            <div data-aos="fade-left" class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/monitise-apps-icons.svg" alt="Monitise Apps" />

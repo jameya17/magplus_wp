@@ -65,10 +65,10 @@ $the_showcase_query = new WP_Query( $args );
                                 $thumb = get_post_meta($post->ID, '_mag_video_thumbnail', true);
                             ?>
                                 <div class="g-col offset_default">
-                                    <a href="<?php the_permalink(); ?>" class="one-half image-block">
+                                    <a href="<?php the_permalink(); ?>" class="one-half image-block" data-aos="fade-right">
                                         <img src="<?php echo $thumb; ?>">
                                     </a>    
-                                    <div class="one-half">
+                                    <div class="one-half" data-aos="fade-left">
                                         <h3 class="sec-title"><?php the_title(); ?></h3>
                                         <p class="block-ellipsis"><?php echo get_the_excerpt(); ?></p>
                                         <a href="<?php the_permalink(); ?>" title="View Case Study +" class="text-link"> View Case Study +</a>

@@ -12,7 +12,7 @@ get_header();
 ?>
     <div class="container">
         <section class="l-section sec-pad white-bg" style="background-image: url('<?php bloginfo('template_directory'); ?>/images/easily-create-your-next-magazine-bg.svg'); background-repeat: no-repeat; background-position: top right">
-            <div class="l-section-wrap">
+            <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col">
                     <div class="one-half">
                         <h1>What is<br/> Magplus Pro?</h1>
@@ -30,7 +30,7 @@ get_header();
         </section>
         
         <section class="l-section sec-pad grey-bg">
-            <div class="l-section-wrap">
+            <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">  
                     <h3>How it Works</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
@@ -57,7 +57,7 @@ get_header();
         </section>
 
         <section class="l-section sec-pad white-bg">
-            <div class="l-section-wrap">
+            <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">  
                     <h3>Why choose Magplus</h3>
                     <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
@@ -68,7 +68,7 @@ get_header();
 
                     <div class="card-section">
                         <div class="card-listing">
-                            <div class="card click-card-block">
+                            <div class="card click-card-block" data-aos="fade-right">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
@@ -86,7 +86,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card click-card-block">
+                            <div class="card click-card-block" data-aos="fade-left">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/publish-content-icon.svg" alt="Publish Content" />
@@ -104,7 +104,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card click-card-block">
+                            <div class="card click-card-block" data-aos="fade-right">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/manage-apps-icon.svg" alt="Manage Apps" />
@@ -122,7 +122,7 @@ get_header();
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
-                            <div class="card click-card-block">
+                            <div class="card click-card-block" data-aos="fade-left">
                                 <div class="card-body">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/monitise-apps-icons.svg" alt="Monitise Apps" />

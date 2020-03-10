@@ -1512,8 +1512,6 @@ a.apple-link {
 .form-container textarea {
   width: 100%;
   min-height: 15em; }
-.form-container .primary-btn span {
-  width: 235px; }
 
 .sign-up-form ::-webkit-input-placeholder {
   /* Edge */
@@ -1636,7 +1634,8 @@ input:-webkit-autofill:focus {
         overflow-y: auto; } }
     @media only screen and (max-width: 767px) {
       .contact-us-form .form-block {
-        height: 400px; } }
+        height: 400px;
+        width: 310px; } }
   .contact-us-form .form-field-group {
     margin-bottom: 20px; }
   .contact-us-form .styled-input {
@@ -3579,6 +3578,43 @@ footer {
 .entry-content strong {
   font-weight: bold;
   color: #333333; }
+.entry-content .item {
+  position: relative; }
+  .entry-content .item img {
+    width: 100%; }
+  .entry-content .item .video-play-btn {
+    top: 45%; }
+.entry-content ul {
+  margin-bottom: 25px; }
+  .entry-content ul li {
+    color: #595656; }
+.entry-content ol {
+  margin-bottom: 25px; }
+  .entry-content ol li {
+    color: #595656; }
+.entry-content h2 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin-bottom: 20px; }
+.entry-content b {
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin-bottom: 0; }
+.entry-content a {
+  font-size: 16px;
+  line-height: 26px;
+  color: #595656;
+  font-weight: 400;
+  color: #FF8616;
+  letter-spacing: 1px; }
+  .entry-content a:hover {
+    color: #F36F21; }
 
 .fiveCol-slider h3 {
   font-size: 30px;

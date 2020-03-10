@@ -456,7 +456,7 @@ a{
         min-height: 15em;
     }
     .primary-btn span{
-        width: 235px;
+        // width: 235px;
     }
 }    
 .sign-up-form{
@@ -588,6 +588,7 @@ input:-webkit-autofill:focus {
         }
         @media only screen and (max-width: 767px) {
             height: 400px;  
+            width: 310px;
         }
     }
     .form-field-group{

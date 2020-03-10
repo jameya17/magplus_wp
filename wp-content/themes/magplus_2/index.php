@@ -15,7 +15,7 @@
                         		if(have_posts()): while(have_posts()): the_post(); 
                         			$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                         	?>
-                            <div class="card card-with-image item">
+                            <div class="card card-with-image item" data-aos="fade-up">
                                 <div class="card-body">
                                     <div class="card-image">
                                         <img src="<?php echo $thumb[0]; ?>" alt="">  

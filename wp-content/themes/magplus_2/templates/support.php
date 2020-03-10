@@ -77,7 +77,7 @@ get_header();
                         </ul>
                     </div>
                 </div>    
-                <div class="g-col align-center">
+                <div class="g-col align-center" data-aos="fade-up">
                     <div class="content-block">
                         <h3>Mag+ Tutorials</h3>
                         <div class="small-wrap">
@@ -124,7 +124,7 @@ get_header();
 
             <section id="case-studies" class="l-section sec-pad grey-bg scrrol-sec">
                 <div class="l-section-wrap"> 
-                    <div class="g-col align-center">
+                    <div class="g-col align-center" data-aos="fade-up">
                         <div class="content-block">
                             <h3>Mag+ Case Studies</h3>
                             <div class="small-wrap">
@@ -169,7 +169,7 @@ get_header();
             
             <section id="blog" class="l-section sec-pad white-bg scrrol-sec">
                 <div class="l-section-wrap">
-                    <div class="g-col align-center">
+                    <div class="g-col align-center" data-aos="fade-up">
                         <div class="content-block">
                             <h3>Mag+ Blogs</h3>
                             <div class="small-wrap">
