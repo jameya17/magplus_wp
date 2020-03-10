@@ -313,6 +313,14 @@
                 $(this).addClass('active'); 
             }
         }); 
+        $(".js-anchor-link").click(function(e) {
+            e.preventDefault();
+            var target = $($(this).attr("href"));
+            if (target.length) {
+                var scrollTo = target.offset().top + 500;
+                $("body, html").animate({ scrollTop: scrollTo + "px" }, 800);
+            }
+        });
         AOS.init({
             disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
             startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
@@ -369,6 +377,7 @@
             $('.sticky-sidebar a.active').removeClass('active');
             $('.sticky-nav-block').removeClass('fixed');
         }
+
     });
 
 </script>

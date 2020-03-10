@@ -26,7 +26,7 @@ get_header();
                             <div class="small-wrap">
                                 <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
                                 <div class="btn-block align-center">
-                                    <a href="/" class="primary-btn" title="Watch All Tutorials">Watch All Tutorials
+                                    <a href="#tutorials" class="primary-btn js-anchor-link" title="Watch All Tutorials">Watch All Tutorials
                                         <span class="span1">Watch All Tutorials</span>
                                         <span class="span2">Watch All Tutorials</span>
                                         <span class="span3">Watch All Tutorials</span>
