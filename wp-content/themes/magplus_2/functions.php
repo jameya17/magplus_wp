@@ -16,7 +16,7 @@ require_once(TEMPLATEPATH .'/logged-in/functions.php'); // loggin functions
 $inc_path = TEMPLATEPATH .'/inc/';
 $meta_path = $inc_path .'/metaboxes/';
 require_once($inc_path. 'sidebars.php');
-require_once($inc_path. 'signup.php');
+//require_once($inc_path. 'signup.php');
 require_once($inc_path. 'posttypes.php');
 require_once($inc_path. 'manual.php'); // the documentation about classes and other theme related things
 require_once($inc_path. 'theme-functions.php');// theme functions
