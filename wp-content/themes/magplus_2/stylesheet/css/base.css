@@ -975,64 +975,6 @@ ol {
   .dropdown:focus {
     outline: 0; }
 
-input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden; }
-
-label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 200px;
-  height: 100px;
-  background: grey;
-  display: block;
-  border-radius: 100px;
-  position: relative; }
-
-label::before {
-  content: 'ne';
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: #fff;
-  font-size: 33.33333333px;
-  top: 0;
-  left: 0;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 82%;
-  height: 100%;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  text-indent: 0; }
-
-label::after {
-  content: '';
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 94px;
-  height: 88px;
-  background: #fff;
-  border-radius: 50%;
-  transition: 0.3s; }
-
-input:checked + label {
-  background: #2459d0db; }
-
-input:checked + label::before {
-  content: 'ano';
-  justify-content: flex-start; }
-
-input:checked + label::after {
-  left: calc(100% - 6px);
-  transform: translateX(-100%); }
-
-label:active:after {
-  width: 133.33333333px; }
-
 .nav {
   padding: 0;
   list-style-type: none; }
@@ -2281,6 +2223,9 @@ input:-webkit-autofill:focus {
       padding: 0;
       left: 0;
       bottom: 0; } }
+  .sidebar.fixed {
+    position: fixed;
+    top: 130px; }
 
 .sidebar-header {
   position: relative;
@@ -2382,8 +2327,10 @@ input:-webkit-autofill:focus {
   background-color: #ECECEC;
   padding: 60px 20px;
   border-radius: 8px; }
-  .post-sidebar .get-update-ces .sec-title {
-    margin-bottom: 50px; }
+  .post-sidebar .get-update-ces p {
+    font-size: 11px;
+    line-height: 14px;
+    color: #8D8788; }
   .post-sidebar .get-update-ces h6 {
     font-size: 11px;
     line-height: 16px;

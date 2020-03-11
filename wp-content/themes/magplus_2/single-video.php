@@ -122,7 +122,8 @@
                         </div> 
                         <div class="sidebar-section-listing">
                             <div class="get-update-ces">
-                                <h3 class="sec-title">Get Updates</h3>            
+                                <h3 class="sec-title">Get Updates</h3>    
+                                <p>Subscribe to our mailing list and get latest product updates, insights, and tips in your inbox. </p>        
                                 <div class="subscription-sec">
                                     <div class="subscription-form">
                                         <div class="inline-form error-block">

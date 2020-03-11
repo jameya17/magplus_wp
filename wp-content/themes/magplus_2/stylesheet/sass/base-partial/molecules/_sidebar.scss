@@ -1,5 +1,14 @@
+.blog-listing-section{
+    // .g-col.offset_default{
+    //     position: relative; 
+    // }
+}
 .sidebar{
-    width: 265px;
+    width: 265px; 
+    // position: absolute;
+    // left: 72%;
+    // top: 260px; 
+    // margin: 0 !important; 
     .inline-form{
         margin-bottom: 1px;     
     }
@@ -13,6 +22,10 @@
         left: 0;
         bottom: 0;
     } 
+    &.fixed{
+        position: fixed; 
+        top: 130px;  
+    }
 }
 .sidebar-header{
     position: relative;
@@ -137,7 +150,12 @@
         padding: 60px 20px;
         border-radius: 8px;
         .sec-title{
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
+        }
+        p{
+            font-size: 11px;
+            line-height: 14px;
+            color: #8D8788;
         }
         h6{
             font-size: 11px;
