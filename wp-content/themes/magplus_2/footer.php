@@ -207,7 +207,7 @@
                 items: 3,  
                 margin: 30,    
                 nav:false,   
-                dots: false,
+                dots: true,
                 autoplay: true  
                 }
             }
