@@ -74,7 +74,7 @@ get_header();
                                             <li class="btn-block">&nbsp;</li>
                                         </ul>
                                     </div>
-                                    <div class="plan-td">
+                                    <div class="plan-td" style="display:block;">
                                         <ul>
                                             <li class="plan-head">
                                                 <strong>Pay As you Publish</strong>
@@ -120,8 +120,8 @@ get_header();
                                     <div class="plan-td">
                                         <ul>
                                             <li class="plan-head">
-                                                <strong>Multi</strong>
-                                                <strong class="plan-price">90$</strong>
+                                                <strong>Multi-Pro</strong>
+                                                <strong class="plan-price">250$</strong>
                                             </li>
                                             <li>1 Each</li>
                                             <li>Unlimited</li>
@@ -141,8 +141,8 @@ get_header();
                                     <div class="plan-td">
                                         <ul>
                                             <li class="plan-head">
-                                                <strong>Multi</strong>
-                                                <strong class="plan-price">90$</strong>
+                                                <strong>Unlimited</strong>
+                                                <strong class="plan-price">500$</strong>
                                             </li>
                                             <li>1 Each</li>
                                             <li>Unlimited</li>
@@ -162,7 +162,7 @@ get_header();
                                 </div>     
                             </div>
                         </div>  
-                        <a href="/" class="primary-btn align-center" title="Full Specs and Pricing">Full Specs and Pricing
+                        <a href="/" class="primary-btn" title="Full Specs and Pricing">Full Specs and Pricing
                             <span class="span1">Full Specs and Pricing</span>
                             <span class="span2">Full Specs and Pricing</span>
                         </a>

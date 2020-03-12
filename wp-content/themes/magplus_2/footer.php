@@ -358,14 +358,21 @@
         //SELECT OPTIONS AND HIDE OPTION AFTER SELECTION
         $(".drop-down .options ul li a").click(function() {
             var text = $(this).html();
+            var target = $($(this).attr("href"));
             $(".drop-down .selected a span").html(text);
             $(".drop-down .options ul").hide();
+            if (target.length) {
+                $(this).addClass("active");
+            }
+            else{
+                $(this).removeClass("active");
+            }
         }); 
 
 
         //HIDE OPTIONS IF CLICKED ANYWHERE ELSE ON PAGE
         $(document).bind('click', function(e) {
-            var $clicked = $(e.target);
+            var $clicked = $(e.target); 
             if (! $clicked.parents().hasClass("drop-down"))
                 $(".drop-down .options ul").hide();
         });

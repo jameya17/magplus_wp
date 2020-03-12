@@ -1682,7 +1682,11 @@ input:-webkit-autofill:focus {
 .drop-down {
   position: relative;
   margin-bottom: 15px; }
+  @media only screen and (max-width: 1024px) {
+    .drop-down {
+      text-align: center; } }
   .drop-down .selected a {
+    position: relative;
     display: inline-block;
     width: 90px;
     font-size: 12px;
@@ -1728,6 +1732,11 @@ input:-webkit-autofill:focus {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.9);
     z-index: 1;
     text-align: left; }
+    @media only screen and (max-width: 1024px) {
+      .drop-down .options ul {
+        left: 0;
+        right: 0;
+        margin: 0 auto; } }
     .drop-down .options ul a {
       display: block;
       font-size: 12px;
@@ -3370,7 +3379,6 @@ footer {
     padding: 0; }
   @media only screen and (max-width: 1024px) {
     .pricing-chart-table {
-      display: block;
       padding-bottom: 40px; } }
 
 .pricing-body {
@@ -3431,12 +3439,19 @@ footer {
       letter-spacing: 1.2px; }
     @media only screen and (max-width: 1024px) {
       .plan-th li, .plan-td li {
-        border-top: 1px solid #8D8788;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 55px;
+        font-size: 10px;
+        line-height: 17px;
+        border-top: 1px solid #ddd;
         border-bottom: 0; } }
   @media only screen and (max-width: 1024px) {
     .plan-th, .plan-td {
       margin-bottom: 30px;
-      border: 1px solid #8D8788;
+      border: 1px solid #ddd;
       border-top: 0; } }
 
 .plan-th {
@@ -3444,13 +3459,15 @@ footer {
   width: 28%; }
   @media only screen and (max-width: 1024px) {
     .plan-th {
-      width: 100%; } }
+      width: 50%; } }
 
 .plan-td {
   width: 18%; }
   @media only screen and (max-width: 1024px) {
     .plan-td {
-      width: 100%; } }
+      width: 50%;
+      display: none;
+      border-left: 0; } }
 
 .pricing-switcher {
   margin-bottom: 100px; }

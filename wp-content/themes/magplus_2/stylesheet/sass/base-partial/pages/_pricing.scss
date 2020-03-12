@@ -11,7 +11,7 @@
         padding: 0;
     }
     @media only screen and (max-width: 1024px) {
-        display: block;
+        // display: block;
         padding-bottom: 40px;
     }
 }
@@ -76,13 +76,20 @@
             letter-spacing: 1.2px; 
         }
         @media only screen and (max-width: 1024px) {
-            border-top: 1px solid #8D8788;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 55px; 
+            font-size: 10px;
+            line-height: 17px;
+            border-top: 1px solid #ddd;
             border-bottom: 0;   
         }
     }
     @media only screen and (max-width: 1024px) {
         margin-bottom: 30px;
-        border: 1px solid #8D8788;
+        border: 1px solid #ddd;
         border-top: 0;
     }
 }
@@ -90,13 +97,15 @@
     border-left: 1px solid #ddd; 
     width: 28%;
     @media only screen and (max-width: 1024px) {
-        width: 100%;
+        width: 50%;
     }
 }
 .plan-td{
     width: 18%;
     @media only screen and (max-width: 1024px) {
-        width: 100%; 
+        width: 50%; 
+        display: none;
+        border-left: 0; 
     }
 }
 .pricing-switcher{
