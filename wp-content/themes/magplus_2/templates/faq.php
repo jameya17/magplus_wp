@@ -22,7 +22,7 @@ get_header();
         
         <section class="l-section sec-pad white-bg pad-top0">
             <div class="l-section-wrap">
-                <div class="l-sub-section-pad">
+                <div class="">
                     <div class="g-col align-center">
                         <h3>Magplus: FAQs</h3>
 

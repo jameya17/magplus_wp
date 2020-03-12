@@ -24,9 +24,9 @@ get_header();
             <div class="l-section-wrap">
                 <div class="sticky-nav-block"> 
                     <ul class="nav sticky-sidebar">
-                        <li><a href="/mega-plus/www/privacy.php" class="nav-link" title="Privacy Policy">Privacy Policy</a></li>
-                        <li class="active"><a href="/mega-plus/www/tmc.php" class="nav-link" title="Condictions of Use">Condictions of Use</a></li>
-                        <li><a href="/mega-plus/www/license-agreement.php" class="nav-link" title="Publisher End User License Agreement">Publisher End User License Agreement</a></li>
+                        <li><a href="?page_id=870" class="nav-link" title="Privacy Policy">Privacy Policy</a></li>
+                        <li class="active"><a href="?page_id=867" class="nav-link" title="Condictions of Use">Condictions of Use</a></li>
+                        <li><a href="?page_id=608" class="nav-link" title="Publisher End User License Agreement">Publisher End User License Agreement</a></li>
                     </ul>
                 </div>
                 <div class="content-block">
