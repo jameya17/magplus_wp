@@ -2215,17 +2215,18 @@ input:-webkit-autofill:focus {
     margin-bottom: 1px; }
   @media only screen and (max-width: 1024px) {
     .sidebar {
-      display: none;
-      position: absolute;
+      position: fixed;
+      left: 0;
+      bottom: -260px;
       background-color: #fff;
-      z-index: 9;
       width: 100%;
       padding: 0;
-      left: 0;
-      bottom: 0; } }
-  .sidebar.fixed {
-    position: fixed;
-    top: 130px; }
+      z-index: 9;
+      transition: all .3s; } }
+  .sidebar.active {
+    bottom: 0; }
+    .sidebar.active .sidebar-header::before {
+      transform: none; }
 
 .sidebar-header {
   position: relative;
@@ -2246,10 +2247,21 @@ input:-webkit-autofill:focus {
     background-color: #DDDFE1; }
   @media only screen and (max-width: 1024px) {
     .sidebar-header {
-      margin: 0;
-      padding: 20px; }
+      padding: 15px;
+      font-size: 24px;
+      line-height: 28px;
+      margin: 0; }
       .sidebar-header::before {
-        left: 20px; } }
+        content: '';
+        position: absolute;
+        left: auto;
+        right: 15px;
+        top: 50%;
+        width: 14px;
+        height: 7px;
+        background-image: url(../../images/icons/up-arrow-ico.svg);
+        transform: rotate(180deg);
+        background-color: transparent; } }
 
 .sidebar-listing {
   padding: 0;
@@ -2298,6 +2310,8 @@ input:-webkit-autofill:focus {
     color: #FF8616;
     font-weight: 400;
     letter-spacing: 0.44px; }
+.post-sidebar .sidebar-listing li::last-child .checkbox-container {
+  border-bottom: 0; }
 .post-sidebar .sidebar-listing.tags-listing {
   font-size: 0; }
   .post-sidebar .sidebar-listing.tags-listing .tag-link {
