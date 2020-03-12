@@ -37,11 +37,18 @@ get_header();
 
                     <div class="pricing-body">
                         <div class="align-right">
-                            <select name="" id="" class="dropdown">
-                                <option value=""><em class="currency">&#36;</em>Usd</option>
-                                <option value=""><em class="currency">&#163;</em>Pound</option>
-                                <option value=""><em class="currency">&#128;</em>EUR</option>
-                            </select>    
+                            <div class="drop-down">
+                                <div class="selected">
+                                    <a href="javascript:void"><span>Select</span></a>
+                                </div>
+                                <div class="options">
+                                    <ul>
+                                        <li><a href="javascript:void"><em class="currency">&#36;</em> Usd</a></li>
+                                        <li><a href="javascript:void"><em class="currency">&#163;</em> Pound</a></li>
+                                        <li><a href="javascript:void"><em class="currency">&#128;</em> EUR</a></li>
+                                    </ul>
+                                </div>    
+                            </div>    
                         </div>    
                         <div class="pricing-chart">
                             <div id="monthly">

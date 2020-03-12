@@ -1679,6 +1679,73 @@ input:-webkit-autofill:focus {
     .contact-us-form .tmc-block .checkbox-container input:checked ~ .checkmark {
       background-color: #8D8788; }
 
+.drop-down {
+  position: relative;
+  margin-bottom: 15px; }
+  .drop-down .selected a {
+    display: inline-block;
+    width: 90px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FF8616;
+    border-radius: 8px;
+    border: 1px solid #FF8616;
+    background-color: #FFF0E2;
+    letter-spacing: 1.12px;
+    padding: 10px 14px;
+    text-align: left; }
+    .drop-down .selected a::before {
+      content: '';
+      position: absolute;
+      left: auto;
+      right: 15px;
+      top: 15px;
+      width: 13px;
+      height: 8px;
+      background-image: url(../../images/icons/dropdown-arrow-ico.svg);
+      background-repeat: no-repeat; }
+    .drop-down .selected a span {
+      display: block;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FF8616;
+      letter-spacing: 1.12px;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .drop-down .selected a span.value {
+        display: none; }
+  .drop-down .options ul {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 118px;
+    padding: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    list-style-type: none;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    text-align: left; }
+    .drop-down .options ul a {
+      display: block;
+      font-size: 12px;
+      line-height: 16px;
+      color: #8D8788;
+      padding: 7px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.11px; }
+      .drop-down .options ul a em {
+        display: inline-block;
+        margin-right: 5px; }
+      .drop-down .options ul a:hover {
+        color: #FF8616;
+        transition: 0.2s ease; }
+  .drop-down .options span.value {
+    display: none; }
+
 .card-section {
   margin: 100px 0 0 0; }
   @media only screen and (max-width: 1024px) {
