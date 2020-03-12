@@ -42,7 +42,7 @@ get_header();
                 <div class="l-section-wrap">
                     <div class="tutorial-wraper">
                         <div class="sidebar">
-                            <h3 class="sidebar-header">Categories</h3>
+                            <h3 class="sidebar-header">Categories <span class="icon arrow"></span></h3>
                             <ul class="sidebar-listing">
                                 <?php 
                                     $terms = get_terms('video_cat' );

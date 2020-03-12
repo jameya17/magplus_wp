@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="9px" viewBox="0 0 15 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Arrow Up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Footer-Open" transform="translate(-313.000000, -600.000000)" stroke="#8D8788" stroke-width="1.5">
+            <g id="Footer-Links" transform="translate(2.000000, 579.000000)">
+                <g id="Resources">
+                    <g id="Arrow-Up" transform="translate(319.000000, 25.500000) rotate(-180.000000) translate(-319.000000, -25.500000) translate(312.000000, 22.000000)">
+                        <path d="M10.5947266,3.55547931 C6.19824219,7.96445664 4,10.1689453 4,10.1689453 M10.5947266,3.55547931 L4,-3" id="Path-5" transform="translate(7.297363, 3.584473) rotate(90.000000) translate(-7.297363, -3.584473) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

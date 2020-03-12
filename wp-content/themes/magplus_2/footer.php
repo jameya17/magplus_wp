@@ -340,7 +340,16 @@
             once: false, // whether animation should happen only once - while scrolling down
             mirror: false, // whether elements should animate out while scrolling past them
             anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-        });     
+        }); 
+
+        if ($(window).width() < 767){
+            $('.sidebar-header').click(function(){
+                $(this).parent('.sidebar').toggleClass("active");
+            })
+            $('.sidebar-listing .checkbox-container').click(function(){
+                $(this).closest('.sidebar').removeClass("active"); 
+            });
+        }  
     }); 
     function tabNav(evt, tabHead) {
         var i, tabcontent, tablinks;
