@@ -84,7 +84,8 @@
     </div>
     <div class="drawer-body">
         <div class="form-section form-container sign-up-form contact-us-form">
-            <form class="form-block" action="">
+            <?php echo do_shortcode('[salesforce form="25"]'); ?>
+            <!---<form class="form-block" action="">
                 <h2 class="form-block-title">Contact</h2>
                 <p>Feel free to contact us. We are willing to help you with any issues you may encounter with our products.<br/> Your privacy is important to us. We’ll never share your information</p>
                 <div class="form-field-group">
@@ -130,7 +131,7 @@
                         <span class="span3">Try for Free</span>
                     </a>
                 </div>
-            </form>
+            </form>-->
             <span id="close-popup"></span>
         </div> 
     </div>
