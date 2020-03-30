@@ -62,7 +62,7 @@
                 margin: 0; 
             }
         }
-        &.btn-block{
+        &.btn-block{ 
             padding: 25px 0;
             @include justify-content(center); 
             @media only screen and (max-width: 1024px) {
@@ -141,5 +141,11 @@
             border-radius: 10px 10px 0 0;
             text-transform: uppercase;
         }
+    }
+}
+.pricing-fieldset{
+    position: relative;
+    .switch{
+        position: absolute;
     }
 }

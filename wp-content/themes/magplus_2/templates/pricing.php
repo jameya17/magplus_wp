@@ -31,7 +31,7 @@ get_header();
                             <label for="monthly">Monthly</label>
                             <input type="radio" name="duration-1" value="yearly" id="yearly">
                             <label for="yearly">Yearly</label>
-                            <!-- <span class="switch"></span> -->
+                            <span class="switch"></span>
                         </div>
                     </div>    
 

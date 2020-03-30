@@ -259,28 +259,44 @@
         letter-spacing: 2px;
         cursor: pointer; 
         text-transform: uppercase;
-        -webkit-transition: -webkit-transform 0.5s;
-        -moz-transition: -moz-transform 0.5s;
-        transition: transform 0.5s; 
+        // -webkit-transition: -webkit-transform 0.5s;
+        // -moz-transition: -moz-transform 0.5s;
+        transition: all .3s; 
     }
     .switch {
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: -2px;
+        left: -2px; 
         height: 52px;
         width: 212px;
         background-color: $org-col;
         border-radius: 50em;
-        -webkit-transition: -webkit-transform 0.5s;
-        -moz-transition: -moz-transform 0.5s;
-        transition: transform 0.5s;
+        // -webkit-transition: -webkit-transform 0.5s;
+        // -moz-transition: -moz-transform 0.5s;
+        transition: all .3s;
     } 
-    input[type="radio"]{
+    #monthly{
         &:checked{
             &  +label{
-                background-color: $org-col;
+                //background-color: $org-col;
                 color: $white-col;
                 border-radius: 30px; 
+                & +.switch{
+                    transform: translate3d(0px, 0px, 0px);    
+                }
+            }
+
+        }
+    }
+    #yearly{
+        &:checked{
+            &  +label{
+                //background-color: $org-col;
+                color: $white-col;
+                border-radius: 30px; 
+                & +.switch{
+                    transform: translate3d(212px, 0px, 0px);   
+                }
             }
         }
     }
