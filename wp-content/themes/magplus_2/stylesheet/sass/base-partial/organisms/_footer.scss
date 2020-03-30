@@ -343,7 +343,7 @@ footer{
     }
 }
 .sf_field_checkbox1__c{
-    @include flexbox;
-    @include justify-content(center);
-    @include text-align(center)
+    @include flexbox; 
+    @include justify-content(center); 
+    @include align-items(center); 
 }
