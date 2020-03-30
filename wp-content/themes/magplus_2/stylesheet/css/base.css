@@ -933,24 +933,26 @@ ol {
   letter-spacing: 2px;
   cursor: pointer;
   text-transform: uppercase;
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  transition: transform 0.5s; }
+  transition: all .3s; }
 .pricing-switcher .switch {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: -2px;
+  left: -2px;
   height: 52px;
   width: 212px;
   background-color: #FF8616;
   border-radius: 50em;
-  -webkit-transition: -webkit-transform 0.5s;
-  -moz-transition: -moz-transform 0.5s;
-  transition: transform 0.5s; }
-.pricing-switcher input[type="radio"]:checked + label {
-  background-color: #FF8616;
+  transition: all .3s; }
+.pricing-switcher #monthly:checked + label {
   color: #fff;
   border-radius: 30px; }
+  .pricing-switcher #monthly:checked + label + .switch {
+    transform: translate3d(0px, 0px, 0px); }
+.pricing-switcher #yearly:checked + label {
+  color: #fff;
+  border-radius: 30px; }
+  .pricing-switcher #yearly:checked + label + .switch {
+    transform: translate3d(212px, 0px, 0px); }
 @media only screen and (max-width: 1024px) {
   .pricing-switcher label {
     width: auto;
@@ -2261,6 +2263,22 @@ input:-webkit-autofill:focus {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .pagination .wp-pagenavi {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   @media only screen and (max-width: 1024px) {
     .pagination {
       margin: 0 auto 20px; } }
@@ -2279,6 +2297,37 @@ input:-webkit-autofill:focus {
         color: #FF8616; }
     .pagination li.active a {
       color: #FF8616; }
+  .pagination a.page {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8D8788;
+    font-weight: 400;
+    margin-right: 30px; }
+    .pagination a.page:hover {
+      color: #FF8616; }
+  .pagination .current {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #FF8616;
+    margin-right: 30px; }
+  .pagination .pages {
+    display: none; }
+  .pagination .previouspostslink, .pagination .nextpostslink {
+    width: 8px;
+    height: 14px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8D8788;
+    font-weight: 400;
+    text-indent: -9999px;
+    margin-right: 30px;
+    background: url("../../images/icons/pagination-prev.svg") no-repeat center center; }
+  .pagination .nextpostslink {
+    background: url("../../images/icons/pagination-next.svg") no-repeat center center; }
   .pagination.pagination-bottom {
     margin: 50px auto 0; }
     @media only screen and (max-width: 1024px) {
@@ -3497,6 +3546,11 @@ footer {
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
     text-transform: uppercase; }
+
+.pricing-fieldset {
+  position: relative; }
+  .pricing-fieldset .switch {
+    position: absolute; }
 
 .tutorialPg .sidebar {
   width: 26.5%; }
