@@ -3818,11 +3818,37 @@ footer {
   padding-top: 160px;
   border-top: 1px solid #6B6A6A; }
 
+.blog-listing-section .g-col.offset_default {
+  display: block;
+  clear: both; }
 .blog-listing-section .one-third {
-  width: 70.666667%; }
+  display: inline-block;
+  width: 70.666667%;
+  vertical-align: top; }
   @media only screen and (max-width: 1024px) {
     .blog-listing-section .one-third {
-      width: 100%; } }
+      width: 100%;
+      float: none; } }
+.blog-listing-section .post-sidebar {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  vertical-align: top; }
+  @media only screen and (max-width: 1024px) {
+    .blog-listing-section .post-sidebar {
+      position: static;
+      float: none; } }
+  .blog-listing-section .post-sidebar.fixed {
+    position: fixed;
+    right: 0; }
+  .blog-listing-section .post-sidebar.post-sidebar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky; }
+  .blog-listing-section .post-sidebar.post-sidebar {
+    top: 130px; }
 .blog-listing-section .blog-listing {
   display: -webkit-box;
   display: -moz-box;
