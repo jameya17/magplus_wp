@@ -25,13 +25,13 @@ get_header();
                             <h3>Tutorials</h3>
                             <div class="small-wrap">
                                 <p>Watch this carefully curated list of tutorial videos to help you kickstart you jour with using mag+. You can always reach out to us at <a href="support@magplus.com" title="support@magplus.com" class="text-link">support@magplus.com</a> if you need additional information on any of the topics.</p>
-                                <div class="btn-block align-center">
+                                <!-- <div class="btn-block align-center">
                                     <a href="#tutorials" class="primary-btn js-anchor-link" title="Watch All Tutorials">Watch All Tutorials
                                         <span class="span1">Watch All Tutorials</span>
                                         <span class="span2">Watch All Tutorials</span>
                                         <span class="span3">Watch All Tutorials</span>
                                     </a>
-                                </div>
+                                </div> -->
                             </div>  
                         </div>    
                     </div>    

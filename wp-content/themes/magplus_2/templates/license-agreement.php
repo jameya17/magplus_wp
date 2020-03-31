@@ -25,12 +25,12 @@ get_header();
                 <div class="sticky-nav-block"> 
                     <ul class="nav sticky-sidebar">
                         <li><a href="?page_id=870" class="nav-link" title="Privacy Policy">Privacy Policy</a></li>
-                        <li><a href="?page_id=867" class="nav-link" title="Condictions of Use">Condictions of Use</a></li>
-                        <li class="active"><a href="?page_id=608" class="nav-link" title="Publisher End User License Agreement">Publisher End User License Agreement</a></li>
+                        <li><a href="?page_id=867" class="nav-link" title="Terms of Use">Terms of Use</a></li>
+                        <li class="active"><a href="?page_id=608" class="nav-link" title="License and Agreement">License and Agreement</a></li>
                     </ul>
                 </div>
                 <div class="content-block">
-                    <h3 class="sec-title">Publisher End User License Agreement</h3> 
+                    <h3 class="sec-title">License and Agreement</h3> 
                     <span>Last updated: September 29, 2017</span>
                     
                     <p>Welcome to MPS North America LLC (d/b/a “mag+ “) and/or its affiliates. mag+ (the owner of <a href="www.magplus.com" class="text-link" title="www.magplus.com">www.magplus.com</a> ) understands you care how information about you is used and shared, and we appreciate your trust that we will do so carefully and sensibly. This notice describes our privacy policy.</p>

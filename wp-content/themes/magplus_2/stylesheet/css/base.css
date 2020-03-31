@@ -1053,7 +1053,7 @@ ol {
     font-size: 0;
     list-style-type: none;
     padding: 0;
-    margin-bottom: 110px; }
+    margin-bottom: 85px; }
     @media only screen and (max-width: 1024px) {
       .tab-section .tab-head {
         margin-bottom: 40px; } }
@@ -3350,7 +3350,8 @@ footer {
       padding: 0; } }
 
 .casestudiesPg .tab-section {
-  margin-top: 55px; }
+  margin-top: 55px;
+  margin-bottom: 0; }
   @media only screen and (max-width: 1024px) {
     .casestudiesPg .tab-section {
       margin: 0; } }
