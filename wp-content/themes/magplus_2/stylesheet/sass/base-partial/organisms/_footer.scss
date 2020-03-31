@@ -334,16 +334,80 @@ footer{
 //Embedded_form
 
 .sf_field{
-    float: left;
+    float: none;
     width: 48%;
     margin-bottom: 25px;
-    //margin: 0 1%;
-    &:nth-child(even){
-       margin-right: 2%;   
+    display: inline-block;
+    vertical-align: top;
+    // &:nth-child(even){
+    //    margin-right: 2%;   
+    // }
+    .w2linput.text{
+        width: 90%;
+        margin: 0; 
     }
 }
 .sf_field_checkbox1__c{
-    @include flexbox; 
-    @include justify-content(center); 
-    @include align-items(center); 
+    // @include flexbox; 
+    // @include justify-content(center); 
+    // @include align-items(center); 
+    display: inline-block;
+    width: 20px;
+    margin: 0;
+    .checkbox{
+        border: 1px solid #8D8788;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        width: 22px; 
+        height: 20px;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 10px;
+            height: 10px;
+            background-color: #43CB83;
+            border-radius: 50%; 
+            visibility: hidden;
+        }
+        &:checked{
+            &::after{
+                visibility: visible; 
+            }
+        }
+    }
+}
+.sf_field_Consent{
+    p{
+        margin-bottom: 0; 
+    }
+
+}
+.w2lsubmit{
+    .submit{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20.5px;
+        font-weight: 500;
+        color: #fff;
+        padding: 15px 40px;
+        background-color: #FF8616;
+        border: 1px solid #F36F21;
+        border-radius: 30.5px;
+        cursor: pointer;
+        white-space: nowrap;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover{
+            color: #FF8616;
+            background-color: #fff;
+            border: 1px solid #FF8616;
+        }
+    }
+}
+.salesforce_w2l_lead.sf_one_column, .sf_form_salesforce_w2l_lead_25{
+    width: 100%;  
 }
