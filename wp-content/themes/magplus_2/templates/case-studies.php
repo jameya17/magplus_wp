@@ -39,9 +39,9 @@ $the_showcase_query = new WP_Query( $args );
                     </div>
                     <div class="g-col align-center">
                         <div class="content-block">
-                            <h3>Mag+ Case Studies</h3>
+                            <h3>Case Studies</h3>
                             <div class="small-wrap">
-                                <p class="">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                                <p class="">More than 5000 apps have been created using the mag+ platform till now. See below to see how some of our customers have used mag+ to solve their business problems and increase their engagement with the end-users.</p>
                             </div>  
                         </div>    
                     </div>   

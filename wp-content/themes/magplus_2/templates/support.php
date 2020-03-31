@@ -79,9 +79,9 @@ get_header();
                 </div>    
                 <div class="g-col align-center" data-aos="fade-up">
                     <div class="content-block">
-                        <h3>Mag+ Tutorials</h3>
+                        <h3>Tutorials</h3>
                         <div class="small-wrap">
-                            <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                            <p>Watch this carefully curated list of tutorial videos to help you kickstart you jour with using mag+. You can always reach out to us at <a href="support@magplus.com" class="text-link" title="support@magplus.com">support@magplus.com</a> if you need additional information on any of the topics.</p>
                             <div class="btn-block">
                                 <a href="<?php echo get_permalink(31675); ?>" class="primary-btn" title="Watch All Tutorials">Watch All Tutorials
                                     <span class="span1">Watch All Tutorials</span>
@@ -126,9 +126,9 @@ get_header();
                 <div class="l-section-wrap"> 
                     <div class="g-col align-center" data-aos="fade-up">
                         <div class="content-block">
-                            <h3>Mag+ Case Studies</h3>
+                            <h3>Case Studies</h3>
                             <div class="small-wrap">
-                                <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                                <p>More than 5000 apps have been created using the mag+ platform till now. See below to see how some of our customers have used mag+ to solve their business problems and increase their engagement with the end-users.</p>
                                 <div class="btn-block">
                                     <a href="<?php echo get_permalink(31670); ?>" class="primary-btn" title="View All Case Studies">View All Case Studies
                                         <span class="span1">View All Case Studies</span>
@@ -171,9 +171,9 @@ get_header();
                 <div class="l-section-wrap">
                     <div class="g-col align-center" data-aos="fade-up">
                         <div class="content-block">
-                            <h3>Mag+ Blogs</h3>
+                            <h3>Blogs</h3>
                             <div class="small-wrap">
-                                <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                                <p>Get the latest news, industry insights, stories and all things publishing with our mag+ blog posts.</p>
                                 <div class="btn-block">
                                     <a href="<?php echo get_permalink(19); ?>" class="primary-btn" title="View All Blogs">View All Blogs
                                         <span class="span1">View All Blogs</span>

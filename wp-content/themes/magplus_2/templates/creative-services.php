@@ -19,8 +19,8 @@ get_header();
                             <img src="<?php bloginfo('template_directory'); ?>/images/digital-storytelling-made-easier.svg" alt="Digital storytelling made Easier" />
                         </div>    
                         <div class="one-half" data-aos="fade-left">
-                            <h3>Digital storytelling made Easier</h3>
-                            <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                            <h3>We can help you elevate your brand!</h3>
+                            <p>The mag+ Creative Studios helps bring your content to life and tailor unique digital experiences. Every design decision is taken to further elevate your brand image.</p>
                             <!-- <a href="/" class="primary-btn" title="Know More">
                                 <span class="span1">Know More</span>
                                 <span class="span2">Know More</span>
@@ -33,15 +33,15 @@ get_header();
         <section class="l-section sec-pad white-bg pad-top0 key-offerings">
             <div class="l-section-wrap" data-aos="fade-up">
                 <div class="l-sub-section-pad">
-                    <h3 class="sec-title title-with-border">Key Offerings</h3>    
+                    <h3 class="sec-title title-with-border">Why choose us?</h3>    
                     <div class="g-col">
                         <div class="card plain-card">
                             <div class="card-body">
                                 <div class="card-icon">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/icons/cost-effective.svg" alt="Cost Effective" />
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/icons/cost-effective.svg" alt="Feature-Rich" />
                                 </div>
-                                <h5 class="card-title">Cost Effective</h5>
-                                <p class="card-text">From the creation of your layout through quality assurance, mag+ does it all for you.</p>
+                                <h5 class="card-title">Feature-Rich</h5>
+                                <p class="card-text">Improve the user-experience with an array of features to augment interactivity. </p>
                             </div>
                         </div>
                         <div class="card plain-card">
@@ -50,25 +50,25 @@ get_header();
                                     <img src="<?php bloginfo('template_directory'); ?>/images/icons/fast.svg" alt="Fast" />
                                 </div>
                                 <h5 class="card-title">Fast</h5>
-                                <p class="card-text">Reduce your time to market with swift content creation and our streamlined processes.</p>
+                                <p class="card-text">Reduce your time to market with our swift and highly optimised creation workflow.</p>
                             </div>
                         </div>
                         <div class="card plain-card">
                             <div class="card-body">
                                 <div class="card-icon">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/icons/flexible.svg" alt="Flexible" />
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/icons/flexible.svg" alt="Cost-Effective" />
+                                </div>
+                                <h5 class="card-title">Cost-Effective</h5>
+                                <p class="card-text">Save your valuable dollars with our highly competitive price offerings.</p>
+                            </div>
+                        </div>
+                        <div class="card plain-card">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <img src="<?php bloginfo('template_directory'); ?>/images/icons/feature-rich.svg" alt="Flexible" />
                                 </div>
                                 <h5 class="card-title">Flexible</h5>
-                                <p class="card-text">Choose your desired content type and customize the layout for your business needs.</p>
-                            </div>
-                        </div>
-                        <div class="card plain-card">
-                            <div class="card-body">
-                                <div class="card-icon">
-                                    <img src="<?php bloginfo('template_directory'); ?>/images/icons/feature-rich.svg" alt="Feature Rich" />
-                                </div>
-                                <h5 class="card-title">Feature Rich</h5>
-                                <p class="card-text">A wide variety of features augment interactivity and improve the user experience.</p>
+                                <p class="card-text">Choose your desired content type and customise the layout as per business needs.</p>
                             </div>
                         </div>
                     </div>    
@@ -88,18 +88,18 @@ get_header();
                             <div class="card plain-card">
                                 <div class="card-body">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/content-sourcing.svg" alt="Step 1 - Content Sourcing " />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/content-sourcing.svg" alt="Step 1 - Asset collection/Content sourcing " />
                                     </div>
-                                    <h5 class="card-title">Step 1 - Content Sourcing </h5>
+                                    <h5 class="card-title">Step 1 - Asset collection/Content sourcing </h5>
                                     <p class="card-text">Our in-house designers take your existing content in the form of photos, PDFs, videos, or virtually any other type of print or digital content.</p>
                                 </div>
                             </div>
                             <div class="card plain-card">
                                 <div class="card-body">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/content-creation.svg" alt="Step 2 - Content Creation" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/content-creation.svg" alt="Step 2 - Content Enhancement/transformation/creation" />
                                     </div>
-                                    <h5 class="card-title">Step 2 - Content Creation</h5>
+                                    <h5 class="card-title">Step 2 - Content Enhancement/transformation/creation</h5>
                                     <p class="card-text">We revamp this content to create dynamic stories for a native touchscreen environment using a wide variety of mag+ features.</p>
                                 </div>
                             </div>
@@ -111,19 +111,19 @@ get_header();
                             <div class="card plain-card">
                                 <div class="card-body">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/quality-check.svg" alt="Step 3 - Quality Check" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/quality-check.svg" alt="Step 3 - Quality Assurance" />
                                     </div>
-                                    <h5 class="card-title">Step 3 - Quality Check</h5>
+                                    <h5 class="card-title">Step 3 - Quality Assurance</h5>
                                     <p class="card-text">Your designed layout undergoes stringent quality checks to ensure high-quality deliverables.</p>
                                 </div>
                             </div>
                             <div class="card plain-card">
                                 <div class="card-body">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/final-delivery.svg" alt="Step 4 - Final Delivery" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/final-delivery.svg" alt="Step 4 - Content Publishing" />
                                     </div>
-                                    <h5 class="card-title">Step 4 - Final Delivery</h5>
-                                    <p class="card-text">We deliver a fully interactive digital version to you.</p>
+                                    <h5 class="card-title">Step 4 - Content Publishing</h5>
+                                    <p class="card-text">A fully interactive digital version is published to your mobile app.</p>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ get_header();
         <section class="l-section sec-pad white-bg">
             <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">  
-                    <h3>Other Offerings</h3>
+                    <h3>Other Offerings - Names of the offerings</h3>
                     
                     <div class="card-section">
                         <div class="card-listing marb-75">
@@ -181,8 +181,8 @@ get_header();
                 <div class="l-sub-section-pad">
                     <div class="g-col">
                         <div class="one-half">
-                            <h3>The Outcome</h3>
-                            <p>Your plain content is converted into an engaging and creative digital story. The delivered content is publication-ready and can be instantly rendered to your preferred devices using mag+ white label apps.</p>
+                            <h3>What will we deliver?</h3>
+                            <p>Your plain content is converted into an engaging and creative digital story. The delivered content is publication-ready and can be instantly rendered to your preferred devices using the mobile app created using mag+.</p>
                         </div>    
                         <div class="one-half image-block">
                             

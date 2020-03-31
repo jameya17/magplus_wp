@@ -120,8 +120,8 @@ get_header();
         <section class="l-section sec-pad grey-bg">
             <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">  
-                    <h3>Why choose Magplus</h3>
-                    <p class="small-wrap">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                    <h3>Why choose mag+?</h3>
+                    <p class="small-wrap">mag+’s digital-publishing software covers every part of the app-publishing process. Design your content using simple tools, build your own branded mobile app on our Web portal, and distribute your designed content to that app for end users to experience on their mobile devices.</p>
                     <a href="/" class="primary-btn" title="Contact Us">Contact Us
                         <span class="span1">Contact Us</span>
                         <span class="span2">Contact Us</span>
@@ -135,51 +135,51 @@ get_header();
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
                                     </div>
                                     <h4 class="card-title">Create Content</h4>
-                                    <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <p class="card-text">Create highly interactive, multimedia layouts that are native to the touchscreens by using our powerful plug-in for Adobe InDesign, the most popular design software in the world. </p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
                                 <div class="card-popup-content popup-content-block">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Design your mobile app" />
                                     </div>
                                     <h4 class="card-title">Create Content</h4>
-                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <p class="card-text">Create highly interactive, multimedia layouts that are native to the touchscreens by using our powerful plug-in for Adobe InDesign, the most popular design software in the world. </p>
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
                             <div data-aos="fade-left" class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/publish-content-icon.svg" alt="Publish Content" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/publish-content-icon.svg" alt="Design your mobile app" />
                                     </div>
-                                    <h4 class="card-title">Publish Content</h4>
-                                    <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <h4 class="card-title">Design your mobile app</h4>
+                                    <p class="card-text">Your mag+ powered mobile app is how users consume your content. Use our cloud-based web tools to create a branded app, fully integrated with analytics, messaging, and more, for public or internal use.</p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
                                 <div class="card-popup-content popup-content-block">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Monetize your app" />
                                     </div>
-                                    <h4 class="card-title">Create Content</h4>
-                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <h4 class="card-title">Design your mobile app</h4>
+                                    <p class="card-text">Your mag+ powered mobile app is how users consume your content. Use our cloud-based web tools to create a branded app, fully integrated with analytics, messaging, and more, for public or internal use.</p>
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
                             <div data-aos="fade-right" class="card click-card-block">
                                 <div class="card-body">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/manage-apps-icon.svg" alt="Manage Apps" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/manage-apps-icon.svg" alt="Publish content" />
                                     </div>
-                                    <h4 class="card-title">Manage Apps</h4>
-                                    <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <h4 class="card-title">Publish content</h4>
+                                    <p class="card-text">Once your app is on your users’ smart-devices, publishing your content—magazines, brochures, push notifications, or live feeds—is as simple as uploading a file and pushing a button.</p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
                                 <div class="card-popup-content popup-content-block">
                                     <div class="card-icon">
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
                                     </div>
-                                    <h4 class="card-title">Create Content</h4>
-                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <h4 class="card-title">Publish content</h4>
+                                    <p class="card-text">Once your app is on your users’ smart-devices, publishing your content—magazines, brochures, push notifications, or live feeds—is as simple as uploading a file and pushing a button.</p>
                                     <a href="" id="close-popup"></a>
                                 </div>
                             </div>
@@ -189,15 +189,15 @@ get_header();
                                         <img src="<?php bloginfo('template_directory'); ?>/images/icons/monitise-apps-icons.svg" alt="Monitise Apps" />
                                     </div>
                                     <h4 class="card-title">Monitise Apps</h4>
-                                    <p class="card-text">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <p class="card-text">Use in-app purchases or user subscriptions to monetize the content in your app. Additionally, use 3rd party platforms like Admob, AdMarvel to monetize using in-app advertisements</p>
                                     <a href="#" class="btn-link" title="Read More +">Read More +</a>
                                 </div>
                                 <div class="card-popup-content popup-content-block">
                                     <div class="card-icon">
-                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Create Content" />
+                                        <img src="<?php bloginfo('template_directory'); ?>/images/icons/create-content-icon.svg" alt="Monetize your app" />
                                     </div>
-                                    <h4 class="card-title">Create Content</h4>
-                                    <p class="card-discp">Using the proven mag+ creation tools, add worth to content in the form of interactive features and great user experience. Choose to design over a wide </p>
+                                    <h4 class="card-title">Monitise Apps</h4>
+                                    <p class="card-text">Use in-app purchases or user subscriptions to monetize the content in your app. Additionally, use 3rd party platforms like Admob, AdMarvel to monetize using in-app advertisements</p>
                                     <a href="" id="close-popup"></a>
                                 </div> 
                             </div>
@@ -211,7 +211,8 @@ get_header();
                 <div class="g-col">
                     <div class="magpluspro-con-block">
                         <h3>Check out our all new Magplus Pro</h3>
-                        <p>The SIngle source of truth Using the proven mag+ creation tools, add worth to content in the form of interactive </p>
+                        <!-- <h3>Still confused on how to create an interactive magazine? Is the search for the right information weighing you down? Then, check out our all new mag+ NOW.</h3> -->
+                        <p>An all-in-one solution to streamline your entire publishing process.</p>
                         <a href="/" class="btn primary-btn secondary-btn" title="Contact Us">Check Now
                             <span class="span1">Check Now</span>
                             <span class="span2">Check Now</span>

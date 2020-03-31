@@ -22,9 +22,9 @@ get_header();
                     </div>
                     <div class="g-col align-center">
                         <div class="content-block">
-                            <h3>Mag+ Tutorials</h3>
+                            <h3>Tutorials</h3>
                             <div class="small-wrap">
-                                <p>Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
+                                <p>Watch this carefully curated list of tutorial videos to help you kickstart you jour with using mag+. You can always reach out to us at <a href="support@magplus.com" title="support@magplus.com" class="text-link">support@magplus.com</a> if you need additional information on any of the topics.</p>
                                 <div class="btn-block align-center">
                                     <a href="#tutorials" class="primary-btn js-anchor-link" title="Watch All Tutorials">Watch All Tutorials
                                         <span class="span1">Watch All Tutorials</span>
