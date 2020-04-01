@@ -943,6 +943,11 @@ ol {
   background-color: #FF8616;
   border-radius: 50em;
   transition: all .3s; }
+  @media only screen and (max-width: 1024px) {
+    .pricing-switcher .switch {
+      width: 108px;
+      padding: 8px 20px;
+      height: 34px; } }
 .pricing-switcher #monthly:checked + label {
   color: #fff;
   border-radius: 30px; }
@@ -953,12 +958,15 @@ ol {
   border-radius: 30px; }
   .pricing-switcher #yearly:checked + label + .switch {
     transform: translate3d(212px, 0px, 0px); }
+    @media only screen and (max-width: 1024px) {
+      .pricing-switcher #yearly:checked + label + .switch {
+        transform: translate3d(150px, 0px, 0px); } }
 @media only screen and (max-width: 1024px) {
   .pricing-switcher label {
-    width: auto;
+    width: 105px;
     font-size: 15px;
     line-height: 26px;
-    padding: 8px 20px; } }
+    padding: 10px 20px; } }
 
 .dropdown {
   font-size: 16px;
@@ -1681,13 +1689,14 @@ input:-webkit-autofill:focus {
     .contact-us-form .tmc-block .checkbox-container input:checked ~ .checkmark {
       background-color: #8D8788; }
 
-.drop-down {
+.drop-down, .mob-select {
   position: relative;
   margin-bottom: 15px; }
   @media only screen and (max-width: 1024px) {
-    .drop-down {
-      text-align: center; } }
-  .drop-down .selected a {
+    .drop-down, .mob-select {
+      text-align: center;
+      margin-bottom: 40px; } }
+  .drop-down .selected a, .mob-select .selected a {
     position: relative;
     display: inline-block;
     width: 90px;
@@ -1700,7 +1709,7 @@ input:-webkit-autofill:focus {
     letter-spacing: 1.12px;
     padding: 10px 14px;
     text-align: left; }
-    .drop-down .selected a::before {
+    .drop-down .selected a::before, .mob-select .selected a::before {
       content: '';
       position: absolute;
       left: auto;
@@ -1710,7 +1719,7 @@ input:-webkit-autofill:focus {
       height: 8px;
       background-image: url(../../images/icons/dropdown-arrow-ico.svg);
       background-repeat: no-repeat; }
-    .drop-down .selected a span {
+    .drop-down .selected a span, .mob-select .selected a span {
       display: block;
       font-size: 12px;
       line-height: 14px;
@@ -1718,9 +1727,9 @@ input:-webkit-autofill:focus {
       letter-spacing: 1.12px;
       text-transform: uppercase;
       cursor: pointer; }
-      .drop-down .selected a span.value {
+      .drop-down .selected a span.value, .mob-select .selected a span.value {
         display: none; }
-  .drop-down .options ul {
+  .drop-down .options ul, .mob-select .options ul {
     display: none;
     position: absolute;
     top: 42px;
@@ -1735,11 +1744,11 @@ input:-webkit-autofill:focus {
     z-index: 1;
     text-align: left; }
     @media only screen and (max-width: 1024px) {
-      .drop-down .options ul {
+      .drop-down .options ul, .mob-select .options ul {
         left: 0;
         right: 0;
         margin: 0 auto; } }
-    .drop-down .options ul a {
+    .drop-down .options ul a, .mob-select .options ul a {
       display: block;
       font-size: 12px;
       line-height: 16px;
@@ -1748,14 +1757,38 @@ input:-webkit-autofill:focus {
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 0.11px; }
-      .drop-down .options ul a em {
+      .drop-down .options ul a em, .mob-select .options ul a em {
         display: inline-block;
         margin-right: 5px; }
-      .drop-down .options ul a:hover {
+      .drop-down .options ul a:hover, .mob-select .options ul a:hover {
         color: #FF8616;
         transition: 0.2s ease; }
-  .drop-down .options span.value {
+  .drop-down .options span.value, .mob-select .options span.value {
     display: none; }
+
+.select-field {
+  width: 50%; }
+
+.mob-select {
+  width: 100%; }
+  .mob-select .selected a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 0;
+    border: 0;
+    background-color: #FF8616;
+    letter-spacing: 1.12px;
+    padding: 6px 0;
+    text-align: center; }
+    .mob-select .selected a span {
+      color: #fff; }
+    .mob-select .selected a::before {
+      top: 10px;
+      background-image: url(../../images/icons/dropdown-white-arrow-ico.svg); }
 
 .card-section {
   margin: 100px 0 0 0; }
@@ -3489,7 +3522,9 @@ footer {
     padding: 0; }
   @media only screen and (max-width: 1024px) {
     .pricing-chart-table {
-      padding-bottom: 40px; } }
+      position: relative;
+      padding-bottom: 40px;
+      border-top: 1px solid #ddd; } }
 
 .pricing-body {
   padding: 0;
@@ -3556,13 +3591,15 @@ footer {
         height: 55px;
         font-size: 10px;
         line-height: 17px;
-        border-top: 1px solid #ddd;
-        border-bottom: 0; } }
+        border-bottom: 1px solid #ddd;
+        border-top: 0; } }
   @media only screen and (max-width: 1024px) {
     .plan-th, .plan-td {
       margin-bottom: 30px;
       border: 1px solid #ddd;
-      border-top: 0; } }
+      border-top: 0;
+      border-bottom: 0;
+      padding-top: 45px; } }
 
 .plan-th {
   border-left: 1px solid #ddd;
@@ -3607,11 +3644,21 @@ footer {
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
     text-transform: uppercase; }
+    @media only screen and (max-width: 1024px) {
+      .popular li.lbl-popular {
+        top: -10px;
+        padding: 0; } }
 
 .pricing-fieldset {
   position: relative; }
   .pricing-fieldset .switch {
     position: absolute; }
+
+.select-field {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9; }
 
 .tutorialPg .sidebar {
   width: 26.5%; }

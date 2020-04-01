@@ -53,6 +53,21 @@ get_header();
                         <div class="pricing-chart">
                             <div id="monthly">
                                 <div class="pricing-chart-table">
+                                    <div class="mob-view select-field">
+                                        <div class="mob-select">
+                                            <div class="selected">
+                                                <a href="javascript:void"><span>Select</span></a>
+                                            </div>
+                                            <div class="options">
+                                                <ul>
+                                                    <li><a href="javascript:void" id="publish">Publish</a></li>
+                                                    <li><a href="javascript:void" id="multi">Multi</a></li>
+                                                    <li><a href="javascript:void" id="multi-pro">Multi-Pro</a></li>
+                                                    <li><a href="javascript:void" id="unlimited">Unlimited</a></li>
+                                                </ul>
+                                            </div>    
+                                        </div> 
+                                    </div>
                                     <div class="plan-th">
                                         <ul>
                                             <li class="plan-head">
@@ -74,7 +89,7 @@ get_header();
                                             <li class="btn-block">&nbsp;</li>
                                         </ul>
                                     </div>
-                                    <div class="plan-td" style="display:block;">
+                                    <div class="plan-td publish" style="display: block;">
                                         <ul>
                                             <li class="plan-head">
                                                 <strong>Pay As you Publish</strong>
@@ -95,7 +110,7 @@ get_header();
                                             <li class="btn-block"><button type="btn" class="btn sec-btn" title="Get Started">Get Started</button></li>
                                         </ul>
                                     </div>
-                                    <div class="plan-td popular">
+                                    <div class="plan-td multi popular">
                                         <ul>
                                             <li class="lbl-popular">Most Popular</li>
                                             <li class="plan-head">
@@ -117,7 +132,7 @@ get_header();
                                             <li class="btn-block"><button type="btn" class="btn sec-btn" title="Get Started">Get Started</button></li>
                                         </ul>
                                     </div>
-                                    <div class="plan-td">
+                                    <div class="plan-td multi-pro">
                                         <ul>
                                             <li class="plan-head">
                                                 <strong>Multi-Pro</strong>
@@ -138,7 +153,7 @@ get_header();
                                             <li class="btn-block"><button type="btn" class="btn sec-btn" title="Get Started">Get Started</button></li>
                                         </ul>
                                     </div>
-                                    <div class="plan-td">
+                                    <div class="plan-td unlimited">
                                         <ul>
                                             <li class="plan-head">
                                                 <strong>Unlimited</strong>

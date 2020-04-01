@@ -11,8 +11,10 @@
         padding: 0;
     }
     @media only screen and (max-width: 1024px) {
-        // display: block;
+        position: relative;
         padding-bottom: 40px;
+        border-top: 1px solid #ddd; 
+        // border-right: 1px solid #ddd; 
     }
 }
 .pricing-body{
@@ -83,14 +85,16 @@
             height: 55px; 
             font-size: 10px;
             line-height: 17px;
-            border-top: 1px solid #ddd;
-            border-bottom: 0;   
+            border-bottom: 1px solid #ddd;
+            border-top: 0;   
         }
     }
     @media only screen and (max-width: 1024px) {
         margin-bottom: 30px;
         border: 1px solid #ddd;
         border-top: 0;
+        border-bottom: 0; 
+        padding-top: 45px;
     }
 }
 .plan-th{
@@ -106,6 +110,7 @@
         width: 50%; 
         display: none;
         border-left: 0; 
+        // border-right: 0;  
     }
 }
 .pricing-switcher{
@@ -140,6 +145,10 @@
             padding: 10px 0;
             border-radius: 10px 10px 0 0;
             text-transform: uppercase;
+            @media only screen and (max-width: 1024px) {
+                top: -10px;
+                padding: 0;    
+            }
         }
     }
 }
@@ -148,4 +157,10 @@
     .switch{
         position: absolute;
     }
+}
+.select-field{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
 }

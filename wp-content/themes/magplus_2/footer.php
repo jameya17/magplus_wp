@@ -150,7 +150,7 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/owl.carousel.min.js"></script>
 <!-- <script type="text/javascript" src="/js/jquery.fancybox.js"></script>  -->
 <script src="<?php bloginfo('template_directory'); ?>/js/aos.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
+<script src='<?php bloginfo('template_directory'); ?>/js/jquery.fancybox.min.js'></script> 
 <script type="text/javascript">
     $(document).ready(function() {
         $(".icon-burger").click(function() {
@@ -382,7 +382,58 @@
             if (!$clicked.parents().hasClass("drop-down"))
                 $(".drop-down .options ul").hide();
         });
+
+
+
+        $(".mob-select .selected a").click(function() {
+            $(".mob-select .options ul").toggle();
+        });
+
+        //SELECT OPTIONS AND HIDE OPTION AFTER SELECTION
+        $(".mob-select .options ul li a").click(function() {
+            var text = $(this).html();
+            var target = $($(this).attr("href"));
+            $(".mob-select .selected a span").html(text);
+            $(".mob-select .options ul").hide();
+            if (target.length) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
+        $(".mob-select .options ul li a").click(function() {
+            var select = this.id; 
+            if (select == 'publish') {
+                $('.plan-td').hide();
+                $('.plan-td.publish').show();
+                
+            }else if (select == 'multi'){ 
+                $('.plan-td').hide();
+                $('.plan-td.multi').show();
+            }
+            else if (select == 'multi-pro'){
+                $('.plan-td').hide();
+                $('.plan-td.multi-pro').show();
+            }
+            else if (select == 'unlimited'){
+                $('.plan-td').hide();
+                $('.plan-td.unlimited').show();
+            }
+            else{
+                alert();
+                $('.plan-td').hide();
+            } 
+        });
+
+        //HIDE OPTIONS IF CLICKED ANYWHERE ELSE ON PAGE
+        $(document).bind('click', function(e) {
+            var $clicked = $(e.target);
+            if (!$clicked.parents().hasClass("mob-select"))
+                $(".mob-select .options ul").hide();
+        });
     });
+
+    
 
     function tabNav(evt, tabHead) {
         var i, tabcontent, tablinks;
