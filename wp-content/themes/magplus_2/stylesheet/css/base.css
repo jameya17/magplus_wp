@@ -2004,7 +2004,7 @@ input:-webkit-autofill:focus {
   @media only screen and (max-width: 1024px) {
     .owl-carousel {
       width: 100%;
-      padding: 30px 0  0; } }
+      padding: 30px 0; } }
   .owl-carousel .owl-stage-outer {
     overflow: hidden; }
     @media only screen and (max-width: 1024px) {
@@ -3322,7 +3322,8 @@ footer {
   padding-top: 68px; }
   @media only screen and (max-width: 1024px) {
     .container {
-      padding: 68px 0 0; } }
+      overflow: hidden;
+      padding: 56px 0 0; } }
 
 .sec-pad {
   display: -webkit-box;

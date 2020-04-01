@@ -148,7 +148,8 @@
 .container{
     padding-top: 68px;
     @media only screen and (max-width: 1024px) {
-        padding: 68px 0 0; 
+        overflow: hidden;
+        padding: 56px 0 0; 
     }
 }
 .sec-pad{
