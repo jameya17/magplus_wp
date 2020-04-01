@@ -27,12 +27,12 @@ get_header();
                 </div>    
             </div>
         </section>
-        <section class="l-section sec-pad grey-bg pad-bot0">
+        <section class="l-section sec-pad grey-bg pad-bot0 trusted-sec">
             <div class="l-section-wrap" data-aos="fade-up">
                 <div class="g-col align-center">
                     <h3 class="title-with-border bdr-org">Trusted by the world's best</h3>
 
-                    <div class="loop owl-carousel">
+                    <div class="loop owl-carousel ">
                         <div class="item">
                             <div class="item-image">
                                 <img src="<?php bloginfo('template_directory'); ?>/images/volvo-fh.png" alt="Volvo FH">

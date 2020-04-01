@@ -282,6 +282,9 @@
 .sec-pad{
     .marB75{
         margin-bottom: 75px;
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 30px;
+        }
     }
 }
 .how-it-works-sec{
@@ -299,6 +302,11 @@
             }
         }
     }
+    .g-col{
+        @media only screen and (max-width: 1024px) {
+            flex-direction: inherit;
+        }     
+    }
 }
 .mob-view{
     display: none !important; 
@@ -311,4 +319,21 @@
     @media only screen and (max-width: 1024px) {
         margin-bottom: 25px;
     }
+}
+.how-it-works-img{
+    @media only screen and (max-width: 1024px) {
+        max-height: 350px;
+    }
+}
+.casestudiesdtlPg{
+    .g-col.offset_default{
+        @include align-items(flex-start); 
+    }
+}
+
+//Fancybox
+.fancybox-slide{
+    @media only screen and (max-width: 1024px) {
+        padding: 15px;
+    }    
 }

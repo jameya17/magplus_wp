@@ -4,8 +4,8 @@
 		$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
 	endwhile; endif;
 ?>
-<div class="container casestudiesPg"> 
-        <section id="tutorials" class="l-section sec-pad pad-top0">
+<div class="container casestudiesPg casestudiesdtlPg"> 
+        <section id="tutorials" class="l-section sec-pad pad-top0 blog-listing-section">
             <div class="l-section-wrap">
                 <div class="breadcrumb">
                     <ul>

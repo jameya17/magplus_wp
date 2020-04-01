@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-	<div class="container casestudiesPg"> 
-        <section id="tutorials" class="l-section sec-pad pad-top0">
+	<div class="container casestudiesPg casestudiesdtlPg"> 
+        <section id="tutorials" class="l-section sec-pad pad-top0 blog-listing-section">
             <div class="l-section-wrap">
                 <div class="breadcrumb">
                     <ul>

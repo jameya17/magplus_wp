@@ -9,11 +9,12 @@ footer{
             font-size: 14px;
             line-height: 16px;
             font-weight: 500;
+            color: rgba(255,255,255, .7);
             padding: 15px 15px;
             margin: 0;
-            border-top: 1px solid #D8D8D8;
+            border-top: 1px solid rgba(255,255,255, .5);
             text-transform: none;
-            letter-spacing: 1px;
+            letter-spacing: .3px;
             opacity: .6;
             &:last-child{
                 border-bottom: 0; 
@@ -42,9 +43,13 @@ footer{
         @media only screen and (max-width: 1024px) {
             margin: 0 auto;
             text-align: center;
-            border-top: 1px solid #D8D8D8; 
+            border-top: 1px solid rgba(255,255,255, .5); 
             h6{
                 border: 0;
+                font-size: 11px;
+                line-height: 16px;
+                letter-spacing: 2.75px;
+                text-transform: uppercase; 
             }
             p{
                 opacity: .5;
@@ -55,6 +60,9 @@ footer{
                 @media only screen and (max-width: 1024px) {
                     @include justify-content(center); 
                     margin: 0 auto;
+                }
+                .btn{
+                    background-color: $dark-org-col;
                 }
             }
         }
@@ -127,7 +135,7 @@ footer{
             display: block;
             font-size: 10px;
             line-height: 14px;
-            color: #fff;
+            color: rgba(255,255,255, .7); 
             opacity: .5;
             padding: 10px 15px;
         }
@@ -245,16 +253,26 @@ footer{
         color: $dark-org-col;
         border-color: $dark-org-col; 
     }
+    @media only screen and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 35px 10px;
+    }
 }
 .sharing-icon{
     display: inline-block;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: $org-col url('../../images/icons/share-icon.svg') no-repeat center center;
+    background: $dark-org-col url('../../images/icons/share-icon.svg') no-repeat center center;
     cursor: pointer;
     &:hover{
         background-color: $dark-org-col;
+    }
+    @media only screen and (max-width: 1024px) {
+        width: 36px;
+        height: 36px;
+        background-size: 50%; 
     }
 }
 
@@ -262,6 +280,9 @@ footer{
     position: fixed; 
     bottom: 10px; 
     right: 10px;
+    @media only screen and (max-width: 1024px) {
+        right: 0px;
+    }
     .chat-icon{
         display: block;
         width: 64px;
@@ -270,6 +291,11 @@ footer{
         cursor: pointer;
         &:hover{
             opacity: 0.9;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 50px;
+            height: 50px;
+            background-size: 100%; 
         }
     }
 }

@@ -164,6 +164,9 @@
             position: -ms-sticky;
             position: -o-sticky;
             position: sticky;
+            @media only screen and (max-width: 1024px) { 
+                position: static;
+            }
         }
         &.post-sidebar {
             top: 130px;
@@ -182,6 +185,9 @@
     .card{
         max-width: 325px;
         margin: 30px; 
+        @media only screen and (max-width: 1024px) { 
+            margin: 0px; 
+        }
     }
     .card-with-image{
         img{

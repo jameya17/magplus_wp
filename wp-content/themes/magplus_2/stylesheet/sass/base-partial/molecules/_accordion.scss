@@ -45,6 +45,9 @@
         color: #8D8788; 
         margin-bottom: 0;
         text-align: left;  
+        @media only screen and (max-width: 1024px) {
+            margin-bottom: 0 !important;
+        }
     }
 }
 

@@ -81,7 +81,7 @@ get_header();
                     <h3>How it Works</h3>
                     <p class="small-wrap marB75">Mag+ makes it easy to publish your content to your own mobile app. From text to video to interactive elements, no matter the source, the mag+ software lets you bring your content to life on tablets and phones with no coding and no hassles.</p>
                     <div class="mob-view">
-                        <img src="<?php bloginfo('template_directory'); ?>/images/hide-seek.svg" alt=" Hide and seek" />
+                        <img src="<?php bloginfo('template_directory'); ?>/images/hide-seek.svg" alt=" Hide and seek"  class="how-it-works-img"/>
                     </div>
                     <div class="g-col">
                         <div class="one-third">
